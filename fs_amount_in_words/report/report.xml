@@ -30,7 +30,7 @@
             <xpath expr="//div[@class='clearfix']" position="after">
                 <div style="font-size:16px; padding-bottom:35px; padding-top:35px;">
                     <tr class="border-black">
-                        <td><strong>This invoice is approved for the sum of: </strong></td>
+                        <td><strong>Cette facture est approuvée pour la somme de :</strong></td>
                         <td><span t-field="o.num_word"/></td>
                     </tr>
                 </div>
