@@ -37,7 +37,7 @@ class PurchaseOrder(models.Model):
         for rec in self:
             rec.num_word = str(rec.currency_id.amount_to_text(rec.amount_total))
 
-    num_word = fields.Char(string="This purchase order form is approved for the sum of: ", compute='_compute_amount_in_word')
+    num_word = fields.Char(string="Ce bon de commande est approuvé pour la somme de : ", compute='_compute_amount_in_word')
 
 
 class InvoiceOrder(models.Model):
@@ -49,4 +49,4 @@ class InvoiceOrder(models.Model):
         for rec in self:
             rec.num_word = str(rec.currency_id.amount_to_text(rec.amount_total))
 
-    num_word = fields.Char(string="This invoice is approved for the sum of: ", compute='_compute_amount_in_word')
+    num_word = fields.Char(string="Cette facture est approuvée pour la somme de : ", compute='_compute_amount_in_word')

@@ -6,7 +6,7 @@
             <xpath expr="//div[@class='clearfix']" position="after">
                 <div style="font-size:16px; padding-bottom:35px; padding-top:35px;">
                     <tr class="border-black">
-                        <td><strong>This sale order is approved for the sum of: </strong></td>
+                        <td><strong>Cette commande de vente est approuvée pour la somme de :</strong></td>
                         <td><span t-field="doc.num_word"/></td>
                     </tr>
                 </div>
@@ -18,7 +18,7 @@
             <xpath expr="//div[@class='row justify-content-end']" position="after">
                 <div style="font-size:16px; padding-bottom:35px; padding-top:35px;">
                     <tr class="border-black">
-                        <td><strong>This purchase order form is approved for the sum of: </strong></td>
+                        <td><strong>Ce bon de commande est approuvé pour la somme de : </strong></td>
                         <td><span t-field="o.num_word"/></td>
                     </tr>
                 </div>
@@ -30,7 +30,7 @@
             <xpath expr="//div[@class='clearfix']" position="after">
                 <div style="font-size:16px; padding-bottom:35px; padding-top:35px;">
                     <tr class="border-black">
-                        <td><strong>Cette facture est approuv�e pour la somme de :</strong></td>
+                        <td><strong>Cette facture est approuvée pour la somme de :</strong></td>
                         <td><span t-field="o.num_word"/></td>
                     </tr>
                 </div>
