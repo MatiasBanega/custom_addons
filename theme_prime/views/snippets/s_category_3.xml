@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_category_3" name="Category - 3">
+        <section class="s_category_3 oe_img_bg oe_custom_bg pt48 pb48" style="background-image: url('/web/image/theme_prime.s_category_3_1');">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12">
+                        <div class="py-5 text-center">
+                            <h5>ENJOY AN EXTRA</h5>
+                            <h2 class="mt16">
+                                <font style="font-size: 48px;">50% OFF</font>
+                            </h2>
+                            <h5 class="mt16">Use code #SHOP50</h5>
+                            <div class="pt16">
+                                <a href="/shop" class="btn btn-primary">Shop Collection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

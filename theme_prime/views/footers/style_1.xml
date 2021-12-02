@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_1" inherit_id="website.layout" name="Footer Style - 1" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt64 pb32">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center mb-5">
+                                <a href="/" class="o_footer_logo logo">
+                                    <img src="/website/static/src/img/website_logo.png" class="img-fluid" aria-label="Logo of MyCompany" title="MyCompany" role="img"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-5 mb-4">
+                                <h5>Products</h5>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul class="list-unstyled">
+                                            <li class="my-2"><a href="#">Smartphone</a></li>
+                                            <li class="my-2"><a href="#">Laptop</a></li>
+                                            <li class="my-2"><a href="#">Mouse</a></li>
+                                            <li class="my-2"><a href="#">Monitor</a></li>
+                                            <li class="my-2"><a href="#">Watch</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-unstyled">
+                                            <li class="my-2"><a href="#">Tablet</a></li>
+                                            <li class="my-2"><a href="#">Accessorie</a></li>
+                                            <li class="my-2"><a href="#">Mouses Pad</a></li>
+                                            <li class="my-2"><a href="#">Handset</a></li>
+                                            <li class="my-2"><a href="#">Phablet</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="list-unstyled">
+                                            <li class="my-2"><a href="#">Speakers</a></li>
+                                            <li class="my-2"><a href="#">Camera</a></li>
+                                            <li class="my-2"><a href="#">Play Station</a></li>
+                                            <li class="my-2"><a href="#">Xbox</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-3 mb-4">
+                                <h5>Brands</h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="my-2"><a href="#">Logitech</a></li>
+                                            <li class="my-2"><a href="#">Samsung</a></li>
+                                            <li class="my-2"><a href="#">Microsoft</a></li>
+                                            <li class="my-2"><a href="#">Apple</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="my-2"><a href="#">Huawei</a></li>
+                                            <li class="my-2"><a href="#">Motorola</a></li>
+                                            <li class="my-2"><a href="#">Sony</a></li>
+                                            <li class="my-2"><a href="#">Nokia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4 mb-4">
+                                <h5>MyCompany</h5>
+                                <div>250 Executive Park Blvd, Suite 3400 <br/> San Francisco CA 94134 <br/>United States</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-envelope mr-1"/><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-phone mr-1"/><span class="o_force_ltr"><a href="tel:1 (650) 691-3277">+1 (650) 691-3277</a></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-xl-5 mb-4">
+                                <h5>We Accept</h5>
+                                <ul class="list-inline tp-payment-icons">
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/visa.png" alt="Visa"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/american_express.png" alt="American Express"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/maestro.png" alt="Maestro"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/jcb.png" alt="JCB"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/discover.png" alt="Discover"/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-xl-3 mb-4">
+                                <h5>Follow Us On</h5>
+                                <ul class="list-inline tp-followus-icons">
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/facebook">
+                                            <span class="fa fa-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/twitter">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/youtube">
+                                            <span class="fa fa-youtube"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/instagram">
+                                            <span class="fa fa-instagram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/github">
+                                            <span class="fa fa-github"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-xl-3 mb-4">
+                                <h5>Subscribe</h5>
+                                <div class="s_newsletter_subscribe_form js_subscribe" data-vxml="001" data-list-id="0">
+                                    <div class="input-group">
+                                        <input type="email" name="email" class="js_subscribe_email form-control bg-transparent" placeholder="your email..."/>
+                                        <span class="input-group-append">
+                                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><i class="fa fa-send-o"/></a>
+                                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-auto">
+                        <div class="my-2">
+                            Copyright &amp;copy; MyCompany
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-auto text-lg-right" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

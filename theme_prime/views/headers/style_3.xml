@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_header_style_3" inherit_id="website.layout" name="Header Style - 3" active="False">
+        <xpath expr="//header//nav" position="replace">
+            <div class="tp-preheader">
+                <div class="container">
+                    <div class="row justify-content-lg-between justify-content-center align-items-center">
+                        <div class="col-auto py-2 d-none d-lg-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="tel:1 (650) 691-3277"><i class="fa fa-1x fa-fw fa-phone"/> 1 (650) 691-3277</a></li>
+                                <li class="list-inline-item"><a href="mailto:info@yourcompany.example.com"><i class="fa fa-1x fa-fw fa-envelope"/> info@yourcompany.example.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto py-2">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><span class="fa fa-truck p-1"/> Free Delivery</li>
+                                <li class="list-inline-item"><span class="fa fa-support p-1"/> 24 x 7 Support</li>
+                                <li class="list-inline-item"><span class="fa fa-refresh p-1"/> 30 Days Return Policy</li>
+                            </ul>
+                        </div>
+                        <div class="col-auto py-2 d-none d-lg-block">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-header">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-lg-between align-items-center">
+                        <div class="col-3 py-3">
+                            <!-- Brand -->
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-value="'d-none d-lg-inline-block'"/>
+                            </t>
+                        </div>
+                        <div class="col-6 py-3">
+                            <form class="w-100 w-lg-75 o_wsale_products_searchbar_form o_not_editable mx-auto" method="get" action="/shop">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <t t-call="theme_prime.component_product_search_category_dropdown">
+                                            <t t-set="_classes" t-value="'border'"/>
+                                        </t>
+                                    </div>
+                                    <input type="text" name="search" data-limit="5" data-display-price="true" data-display-image="true" class="form-control bg-transparent search-query" placeholder="Search Product..." t-att-value="search"/>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary" aria-label="Search">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-3 py-3 text-right">
+                            <ul class="list-inline m-0 tp-account-info">
+                                <t t-call="theme_prime.component_account_info">
+                                    <t t-set="no_search" t-value="True"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+                <div id="top_menu_container" class="container justify-content-between">
+                    <!-- Navbar Toggler -->
+                    <t t-call="theme_prime.component_navbar_toggler"/>
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'d-lg-none o_offcanvas_logo_container'"/>
+                    </t>
+                    <!-- Account Info -->
+                    <t t-call="theme_prime.component_navbar_mobile_account_info"/>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+</odoo>

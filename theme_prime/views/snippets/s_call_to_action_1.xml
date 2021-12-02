@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_call_to_action_1" name="Call To Action - 1">
+        <section class="s_call_to_action_1 pt56 pb56">
+            <div class="container">
+                <div class="row align-items-center s_nb_column_fixed">
+                    <div class="col-12 col-lg-9">
+                        <h2>Order now and get <span class="text-o-color-1">15% OFF</span></h2>
+                        <p class="lead mb-0">We are the creative team of theme prime. No one actually read this so let me write any thing here.</p>
+                    </div>
+                    <div class="col-12 col-lg-3 text-lg-right">
+                        <a href="#" class="btn btn-primary mt-3 mt-lg-0">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_heading_4" name="Heading - 4">
+        <section class="s_heading_4 pt32 pb32">
+            <div class="container">
+                <div class="row justify-content-center s_nb_column_fixed">
+                    <div class="col-12 col-lg-8 text-center">
+                        <span class="fa fa-users fa-2x bg-o-color-1 rounded-circle"></span>
+                        <h2 class="mt-3">Our Creative <font class="text-o-color-1">Team</font></h2>
+                        <p class="lead">We are the creative team of theme prime. No one actually read this so let me write any thing here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

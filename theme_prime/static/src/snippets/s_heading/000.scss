@@ -1,0 +1,78 @@
+.s_heading_1 {
+    .tp-heading-container {
+        &.tp-line-bottom:after {
+            content: '';
+            margin-top: 1.7rem;
+            display: inline-block;
+            border-top-style: solid;
+            border-color: o-color('primary');
+        }
+        &.tp-line-top:before {
+            content: '';
+            margin-bottom: 1.7rem;
+            display: inline-block;
+            border-bottom-style: solid;
+            border-color: o-color('primary');
+        }
+        &.tp-line-thickness-light:before {
+            border-bottom-width: 2px;
+        }
+        &.tp-line-thickness-normal:before {
+            border-bottom-width: 5px;
+        }
+        &.tp-line-thickness-bold:before {
+            border-bottom-width: 10px;
+        }
+
+        &.tp-line-thickness-light:after {
+            border-top-width: 2px;
+        }
+        &.tp-line-thickness-normal:after {
+            border-top-width: 5px;
+        }
+        &.tp-line-thickness-bold:after {
+            border-top-width: 10px;
+        }
+
+        &.tp-line-width-short {
+            &:after, &:before {
+                width: 2.14rem;
+            }
+        }
+        &.tp-line-width-normal {
+            &:after, &:before {
+                width: 2.71rem;
+            }
+        }
+        &.tp-line-width-long {
+            &:after, &:before {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+.s_heading_2 {
+    .tp-heading-container {
+        &.tp-line-bottom:after {
+            content: '';
+            margin-top: 0.9rem;
+            border-top-width: 0.9rem;
+            display: inline-block;
+            border-top-style: solid;
+            border-color: o-color('primary');
+            border-radius: 50%;
+            width: 0.9rem;
+        }
+        &.tp-line-top:before {
+            content: '';
+            margin-bottom: 0.9rem;
+            border-bottom-width: 0.9rem;
+            display: inline-block;
+            border-bottom-style: solid;
+            border-color: o-color('primary');
+            border-radius: 50%;
+            width: 0.9rem;
+        }
+    }
+}

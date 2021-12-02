@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_8" name="Icon Block - 8">
+        <section class="s_icon_block_8 pt32 pb32">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 h-100">
+                            <span class="fa fa-rocket fa-3x text-o-color-1 mb-4"/>
+                            <h5>Creative ideas</h5>
+                            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis. nascetur ridiculus mus.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 h-100">
+                            <span class="fa fa-magic fa-3x text-o-color-1 mb-4"/>
+                            <h5>Excellent features</h5>
+                            <p>Suspendisse potenti. Cras a dui et nisl egestas ornare eu quis odio. Sed bibendum in ante. Suspendisse potenti. Cras a dui et nisl. Sed bibendum in ante.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 h-100">
+                            <span class="fa fa-laptop fa-3x text-o-color-1 mb-4"/>
+                            <h5>Fully responsive</h5>
+                            <p>In hac habitasse platea dictumst. Praesent cursus congue felis, nec pellentesque nulla ornare sed. In hac habitasse platea dictumst. pellentesque nulla ornare sed.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_icon_block_8_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_icon_block_8 .card'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_icon_block_8 .card">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

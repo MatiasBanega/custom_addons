@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <!-- Products Search Bar Autocomplete Item -->
+    <t t-extend="website_sale.productsSearchBar.autocomplete">
+        <t t-jquery="[t-if='!products.length'] span" t-operation="replace">
+            <span class="dropdown-item-text text-muted text-center">No results found. Please try another search.</span>
+        </t>
+        <t t-jquery="img.o_image_64_contain" t-operation="replace">
+            <img t-attf-src="/web/image/product.template/#{product['id']}/image_128"
+                    class="flex-shrink-0 o_image_64_contain border img img-fluid"/>
+        </t>
+        <t t-jquery=".media-body" t-operation="replace">
+            <div class="media-body px-3">
+                <t t-set="description" t-value="widget.displayDescription and product['description_sale']"/>
+                <span t-attf-class="tp-heading-font-weight #{description ? '' : 'mb-0'}" t-esc="product['name']"/>
+                <p t-if="description" class="mb-0 small" t-esc="description"/>
+            </div>
+        </t>
+        <t t-jquery="[t-if='widget.displayPrice']" t-operation="replace">
+            <div t-if="widget.displayPrice" class="flex-shrink-0">
+                <b class="text-nowrap">
+                    <t t-raw="product['price']"/>
+                </b>
+                <t t-if="product['has_discounted_price']">
+                    <br/>
+                    <small class="text-nowrap" style="text-decoration: line-through;">
+                        <t t-raw="product['list_price']"/>
+                    </small>
+                </t>
+            </div>
+        </t>
+        <t t-jquery="[t-if='hasMoreProducts'] button" t-operation="replace">
+            <button type="submit" class="dropdown-item text-center">All results</button>
+        </t>
+    </t>
+
+</templates>

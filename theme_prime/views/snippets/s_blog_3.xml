@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_blog_3" name="Blog - 3">
+        <section class="s_blog_3 s_latest_posts pt16 pb16" data-vcss="001">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <h3 class="mb-0">Latest Posts</h3>
+                        <p class="mb-0">
+                            Here’s what we've been up to recently.
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/blog" class="btn btn-outline-primary d-none d-md-inline">
+                            View all
+                        </a>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed js_get_posts"
+                    data-loading="true"
+                    data-template="theme_prime.s_blog_3_template"
+                    data-filter-by-blog-id="0"
+                    data-order="published_date desc"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_3_template">
+        <div t-foreach="posts" t-as="post" class="col-12 col-md-6 col-lg-4 my-3 s_latest_posts_post">
+            <a t-attf-href="/blog/#{post.blog_id.id}/post/#{post.id}" class="card mb-2 tp-blog-container tp-animation-lift">
+                <t t-set="_cp" t-value="json.loads(post.cover_properties)"/>
+                <div class="card-img-top">
+                    <div class="o_record_cover_component o_record_cover_image" t-attf-style="background-image: #{_cp.get('background-image')};"/>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-truncate" t-esc="post.name"/>
+                    <p class="text-body" t-esc="post.teaser"/>
+                    <div t-if="len(post.tag_ids)">
+                        <t t-foreach="post.tag_ids" t-as="tag">
+                            <span class="badge badge-secondary mr-1" t-esc="tag.name"/>
+                        </t>
+                    </div>
+                </div>
+                <div class="card-footer d-flex align-items-center bg-white">
+                    <div class="d-flex align-items-center">
+                        <span t-field="post.author_avatar" t-options='{"widget": "image", "class": "rounded-circle mr-2 tp-blog-avatar"}'/>
+                        <small t-field="post.author_id" t-options='{"widget": "contact", "fields": ["name"]}'/>
+                    </div>
+                    <div class="ml-auto">
+                        <small t-field="post.post_date" t-options='{"format": "d MMMM, yyyy"}'/>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </template>
+
+</odoo>

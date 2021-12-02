@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_4" inherit_id="website.layout" name="Footer Style - 4" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt48 pb36">
+                    <div class="container">
+                        <div class="row py-4 tp-delivery-info">
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="media">
+                                    <span class="fa fa-rocket fa-2x text-primary"/>
+                                    <div class="media-body pl-3">
+                                        <h6>Fast and free delivery</h6>
+                                        <p>Free delivery for all orders</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="media">
+                                    <span class="fa fa-undo fa-2x text-primary"/>
+                                    <div class="media-body pl-3">
+                                        <h6>Money back guarantee</h6>
+                                        <p>We return money within 30 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="media">
+                                    <span class="fa fa-phone fa-2x text-primary"/>
+                                    <div class="media-body pl-3">
+                                        <h6>24/7 customer support</h6>
+                                        <p>Friendly 24/7 customer support</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="media">
+                                    <span class="fa fa-credit-card fa-2x text-primary"/>
+                                    <div class="media-body pl-3">
+                                        <h6>Secure online payment</h6>
+                                        <p>We process SSL сertificate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                                <h6 class="mb-3">
+                                    Categories
+                                </h6>
+                                <ul class="list-unstyled tp-list-dot">
+                                    <li class="my-2">
+                                        <a href="#">Jeans</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Swimwear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Clogs &amp; Mules</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Bags</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                                <h6 class="mb-3">
+                                    Useful Links
+                                </h6>
+                                <ul class="list-unstyled tp-list-dot">
+                                    <li class="my-2">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Community</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Forums</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Pricing and Plans</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                                <h6 class="mb-3">
+                                    About Us
+                                </h6>
+                                <ul class="list-unstyled tp-list-dot">
+                                    <li class="my-2">
+                                        <a href="#">All services</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="/aboutus">About Us</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="/contactus">Contact Us</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Terms of Use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <h6 class="mb-3">
+                                    Contact Us
+                                </h6>
+                                <div>
+                                    <div>250 Executive Park Blvd, Suite 3400 <br/> San Francisco CA 94134 <br/>United States</div>
+                                    <ul class="list-unstyled">
+                                        <li class="py-1"><i class="fa fa-1x fa-fw fa-envelope mr-1"/><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
+                                        <li class="py-1"><i class="fa fa-1x fa-fw fa-phone mr-1"/><span class="o_force_ltr"><a href="tel:1 (650) 691-3277">+1 (650) 691-3277</a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <ul class="list-inline tp-payment-icons">
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/visa.png" alt="Visa"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/american_express.png" alt="American Express"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/maestro.png" alt="Maestro"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/jcb.png" alt="JCB"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/discover.png" alt="Discover"/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="s_share mb-4" data-name="Social Media">
+                                    <h5 class="s_share_title d-none">Follow us</h5>
+                                    <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                        <i class="fa fa-facebook rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                        <i class="fa fa-twitter rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                        <i class="fa fa-linkedin rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/whatsapp" class="s_share_whatsapp" target="_blank">
+                                        <i class="fa fa-whatsapp rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/pinterest" class="s_share_pinterest" target="_blank">
+                                        <i class="fa fa-pinterest rounded-circle shadow-sm"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-auto">
+                        <div class="my-2">
+                            Copyright &amp;copy; MyCompany
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-auto text-lg-right" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_info_block_2" name="Info Block - 2">
+        <section class="s_info_block_2">
+            <div class="container-fluid px-0">
+                <div class="row no-gutters s_nb_column_fixed align-items-center">
+                    <div class="col-lg-6">
+                        <img src="/web/image/theme_prime.s_info_block_2_1" class="img img-fluid" alt="Info Block Image 01"/>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 p-4">
+                        <h2>Cras in feugiat eros</h2>
+                        <p>Suspendisse est nunc, laoreet eget odio id, finibus convallis ipsum. Praesent eu nisi egestas.</p>
+                        <p>Vestibulum id laoreet sapien. Aliquam porttitor neque ut urna efficitur, eget tincidunt diam convallis. Vestibulum molestie nunc consectetur cursus tincidunt. Aenean interdum justo a tellus condimentum gravida.</p>
+                        <a href="#" class="btn btn-primary mt-2">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_info_block_2_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-option-name='vAlignment']" position="attributes">
+            <attribute name="data-selector" add=".s_info_block_2" separator=", "/>
+        </xpath>
+    </template>
+
+</odoo>

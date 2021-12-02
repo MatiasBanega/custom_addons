@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_pricing_6" name="Pricing - 6">
+        <section class="s_pricing_6 pb16 pt16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 py-3">
+                        <div class="card h-100">
+                            <div class="pt-3 px-3 text-center">
+                                <div class="s_rating pt16 pb16" data-vcss="001" data-icon="fa-star">
+                                    <h2 class="s_rating_title">Basic</h2>
+                                    <div class="s_rating_icons o_not_editable fa-2x text-o-color-1">
+                                        <span class="s_rating_active_icons">
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                        </span>
+                                        <span class="s_rating_inactive_icons">
+                                            <i class="fa fa-star-o"/>
+                                            <i class="fa fa-star-o"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="p-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-times"></span> <strong>24 x Support</strong>
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-times"></span> <strong>Email Support</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="px-3 pt-2 text-center">
+                                <h1><font style="font-size: 48px;">$3</font></h1>
+                                <p class="mb-0">Per Month</p>
+                            </div>
+                            <div class="px-3 py-3 text-center">
+                                <a href="#" class="btn btn-primary btn-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="card h-100">
+                            <div class="pt-3 px-3 text-center">
+                                <div class="s_rating pt16 pb16" data-vcss="001" data-icon="fa-star">
+                                    <h2 class="s_rating_title">Premium</h2>
+                                    <div class="s_rating_icons o_not_editable fa-2x text-o-color-1">
+                                        <span class="s_rating_active_icons">
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                        </span>
+                                        <span class="s_rating_inactive_icons">
+                                            <i class="fa fa-star-o"/>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="p-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>24 x Support</strong>
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-times"></span> <strong>Email Support</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="px-3 pt-2 text-center">
+                                <h1><font style="font-size: 48px;">$8</font></h1>
+                                <p class="mb-0">Per Month</p>
+                            </div>
+                            <div class="px-3 py-3 text-center">
+                                <a href="#" class="btn btn-primary btn-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="card h-100">
+                            <div class="pt-3 px-3 text-center">
+                                <div class="s_rating pt16 pb16" data-vcss="001" data-icon="fa-star">
+                                    <h2 class="s_rating_title">Business</h2>
+                                    <div class="s_rating_icons o_not_editable fa-2x text-o-color-1">
+                                        <span class="s_rating_active_icons">
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                            <i class="fa fa-star"/>
+                                        </span>
+                                        <span class="s_rating_inactive_icons">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="p-3">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> Email Addresses
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>50 GB</strong> Disk Space
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Unlimited</strong> SQL Database
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>24 x Support</strong>
+                                    </li>
+                                    <li class="list-group-item p-1 border-0 bg-transparent">
+                                        <span class="p-1 fa fa-check"></span> <strong>Email Support</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s_hr text-300 pt4 pb4">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <div class="px-3 pt-2 text-center">
+                                <h1><font style="font-size: 48px;">$12</font></h1>
+                                <p class="mb-0">Per Month</p>
+                            </div>
+                            <div class="px-3 py-3 text-center">
+                                <a href="#" class="btn btn-primary btn-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_pricing_6_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_pricing_6 .card'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_pricing_6 .card">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

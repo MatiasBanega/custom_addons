@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<templates>
+
+    <t t-name="ui_configurator_option">
+        <div data-toggle="tooltip" data-html="true" t-attf-title="#{is_disabled ? title : ''}" t-att-data-option="name" t-attf-class="#{selector} d_configurator_btn #{active ? 'd_active' : ''} #{is_disabled ? 'd_disabled' : ''}">
+            <div t-esc="label" class="text-center mt-2 font-weight-bold d-btn-label"/>
+            <div class="text-center mt-2 d-btn-icon">
+                <span t-attf-class="#{icon} fa-2x"/>
+            </div>
+            <span t-if="is_disabled" class="fa fa-exclamation-triangle text-danger d-disabled-warning"/>
+        </div>
+    </t>
+
+    <t t-name="ui_configurator_preview">
+        <div class="d-snippet-preview">
+            <div t-att-class="widget.parentClass">
+                <t t-call="#{widget.previewTemplate}">
+                    <t t-set="item" t-value="widget.demo_data"/>
+                    <t t-set="userParams" t-value="widget.userParams"/>
+                </t>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="d_snippet_options_panel">
+        <div class="fake">
+            <div class="d-card-style-block form-group ml-2">
+                <label for="d_card_style" class="d-block h6">Card Style</label>
+                <select id="d_card_style" class="form-control d-select-card-style w-50">
+                    <t t-foreach="widget.allSnippets" t-as="snippet">
+                        <option t-att-value="snippet" t-att-selected="snippet === widget.userParams.snippetStyle ? 'selected' : undefined">
+                            Style <t t-esc="snippet_index + 1"/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+            <div class="d-range-slider mt-4 ml-2">
+                <label class="d-block h6" for="num_of_products">Products per Row</label>
+                <input t-att-value="widget.userParams.ppr" type="range" class="custom-range w-75" min="2" max="6" id="num_of_products"/>
+                <div class="w-75 d-range-slider-indicator-wrapper mt-1">
+                    <div class="d-flex justify-content-between d-range-slider-indicator">
+                        <small class="text-center">|</small>
+                        <small class="text-center">|</small>
+                        <small class="text-center">|</small>
+                        <small class="text-center">|</small>
+                        <small class="text-center">|</small>
+                    </div>
+                    <div class="d-flex justify-content-between d-range-slider-indicator">
+                        <span class="text-center font-weight-bold">2</span>
+                        <span class="text-center font-weight-bold">3</span>
+                        <span class="text-center font-weight-bold">4</span>
+                        <span class="text-center font-weight-bold">5</span>
+                        <span class="text-center font-weight-bold">6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-card-options-block mt-4 ml-2">
+                <label class="d-block h6">
+                    Card Options <small class="text-muted"> (Select option to enable feature)</small>
+                </label>
+                <t t-foreach="widget.cardOptions" t-as="option">
+                    <t t-call="ui_configurator_option"/>
+                </t>
+            </div>
+            <div class="d-layout-options-block mt-4 ml-2">
+                <label class="d-block h6">
+                    Layout Type
+                </label>
+                <div class="d_layout_option">
+                    <t t-foreach="widget.layoutOptions" t-as="option">
+                        <t t-call="ui_configurator_option"/>
+                    </t>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="d_snippet_preview_panel">
+        <div class="d_snippet_preview_panel">
+            <h6 class="text-center mt-3 mb-0">Card Preview</h6>
+            <small class="d-block text-center">(Hover card to see effects)</small>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d_snippet_previewer"/>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <div class="d_ui_configurator_widget" t-name="d_ui_configurator_widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d_left_panel">
+                    <t t-call="d_snippet_options_panel"/>
+                </div>
+                <div class="col-6 border-left d_right_panel">
+                    <t t-call="d_snippet_preview_panel"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <t t-name="rating_demo_tmpl">
+        <div class="o_website_rating_static">
+            <i class="fa fa-star" role="img"></i>
+            <i class="fa fa-star" role="img"></i>
+            <i class="fa fa-star" role="img"></i>
+            <i class="fa fa-star-half-o" role="img"></i>
+            <i class="fa fa-star text-black-25" role="img"></i>
+        </div>
+    </t>
+</templates>

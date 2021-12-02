@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_cover_2" name="Cover - 2">
+        <section class="s_cover_2">
+
+            <div id="s_cover_2" class="s_carousel tp-custom-carousel s_carousel_default carousel slide" data-interval="10000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#s_cover_2" data-slide-to="0" class="active"></li>
+                    <li data-target="#s_cover_2" data-slide-to="1"></li>
+                </ol>
+                <!-- Content -->
+                <div class="carousel-inner">
+                    <!-- #01 -->
+                    <div class="carousel-item o_cc o_cc2 active" data-name="Slide">
+                        <div class="container-fluid px-0">
+                            <div class="row no-gutters align-items-center content s_nb_column_fixed">
+                                <div class="order-2 order-lg-1 jumbotron rounded px-4 offset-lg-1 col-lg-4 pt24 pb24 bg-white shadow-sm" data-name="Box">
+                                    <img class="img img-fluid" src="/web/image/theme_prime.s_cover_2_brand_1" style="width: 25%;" alt="Cover Brand Image 01"></img>
+                                    <h2><font style="font-size: 36px;">Special Collection</font></h2>
+                                    <p class="lead">
+                                        <font style="font-size: 24px;">Starting at $120.00</font>
+                                    </p>
+                                    <a href="/shop" class="btn btn-lg btn-primary">Shop Now</a>
+                                </div>
+                                <div class="order-1 order-lg-2 offset-lg-1 col-lg-6">
+                                    <img class="img img-fluid" src="/web/image/theme_prime.s_cover_2_1" alt="Cover Image 01"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #02 -->
+                    <div class="carousel-item o_cc o_cc2" data-name="Slide">
+                        <div class="container-fluid px-0">
+                            <div class="row no-gutters align-items-center content s_nb_column_fixed">
+                                <div class="order-2 order-lg-1 jumbotron rounded px-4 offset-lg-1 col-lg-4 pt24 pb24 bg-white shadow-sm" data-name="Box">
+                                    <img class="img img-fluid" src="/web/image/theme_prime.s_cover_2_brand_2" style="width: 25%;" alt="Cover Brand Image 01"></img>
+                                    <h2><font style="font-size: 36px;">Special Collection</font></h2>
+                                    <p class="lead">
+                                        <font style="font-size: 24px;">Starting at $35.00</font>
+                                    </p>
+                                    <a href="/shop" class="btn btn-lg btn-primary">Shop Now</a>
+                                </div>
+                                <div class="order-1 order-lg-2 offset-lg-1 col-lg-6">
+                                    <img class="img img-fluid" src="/web/image/theme_prime.s_cover_2_2" alt="Cover Image 02"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="carousel-control-prev" data-target="#s_cover_2" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                    <span class="fa fa-chevron-left"></span>
+                </div>
+                <div class="carousel-control-next" data-target="#s_cover_2" data-slide="next" role="img" aria-label="Next" title="Next">
+                    <span class="fa fa-chevron-right"></span>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

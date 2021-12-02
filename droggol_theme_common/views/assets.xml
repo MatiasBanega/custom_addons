@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/droggol_theme_common/static/src/scss/variants.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_backend" inherit_id="web.assets_backend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/droggol_theme_common/static/src/js/backend/list_view_brand.js"/>
+            <script type="text/javascript" src="/droggol_theme_common/static/src/js/backend/res_config_settings.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_backend_inherit_sale" inherit_id="sale.assets_backend_inherit_sale">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/droggol_theme_common/static/src/scss/variants.scss"/>
+        </xpath>
+    </template>
+
+</odoo>

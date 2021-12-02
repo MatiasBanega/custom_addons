@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_blog_1" name="Blog - 1">
+        <section class="s_blog_1 s_latest_posts pt16 pb16" data-vcss="001">
+            <div class="container">
+                <h2 class="text-center">Latest Posts</h2>
+                <div class="row s_nb_column_fixed js_get_posts"
+                    data-loading="true"
+                    data-template="theme_prime.s_blog_1_template"
+                    data-filter-by-blog-id="0"
+                    data-order="published_date desc"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_1_template">
+        <figure t-foreach="posts" t-as="post" class="col-12 col-md-6 col-xl-4 my-3 s_latest_posts_post">
+            <div class="tp-blog-container border">
+                <t t-set="_cp" t-value="json.loads(post.cover_properties)"/>
+                <div class="o_record_cover_component o_record_cover_image" t-attf-style="background-image: #{_cp.get('background-image')};">
+                    <div t-if="len(post.tag_ids)" class="p-3">
+                        <span t-foreach="post.tag_ids" t-as="tag" class="m-1 badge badge-primary badge-pill">
+                            <t t-esc="tag.name"/>
+                        </span>
+                    </div>
+                </div>
+                <figcaption class="text-center w-100 h-100 p-3 d-flex flex-column flex-grow-1">
+                    <h4 class="text-truncate s_latest_posts_post_title mt-3">
+                        <a t-attf-href="/blog/#{post.blog_id.id}/post/#{post.id}" class="tp-link-dark" t-esc="post.name"/>
+                    </h4>
+                    <div class="d-flex align-items-center my-2 justify-content-center">
+                        <i class="fa fa-calendar mr-2"></i>
+                        <span t-field="post.post_date" t-options='{"format": "d MMMM, yyyy"}'/>
+                        <span class="mx-2">•</span>
+                        <span t-field="post.author_avatar" t-options='{"widget": "image", "class": "rounded-circle tp-blog-avatar"}'/>
+                        <span class="mx-1">Posted by</span>
+                        <span t-field="post.author_id" t-options='{"widget": "contact", "fields": ["name"]}'/>
+                    </div>
+                    <p t-esc="post.teaser"/>
+                    <a class="my-2 btn btn-primary-soft btn-block" t-attf-href="/blog/#{post.blog_id.id}/post/#{post.id}">Continue Reading</a>
+                </figcaption>
+            </div>
+        </figure>
+    </template>
+
+</odoo>

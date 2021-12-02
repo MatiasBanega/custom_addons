@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_testimonial_2" name="Testimonial - 2">
+        <section class="s_testimonial_2 pb32 pt32">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <img src="/web/image/theme_prime.s_testimonial_author_01" class="img-thumbnail rounded-circle tp-author-image" alt="Author Image 01"/>
+                        <h5 class="mt-4 mb-0">John Doe</h5>
+                        <em class="text-alpha">Designer</em>
+                        <blockquote class="lead font-weight-light font-italic mt-4 border-white">
+                            "Proin a nisi id turpis pharetra fermentum ac eu sem. Morbi ullamcorper mi quis porttitor interdum. Maecenas luctus varius interdum. Duis commodo tincidunt velit non bibendum. Phasellus placerat sodales nunc. Proin a nisi id turpis pharetra fermentum ac eu sem. Morbi ullamcorper mi quis porttitor interdum."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

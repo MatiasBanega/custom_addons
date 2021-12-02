@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_2" name="Icon Block - 2">
+        <section class="s_icon_block_2 pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-thumbs-up fa-3x text-o-color-1"/>
+                        <h5 class="mt-3">Best Quality</h5>
+                        <p class="mt-3">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-tag fa-3x text-o-color-1"/>
+                        <h5 class="mt-3">100% Genuine</h5>
+                        <p class="mt-3">Suspendisse potenti. Cras a dui et nisl egestas ornare eu quis odio. Sed bibendum in ante.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-rocket fa-3x text-o-color-1"/>
+                        <h5 class="mt-3">Trending Collection</h5>
+                        <p class="mt-3">In hac habitasse platea dictumst. Praesent cursus congue felis, nec pellentesque nulla.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

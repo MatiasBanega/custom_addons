@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_cover_5" name="Cover - 5">
+        <section class="s_cover_5 parallax pt192 pb192">
+            <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/web/image/theme_prime.s_cover_5_1'); background-position: 50% 0;"/>
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-6 jumbotron rounded pt32 pb32" data-name="Box">
+                        <h4>Live Sale</h4>
+                        <h2>
+                            <font style="font-size: 48px;">Summer Collection</font>
+                        </h2>
+                        <p class="lead">Get 20% off any purchase over $ 100.</p>
+                        <div class="s_btn pt16 pb16" data-name="Button">
+                            <a href="#" class="btn btn-primary">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container s_cover_5_sub_block position-relative pt-3 pt-lg-0 pb-4">
+            <div class="row s_nb_column_fixed">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="container border rounded bg-white">
+                        <div class="row no-gutters s_nb_column_fixed s_col_no_resize">
+                            <div class="col-sm-4 p-2">
+                                <div class="position-relative">
+                                    <img class="mx-auto tp-img-block img img-fluid rounded" src="/web/image/theme_prime.s_cover_5_2" alt="Cover Image 02"/>
+                                    <div class="tp-banner-text p-2 text-center">
+                                        <a class="text-center" href="#">
+                                            Fresh Arrival
+                                        </a>
+                                        <div>Up to 10% Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 p-2">
+                                <div class="position-relative">
+                                    <img class="mx-auto tp-img-block img img-fluid rounded" src="/web/image/theme_prime.s_cover_5_3" alt="Cover Image 02"/>
+                                    <div class="tp-banner-text p-2 text-center">
+                                        <a class="text-center" href="#">
+                                            Summer Collection
+                                        </a>
+                                        <div>Up to 20% Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 p-2">
+                                <div class="position-relative">
+                                    <img class="mx-auto tp-img-block img img-fluid rounded" src="/web/image/theme_prime.s_cover_5_4" alt="Cover Image 02"/>
+                                    <div class="tp-banner-text p-2 text-center">
+                                        <a class="text-center" href="#">
+                                            Mega Sale
+                                        </a>
+                                        <div>Up to 40% Off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

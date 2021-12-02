@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_cover_1" name="Cover - 1">
+        <section class="s_cover_1">
+
+            <div id="s_cover_1" class="s_carousel tp-custom-carousel s_carousel_default carousel slide" data-interval="10000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#s_cover_1" data-slide-to="0" class="active"></li>
+                    <li data-target="#s_cover_1" data-slide-to="1"></li>
+                    <li data-target="#s_cover_1" data-slide-to="2"></li>
+                </ol>
+                <!-- Content -->
+                <div class="carousel-inner">
+                    <!-- #01 -->
+                    <div class="carousel-item pt184 pb184 active oe_img_bg oe_custom_bg" data-name="Slide" style="background-image: url('/web/image/theme_prime.s_cover_1_1');">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content offset-lg-1 col-lg-5 text-center bg-white-25 pt40 pb40 px-4" data-name="Box">
+                                    <h4>Up to <b>50%</b> off</h4>
+                                    <h2><font style="font-size: 48px;">Finding your Perfect Collection</font></h2>
+                                    <p class="lead"><font style="font-size: 24px;">Use coupon code #SHOP50</font></p>
+                                    <div class="s_btn text-center">
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                        <a href="/contactus" class="btn btn-secondary">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #02 -->
+                    <div class="carousel-item pt184 pb184 oe_img_bg oe_custom_bg" data-name="Slide" style="background-image: url('/web/image/theme_prime.s_cover_1_2');">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content offset-lg-1 col-lg-5 text-center bg-white-25 pt40 pb40 px-4" data-name="Box">
+                                    <h4>Flat <b>20%</b> off</h4>
+                                    <h2><font style="font-size: 48px;">Summer Collection</font></h2>
+                                    <p class="lead"><font style="font-size: 24px;">Get 20% off on any purchase over 200$</font></p>
+                                    <div class="s_btn" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                        <a href="/contactus" class="btn btn-secondary">Contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #03 -->
+                    <div class="carousel-item pt184 pb184 oe_img_bg oe_custom_bg" data-name="Slide" style="background-image: url('/web/image/theme_prime.s_cover_1_3');">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-6 offset-lg-5 text-right pb32 pt48 px-4" data-name="Box">
+                                    <h4>Has Just Arrived!</h4>
+                                    <h2><font style="font-size: 48px;">High Quality Collection</font></h2>
+                                    <p class="lead"><font style="font-size: 24px;">Stylish collections for the best</font></p>
+                                    <div class="s_btn" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                        <a href="#" class="btn btn-secondary">View Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="carousel-control-prev" data-target="#s_cover_1" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                    <span class="fa fa-chevron-left"></span>
+                </div>
+                <div class="carousel-control-next" data-target="#s_cover_1" data-slide="next" role="img" aria-label="Next" title="Next">
+                    <span class="fa fa-chevron-right"></span>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

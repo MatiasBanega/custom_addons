@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_3" name="Icon Block - 3">
+        <section class="s_icon_block_3 pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-rocket fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Creative ideas</h5>
+                                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean pretium ac enim eget dignissim.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-magic fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Excellent features</h5>
+                                <p>Suspendisse potenti. Cras a dui et nisl egestas ornare eu quis odio. Sed bibendum in ante vel accumsan. Praesent scelerisque.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-laptop fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Fully responsive</h5>
+                                <p>In hac habitasse platea dictumst. Praesent cursus congue felis, nec pellentesque nulla ornare sed. Aliquam eget aliquam urna. Aliquam et.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-book fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Extensive documentation</h5>
+                                <p>Aenean varius ligula vel augue condimentum scelerisque. In a urna at tortor tincidunt gravida sit amet vel eros. Integer et.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-leaf fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Modern design</h5>
+                                <p>Proin purus dui, feugiat id ipsum eu, varius ornare ex. Mauris elit dolor, consectetur ac accumsan eu, commodo et odio.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="media">
+                            <span class="fa fa-code fa-2x mr-4 tp-icon-block-icon"/>
+                            <div class="media-body">
+                                <h5>Clean code</h5>
+                                <p>Nam blandit arcu vel mi mollis faucibus. Nam justo velit, maximus viverra volutpat eu, hendrerit et velit. Pellentesque tincidunt mi.</p>
+                                <a href="#" class="small">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_offer_3" name="Offer - 3">
+        <section class="s_offer_3">
+            <div class="container">
+                <div class="row no-gutters s_nb_column_fixed">
+                    <div class="col-12">
+                        <img class="img img-fluid" src="/web/image/theme_prime.s_offer_3_1" alt="Offer Image 01"/>
+                        <a href="/shop" class="btn btn-primary btn-lg btn-block">Get it Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

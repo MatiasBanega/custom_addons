@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_gallery_2" name="Gallery - 2">
+        <section class="s_gallery pt32 pb32">
+            <div class="container">
+                <div class="row tp-photoswipe-container">
+                   <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_01" title="Gallery Image 01" alt="Gallery Image 01"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_02" title="Gallery Image 02" alt="Gallery Image 02"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_03" title="Gallery Image 03" alt="Gallery Image 03"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_04" title="Gallery Image 04" alt="Gallery Image 04"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_05" title="Gallery Image 05" alt="Gallery Image 05"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_06" title="Gallery Image 06" alt="Gallery Image 06"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_07" title="Gallery Image 07" alt="Gallery Image 07"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_08" title="Gallery Image 08" alt="Gallery Image 08"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

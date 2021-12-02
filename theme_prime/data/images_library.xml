@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="s_banner_1_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_1_1</field>
+        <field name="name">theme_prime.s_banner_1_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_1_1.jpg</field>
+    </record>
+    <record id="s_banner_1_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_1_2</field>
+        <field name="name">theme_prime.s_banner_1_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_1_2.jpg</field>
+    </record>
+    <record id="s_banner_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_2_1</field>
+        <field name="name">theme_prime.s_banner_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_2_1.jpg</field>
+    </record>
+    <record id="s_banner_2_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_2_2</field>
+        <field name="name">theme_prime.s_banner_2_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_2_2.jpg</field>
+    </record>
+    <record id="s_banner_2_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_2_3</field>
+        <field name="name">theme_prime.s_banner_2_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_2_3.jpg</field>
+    </record>
+    <record id="s_banner_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_3_1</field>
+        <field name="name">theme_prime.s_banner_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_3_1.png</field>
+    </record>
+    <record id="s_banner_3_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_3_2</field>
+        <field name="name">theme_prime.s_banner_3_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_3_2.png</field>
+    </record>
+    <record id="s_banner_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_1</field>
+        <field name="name">theme_prime.s_banner_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_1.png</field>
+    </record>
+    <record id="s_banner_4_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_2</field>
+        <field name="name">theme_prime.s_banner_4_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_2.png</field>
+    </record>
+    <record id="s_banner_4_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_3</field>
+        <field name="name">theme_prime.s_banner_4_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_3.png</field>
+    </record>
+    <record id="s_banner_4_brand_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_brand_1</field>
+        <field name="name">theme_prime.s_banner_4_brand_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_brand_1.png</field>
+    </record>
+    <record id="s_banner_4_brand_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_brand_2</field>
+        <field name="name">theme_prime.s_banner_4_brand_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_brand_2.png</field>
+    </record>
+    <record id="s_banner_4_brand_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_4_brand_3</field>
+        <field name="name">theme_prime.s_banner_4_brand_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_4_brand_3.png</field>
+    </record>
+    <record id="s_banner_5_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_5_1</field>
+        <field name="name">theme_prime.s_banner_5_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_5_1.png</field>
+    </record>
+    <record id="s_banner_6_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_6_1</field>
+        <field name="name">theme_prime.s_banner_6_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_6_1.png</field>
+    </record>
+    <record id="s_banner_6_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_6_2</field>
+        <field name="name">theme_prime.s_banner_6_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_6_2.png</field>
+    </record>
+    <record id="s_banner_7_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_7_1</field>
+        <field name="name">theme_prime.s_banner_7_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_7_1.jpg</field>
+    </record>
+    <record id="s_banner_7_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_7_2</field>
+        <field name="name">theme_prime.s_banner_7_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_7_2.jpg</field>
+    </record>
+    <record id="s_banner_7_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_7_3</field>
+        <field name="name">theme_prime.s_banner_7_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_7_3.jpg</field>
+    </record>
+    <record id="s_banner_7_4" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_7_4</field>
+        <field name="name">theme_prime.s_banner_7_4</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_7_4.jpg</field>
+    </record>
+    <record id="s_banner_8_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_8_1</field>
+        <field name="name">theme_prime.s_banner_8_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_8_1.jpg</field>
+    </record>
+    <record id="s_banner_8_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_8_2</field>
+        <field name="name">theme_prime.s_banner_8_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_8_2.jpg</field>
+    </record>
+    <record id="s_banner_8_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_8_3</field>
+        <field name="name">theme_prime.s_banner_8_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_8_3.jpg</field>
+    </record>
+    <record id="s_banner_9_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_9_1</field>
+        <field name="name">theme_prime.s_banner_9_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_9_1.jpg</field>
+    </record>
+    <record id="s_banner_9_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_9_2</field>
+        <field name="name">theme_prime.s_banner_9_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_9_2.jpg</field>
+    </record>
+    <record id="s_banner_9_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_9_3</field>
+        <field name="name">theme_prime.s_banner_9_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_9_3.jpg</field>
+    </record>
+    <record id="s_banner_10_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_10_1</field>
+        <field name="name">theme_prime.s_banner_10_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_10_1.jpg</field>
+    </record>
+    <record id="s_banner_11_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_11_1</field>
+        <field name="name">theme_prime.s_banner_11_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_11_1.jpg</field>
+    </record>
+    <record id="s_banner_11_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_11_2</field>
+        <field name="name">theme_prime.s_banner_11_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_11_2.jpg</field>
+    </record>
+    <record id="s_banner_11_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_banner_11_3</field>
+        <field name="name">theme_prime.s_banner_11_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_banner_11_3.jpg</field>
+    </record>
+
+    <record id="s_call_to_action_5_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_call_to_action_5_1</field>
+        <field name="name">theme_prime.s_call_to_action_5_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_call_to_action_5_1.jpg</field>
+    </record>
+
+    <record id="s_category_1_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_category_1_1</field>
+        <field name="name">theme_prime.s_category_1_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_category_1_1.jpg</field>
+    </record>
+    <record id="s_category_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_category_2_1</field>
+        <field name="name">theme_prime.s_category_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_category_2_1.jpg</field>
+    </record>
+    <record id="s_category_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_category_3_1</field>
+        <field name="name">theme_prime.s_category_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_category_3_1.jpg</field>
+    </record>
+    <record id="s_category_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_category_4_1</field>
+        <field name="name">theme_prime.s_category_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_category_4_1.png</field>
+    </record>
+
+    <record id="s_client_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_01</field>
+        <field name="name">theme_prime.s_client_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_01.png</field>
+    </record>
+    <record id="s_client_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_02</field>
+        <field name="name">theme_prime.s_client_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_02.png</field>
+    </record>
+    <record id="s_client_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_03</field>
+        <field name="name">theme_prime.s_client_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_03.png</field>
+    </record>
+    <record id="s_client_04" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_04</field>
+        <field name="name">theme_prime.s_client_04</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_04.png</field>
+    </record>
+    <record id="s_client_05" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_05</field>
+        <field name="name">theme_prime.s_client_05</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_05.png</field>
+    </record>
+    <record id="s_client_06" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_06</field>
+        <field name="name">theme_prime.s_client_06</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_06.png</field>
+    </record>
+    <record id="s_client_07" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_07</field>
+        <field name="name">theme_prime.s_client_07</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_07.png</field>
+    </record>
+    <record id="s_client_08" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_08</field>
+        <field name="name">theme_prime.s_client_08</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_08.png</field>
+    </record>
+    <record id="s_client_09" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_09</field>
+        <field name="name">theme_prime.s_client_09</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_09.png</field>
+    </record>
+    <record id="s_client_10" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_10</field>
+        <field name="name">theme_prime.s_client_10</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_10.png</field>
+    </record>
+    <record id="s_client_11" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_11</field>
+        <field name="name">theme_prime.s_client_11</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_11.png</field>
+    </record>
+    <record id="s_client_12" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_client_12</field>
+        <field name="name">theme_prime.s_client_12</field>
+        <field name="url">/theme_prime/static/src/img/content/s_client_12.png</field>
+    </record>
+
+    <record id="s_coming_soon_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_coming_soon_2_1</field>
+        <field name="name">theme_prime.s_coming_soon_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_coming_soon_2_1.png</field>
+    </record>
+    <record id="s_coming_soon_2_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_coming_soon_2_2</field>
+        <field name="name">theme_prime.s_coming_soon_2_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_coming_soon_2_2.jpg</field>
+    </record>
+
+    <record id="s_cover_1_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_1_1</field>
+        <field name="name">theme_prime.s_cover_1_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_1_1.jpg</field>
+    </record>
+    <record id="s_cover_1_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_1_2</field>
+        <field name="name">theme_prime.s_cover_1_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_1_2.jpg</field>
+    </record>
+    <record id="s_cover_1_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_1_3</field>
+        <field name="name">theme_prime.s_cover_1_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_1_3.jpg</field>
+    </record>
+    <record id="s_cover_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_2_1</field>
+        <field name="name">theme_prime.s_cover_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_2_1.png</field>
+    </record>
+    <record id="s_cover_2_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_2_2</field>
+        <field name="name">theme_prime.s_cover_2_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_2_2.png</field>
+    </record>
+    <record id="s_cover_2_brand_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_2_brand_1</field>
+        <field name="name">theme_prime.s_cover_2_brand_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_2_brand_1.png</field>
+    </record>
+    <record id="s_cover_2_brand_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_2_brand_2</field>
+        <field name="name">theme_prime.s_cover_2_brand_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_2_brand_2.png</field>
+    </record>
+    <record id="s_cover_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_3_1</field>
+        <field name="name">theme_prime.s_cover_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_3_1.jpg</field>
+    </record>
+    <record id="s_cover_3_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_3_2</field>
+        <field name="name">theme_prime.s_cover_3_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_3_2.jpg</field>
+    </record>
+    <record id="s_cover_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_4_1</field>
+        <field name="name">theme_prime.s_cover_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_4_1.jpg</field>
+    </record>
+    <record id="s_cover_5_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_5_1</field>
+        <field name="name">theme_prime.s_cover_5_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_5_1.jpg</field>
+    </record>
+    <record id="s_cover_5_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_5_2</field>
+        <field name="name">theme_prime.s_cover_5_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_5_2.jpg</field>
+    </record>
+    <record id="s_cover_5_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_5_3</field>
+        <field name="name">theme_prime.s_cover_5_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_5_3.jpg</field>
+    </record>
+    <record id="s_cover_5_4" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_5_4</field>
+        <field name="name">theme_prime.s_cover_5_4</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_5_4.jpg</field>
+    </record>
+    <record id="s_cover_6_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_cover_6_1</field>
+        <field name="name">theme_prime.s_cover_6_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_cover_6_1.jpg</field>
+    </record>
+
+    <record id="s_offer_1_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_offer_1_1</field>
+        <field name="name">theme_prime.s_offer_1_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_offer_1_1.jpg</field>
+    </record>
+    <record id="s_offer_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_offer_2_1</field>
+        <field name="name">theme_prime.s_offer_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_offer_2_1.jpg</field>
+    </record>
+    <record id="s_offer_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_offer_3_1</field>
+        <field name="name">theme_prime.s_offer_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_offer_3_1.jpg</field>
+    </record>
+    <record id="s_offer_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_offer_4_1</field>
+        <field name="name">theme_prime.s_offer_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_offer_4_1.jpg</field>
+    </record>
+
+    <record id="s_gallery_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_01</field>
+        <field name="name">theme_prime.s_gallery_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_01.jpg</field>
+    </record>
+    <record id="s_gallery_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_02</field>
+        <field name="name">theme_prime.s_gallery_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_02.jpg</field>
+    </record>
+    <record id="s_gallery_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_03</field>
+        <field name="name">theme_prime.s_gallery_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_03.jpg</field>
+    </record>
+    <record id="s_gallery_04" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_04</field>
+        <field name="name">theme_prime.s_gallery_04</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_04.jpg</field>
+    </record>
+    <record id="s_gallery_05" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_05</field>
+        <field name="name">theme_prime.s_gallery_05</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_05.jpg</field>
+    </record>
+    <record id="s_gallery_06" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_06</field>
+        <field name="name">theme_prime.s_gallery_06</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_06.jpg</field>
+    </record>
+    <record id="s_gallery_07" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_07</field>
+        <field name="name">theme_prime.s_gallery_07</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_07.jpg</field>
+    </record>
+    <record id="s_gallery_08" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_08</field>
+        <field name="name">theme_prime.s_gallery_08</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_08.jpg</field>
+    </record>
+    <record id="s_gallery_09" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_09</field>
+        <field name="name">theme_prime.s_gallery_09</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_09.jpg</field>
+    </record>
+    <record id="s_gallery_10" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_10</field>
+        <field name="name">theme_prime.s_gallery_10</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_10.jpg</field>
+    </record>
+    <record id="s_gallery_11" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_11</field>
+        <field name="name">theme_prime.s_gallery_11</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_11.jpg</field>
+    </record>
+    <record id="s_gallery_12" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_gallery_12</field>
+        <field name="name">theme_prime.s_gallery_12</field>
+        <field name="url">/theme_prime/static/src/img/content/s_gallery_12.jpg</field>
+    </record>
+
+    <record id="s_info_block_1_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_1_1</field>
+        <field name="name">theme_prime.s_info_block_1_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_1_1.jpg</field>
+    </record>
+    <record id="s_info_block_2_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_2_1</field>
+        <field name="name">theme_prime.s_info_block_2_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_2_1.jpg</field>
+    </record>
+    <record id="s_info_block_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_3_1</field>
+        <field name="name">theme_prime.s_info_block_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_3_1.jpg</field>
+    </record>
+    <record id="s_info_block_3_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_3_2</field>
+        <field name="name">theme_prime.s_info_block_3_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_3_2.jpg</field>
+    </record>
+    <record id="s_info_block_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_4_1</field>
+        <field name="name">theme_prime.s_info_block_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_4_1.jpg</field>
+    </record>
+    <record id="s_info_block_5_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_5_1</field>
+        <field name="name">theme_prime.s_info_block_5_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_5_1.jpg</field>
+    </record>
+    <record id="s_info_block_5_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_5_2</field>
+        <field name="name">theme_prime.s_info_block_5_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_5_2.jpg</field>
+    </record>
+    <record id="s_info_block_6_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_6_1</field>
+        <field name="name">theme_prime.s_info_block_6_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_6_1.jpg</field>
+    </record>
+    <record id="s_info_block_6_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_6_2</field>
+        <field name="name">theme_prime.s_info_block_6_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_6_2.jpg</field>
+    </record>
+    <record id="s_info_block_7_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_info_block_7_1</field>
+        <field name="name">theme_prime.s_info_block_7_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_info_block_7_1.jpg</field>
+    </record>
+
+    <record id="s_mega_menu_3_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_3_1</field>
+        <field name="name">theme_prime.s_mega_menu_3_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_3_1.jpg</field>
+    </record>
+    <record id="s_mega_menu_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_4_1</field>
+        <field name="name">theme_prime.s_mega_menu_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_4_1.jpg</field>
+    </record>
+    <record id="s_mega_menu_5_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_5_1</field>
+        <field name="name">theme_prime.s_mega_menu_5_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_5_1.jpg</field>
+    </record>
+    <record id="s_mega_menu_6_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_6_1</field>
+        <field name="name">theme_prime.s_mega_menu_6_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_6_1.jpg</field>
+    </record>
+    <record id="s_mega_menu_6_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_6_2</field>
+        <field name="name">theme_prime.s_mega_menu_6_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_6_2.jpg</field>
+    </record>
+    <record id="s_mega_menu_6_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_6_3</field>
+        <field name="name">theme_prime.s_mega_menu_6_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_6_3.jpg</field>
+    </record>
+    <record id="s_mega_menu_7_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_7_1</field>
+        <field name="name">theme_prime.s_mega_menu_7_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_7_1.jpg</field>
+    </record>
+    <record id="s_mega_menu_8_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_8_1</field>
+        <field name="name">theme_prime.s_mega_menu_8_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_8_1.png</field>
+    </record>
+    <record id="s_mega_menu_8_2" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_8_2</field>
+        <field name="name">theme_prime.s_mega_menu_8_2</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_8_2.jpg</field>
+    </record>
+    <record id="s_mega_menu_8_3" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_mega_menu_8_3</field>
+        <field name="name">theme_prime.s_mega_menu_8_3</field>
+        <field name="url">/theme_prime/static/src/img/content/s_mega_menu_8_3.png</field>
+    </record>
+
+    <record id="s_pricing_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_pricing_01</field>
+        <field name="name">theme_prime.s_pricing_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_pricing_01.jpg</field>
+    </record>
+    <record id="s_pricing_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_pricing_02</field>
+        <field name="name">theme_prime.s_pricing_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_pricing_02.jpg</field>
+    </record>
+    <record id="s_pricing_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_pricing_03</field>
+        <field name="name">theme_prime.s_pricing_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_pricing_03.jpg</field>
+    </record>
+    <record id="s_pricing_04" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_pricing_04</field>
+        <field name="name">theme_prime.s_pricing_04</field>
+        <field name="url">/theme_prime/static/src/img/content/s_pricing_04.jpg</field>
+    </record>
+
+    <record id="s_subscribe_4_1" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_subscribe_4_1</field>
+        <field name="name">theme_prime.s_subscribe_4_1</field>
+        <field name="url">/theme_prime/static/src/img/content/s_subscribe_4_1.jpg</field>
+    </record>
+
+    <record id="s_team_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_01</field>
+        <field name="name">theme_prime.s_team_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_01.png</field>
+    </record>
+    <record id="s_team_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_02</field>
+        <field name="name">theme_prime.s_team_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_02.png</field>
+    </record>
+    <record id="s_team_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_03</field>
+        <field name="name">theme_prime.s_team_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_03.png</field>
+    </record>
+    <record id="s_team_04" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_04</field>
+        <field name="name">theme_prime.s_team_04</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_04.png</field>
+    </record>
+
+    <record id="s_team_square_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_square_01</field>
+        <field name="name">theme_prime.s_team_square_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_square_01.png</field>
+    </record>
+    <record id="s_team_square_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_square_02</field>
+        <field name="name">theme_prime.s_team_square_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_square_02.png</field>
+    </record>
+    <record id="s_team_square_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_square_03</field>
+        <field name="name">theme_prime.s_team_square_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_square_03.png</field>
+    </record>
+    <record id="s_team_square_04" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_team_square_04</field>
+        <field name="name">theme_prime.s_team_square_04</field>
+        <field name="url">/theme_prime/static/src/img/content/s_team_square_04.png</field>
+    </record>
+
+    <record id="s_testimonial_author_01" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_testimonial_author_01</field>
+        <field name="name">theme_prime.s_testimonial_author_01</field>
+        <field name="url">/theme_prime/static/src/img/content/s_testimonial_author_01.jpg</field>
+    </record>
+    <record id="s_testimonial_author_02" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_testimonial_author_02</field>
+        <field name="name">theme_prime.s_testimonial_author_02</field>
+        <field name="url">/theme_prime/static/src/img/content/s_testimonial_author_02.jpg</field>
+    </record>
+    <record id="s_testimonial_author_03" model="theme.ir.attachment">
+        <field name="key">theme_prime.s_testimonial_author_03</field>
+        <field name="name">theme_prime.s_testimonial_author_03</field>
+        <field name="url">/theme_prime/static/src/img/content/s_testimonial_author_03.jpg</field>
+    </record>
+
+</odoo>

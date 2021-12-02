@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_cover_3" name="Cover - 3">
+        <section class="s_cover_3">
+            <div id="s_cover_3" class="s_carousel tp-custom-carousel s_carousel_rounded carousel slide" data-interval="10000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#s_cover_3" data-slide-to="0" class="active"/>
+                    <li data-target="#s_cover_3" data-slide-to="1"/>
+                </ol>
+                <!-- Content -->
+                <div class="carousel-inner">
+                    <!-- #01 -->
+                    <div class="carousel-item active oe_custom_bg oe_img_bg pt256 pb256" style="background-image: url('/web/image/theme_prime.s_cover_3_1');" data-name="Slide">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-5">
+                                    <h3>Flat <span class="text-o-color-1">20%</span> off</h3>
+                                    <h2><font style="font-size: 48px;">Summer Collection</font></h2>
+                                    <p class="lead">
+                                        <font style="font-size: 24px;">Get 20% off on any purchase over 200$</font>
+                                    </p>
+                                    <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                        <a href="/shop" class="btn btn-secondary">View Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #02 -->
+                    <div class="carousel-item oe_custom_bg oe_img_bg pt256 pb256" style="background-image: url('/web/image/theme_prime.s_cover_3_2');" data-name="Slide">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-5">
+                                    <h3>Has Just Arrived!</h3>
+                                    <h2><font style="font-size: 48px;">High Quality Collection</font></h2>
+                                    <p class="lead">
+                                        <font style="font-size: 24px;">Stylish collections for the best</font>
+                                    </p>
+                                    <div class="s_btn pt16 pb16" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                        <a href="/contactus" class="btn btn-secondary">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="carousel-control-prev" data-target="#s_cover_3" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                    <span class="fa fa-chevron-left"></span>
+                </div>
+                <div class="carousel-control-next" data-target="#s_cover_3" data-slide="next" role="img" aria-label="Next" title="Next">
+                    <span class="fa fa-chevron-right"></span>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

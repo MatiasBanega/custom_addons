@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_gallery_1" name="Gallery - 1">
+        <section class="s_gallery pt32 pb32">
+            <div class="container">
+                <div class="row tp-photoswipe-container">
+                   <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_01" title="Gallery Image 01" alt="Gallery Image 01"/>
+                        </div>
+                        <div class="small mt-3">
+                            Branding
+                        </div>
+                        <h6 class="mt-1">
+                            Curology Campaign
+                        </h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_02" title="Gallery Image 02" alt="Gallery Image 02"/>
+                        </div>
+                        <div class="small mt-3">
+                            Packaging
+                        </div>
+                        <h6 class="mt-1">
+                            Honest Packaging
+                        </h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_03" title="Gallery Image 03" alt="Gallery Image 03"/>
+                        </div>
+                        <div class="small mt-3">
+                            Branding
+                        </div>
+                        <h6 class="mt-1">
+                            Larq Bright Campaign
+                        </h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_04" title="Gallery Image 04" alt="Gallery Image 04"/>
+                        </div>
+                        <div class="small mt-3">
+                            Ideation
+                        </div>
+                        <h6 class="mt-1">
+                            Doodle Pads
+                        </h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_05" title="Gallery Image 05" alt="Gallery Image 05"/>
+                        </div>
+                        <div class="small mt-3">
+                            Branding
+                        </div>
+                        <h6 class="mt-1">
+                            Larq Earthtones Collection
+                        </h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 py-3 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect rounded">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_06" title="Gallery Image 06" alt="Gallery Image 06"/>
+                        </div>
+                        <div class="small mt-3">
+                            Product design
+                        </div>
+                        <h6 class="mt-1">
+                            Goby Brush Prototype
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

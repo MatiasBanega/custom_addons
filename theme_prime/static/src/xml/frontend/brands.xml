@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<templates>
+    <t t-name="s_d_brand_snippet">
+        <div class="row no-gutters dr_not_editable">
+            <t t-if="data.length">
+                <t t-foreach="data" t-as="brand">
+                    <div class="col-md-3 col-6">
+                        <div class="bg-white border mb-3 py-3 mx-2">
+                            <a class="d-block rounded-lg tp-animation-scale" t-attf-href="/shop?brand=#{brand.id}">
+                                <img class="d-block img img-fluid w-50 mx-auto" loading="lazy" t-attf-src="/web/image/dr.product.brand/#{brand.id}/image" />
+                            </a>
+                        </div>
+                    </div>
+                </t>
+            </t>
+            <t t-elif="widget.noDataTemplate">
+                <div class="col-12">
+                    <t t-call="#{widget.noDataTemplate}"></t>
+                </div>
+            </t>
+        </div>
+    </t>
+</templates>

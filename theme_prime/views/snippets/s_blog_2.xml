@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_blog_2" name="Blog - 2">
+        <section class="s_blog_2 s_latest_posts pt16 pb16" data-vcss="001">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <h3 class="mb-0">Latest Posts</h3>
+                        <p class="mb-0">
+                            Here’s what we've been up to recently.
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/blog" class="btn btn-outline-primary d-none d-md-inline">
+                            View all
+                        </a>
+                    </div>
+                </div>
+                <div class="row s_nb_column_fixed js_get_posts"
+                    data-loading="true"
+                    data-template="theme_prime.s_blog_2_template"
+                    data-filter-by-blog-id="0"
+                    data-order="published_date desc"/>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_blog_2_template">
+        <div t-foreach="posts" t-as="post" class="col-12 col-md-6 col-lg-4 my-3 s_latest_posts_post">
+            <a t-attf-href="/blog/#{post.blog_id.id}/post/#{post.id}" class="card mb-2 tp-blog-container tp-animation-lift">
+                <t t-set="_cp" t-value="json.loads(post.cover_properties)"/>
+                <div class="card-img-top">
+                    <div class="o_record_cover_component o_record_cover_image" t-attf-style="background-image: #{_cp.get('background-image')};"/>
+                    <div class="position-relative">
+                        <div class="tp-svg-img">
+                            <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="top: -70%;">
+                                <path d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729 c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" opacity="0.4" fill="#f0f1f3"></path>
+                                <path d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729 c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" opacity="0.4" fill="#f0f1f3"></path>
+                                <path d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716 H42.401L43.415,98.342z" opacity="0" fill="#fff"></path>
+                                <path d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428 c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#fff"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body px-4 py-1">
+                    <h3 class="text-truncate mt-3 mb-2" t-esc="post.name"/>
+                    <p class="text-body" t-esc="post.teaser"/>
+                    <div t-if="len(post.tag_ids)">
+                        <t t-foreach="post.tag_ids" t-as="tag">
+                            <span class="badge badge-dark badge-pill mr-1" t-esc="tag.name"/>
+                        </t>
+                    </div>
+                    <hr class="mt-3 mb-2"/>
+                    <div class="align-items-center justify-content-between d-flex position-relative w-100 o_not_editable pb-2">
+                        <div class="align-items-center d-flex">
+                            <span t-field="post.author_avatar" t-options='{"widget": "image", "class": "rounded-circle mr-2 tp-blog-avatar"}'/>
+                            <small t-field="post.author_id" t-options='{"widget": "contact", "fields": ["name"]}'/>
+                        </div>
+                        <div>
+                            <small t-field="post.post_date" t-options='{"format": "d MMMM, yyyy"}'/>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </template>
+
+</odoo>

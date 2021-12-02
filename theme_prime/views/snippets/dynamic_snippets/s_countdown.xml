@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_dr_countdown" name="Countdown">
+    <div class="tp-countdown tp_no_bg_opt s_countdown_1 tp_timer_start pt16 pb8"
+        t-att-data-due-date="datetime.datetime.now().timestamp() + 228307"
+        data-countdown-style="s_countdown_1">
+        <div class="container tp-countdown-wrapper">
+            <div class="row pt16 tp-end-msg-container css_non_editable_mode_hidden s_nb_column_fixed">
+                <div class="col-12">
+                    <div class="text-center alert alert-info css_non_editable_mode_hidden o_not_editable" t-ignore="True" role="status">
+                        The following message will become visible <strong>only</strong> once the countdown ends.
+                    </div>
+                    <div class="oe_structure">
+                        <section class="s_picture">
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-12">
+                                        <h2>Happy Shopping!</h2>
+                                        <p>As promised, we will offer surprise coupon for our next sale.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="tp-countdown_options" inherit_id="website.snippet_options">
+    <xpath expr="." position="inside">
+        <div data-js="dr_countdown" data-selector=".tp-countdown">
+            <we-datetimepicker string="Due Date" data-select-data-attribute="" data-attribute-name="dueDate"/>
+            <we-select string="Countdown Style" data-attribute-name="countdownStyle">
+                <we-button data-name="s_countdown_1" data-select-class="s_countdown_1" data-select-data-attribute="s_countdown_1">Style - 1</we-button>
+                <we-button data-name="s_countdown_2" data-select-class="s_countdown_2" data-select-data-attribute="s_countdown_2">Style - 2</we-button>
+                <we-button data-name="s_countdown_3" data-select-class="s_countdown_3" data-select-data-attribute="s_countdown_3">Style - 3</we-button>
+                <we-button data-name="s_countdown_4" data-select-class="s_countdown_4" data-select-data-attribute="s_countdown_4">Style - 4</we-button>
+            </we-select>
+            <we-select string="Theme" data-dependencies="s_countdown_1, s_countdown_4">
+                <we-button data-select-class="">None</we-button>
+                <we-button data-select-class="tp-light">Light</we-button>
+                <we-button data-select-class="tp-dark">Dark</we-button>
+            </we-select>
+            <we-select string="Alignment" data-dependencies="s_countdown_2, s_countdown_3, s_countdown_4">
+                <we-button data-select-class="tp_timer_start">Left</we-button>
+                <we-button data-select-class="tp_timer_center">Center</we-button>
+                <we-button data-select-class="tp_timer_end">Right</we-button>
+            </we-select>
+        </div>
+    </xpath>
+    <!-- Use as a inner content -->
+    <xpath expr="//*[@t-set='so_content_addition_selector']" position="inside">, .tp-countdown</xpath>
+</template>
+</odoo>

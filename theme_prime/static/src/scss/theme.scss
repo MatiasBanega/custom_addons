@@ -1,0 +1,180 @@
+html {
+    scroll-behavior: smooth;
+}
+
+//------------------------------------------------------------------------------
+// Text selection
+//------------------------------------------------------------------------------
+::selection {
+    background: rgba(o-color('primary'), .2);
+}
+::-moz-selection {
+    background: rgba(o-color('primary'), .2);
+}
+
+//------------------------------------------------------------------------------
+// Pager
+//------------------------------------------------------------------------------
+.page-link {
+    border-radius: $border-radius;
+    margin: auto 3px;
+}
+
+//------------------------------------------------------------------------------
+// Dropdown
+//------------------------------------------------------------------------------
+%tp-dropdown-toggle {
+    font-family: FontAwesome;
+    border: 0;
+    vertical-align: initial;
+}
+.dropleft .dropdown-toggle::before {
+    content: "\f104";
+    @extend %tp-dropdown-toggle;
+}
+.dropright .dropdown-toggle::after {
+    content: "\f105";
+    @extend %tp-dropdown-toggle;
+}
+.dropup .dropdown-toggle::after {
+    content: "\f106";
+    @extend %tp-dropdown-toggle;
+}
+.dropdown-toggle::after {
+    content: "\f107";
+    @extend %tp-dropdown-toggle;
+}
+.dropdown-menu {
+    box-shadow: $dropdown-box-shadow;
+}
+
+//------------------------------------------------------------------------------
+// Breadcrumb
+//------------------------------------------------------------------------------
+.breadcrumb {
+    .breadcrumb-item {
+        + .breadcrumb-item::before {
+            content: "\f105";
+            font: normal normal normal 14px/1 FontAwesome;
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Custom Checkbox
+//------------------------------------------------------------------------------
+.custom-control.custom-checkbox {
+    .custom-control-input:not(:checked):not(:indeterminate) {
+        ~ .custom-control-label:before {
+            outline: 0px;
+        }
+    }
+    .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+        background-color: o-color('primary');
+        border-color: o-color('primary');
+    }
+}
+
+//------------------------------------------------------------------------------
+// Droggol Icons
+//------------------------------------------------------------------------------
+[class^="dri-"], [class*=" dri-"] {
+    display: inline-block;
+}
+
+//------------------------------------------------------------------------------
+// Soft Buttons
+//------------------------------------------------------------------------------
+@each $colorName, $color in (('primary': o-color('primary'))) {
+    .btn-#{$colorName}-soft {
+        @include button-variant(rgba($color, 0.1), rgba($color, 0.1), $color, $color, $color, $color);
+        border-color: transparent;
+        color: $color;
+        @include hover-focus {
+            box-shadow: 0 4px 11px rgba($color, 0.35);
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Layout
+//------------------------------------------------------------------------------
+
+@mixin tp-container-width($width){
+    @media (min-width: $width) {
+        $max-width: $width * 93 / 100;
+        .container {
+            max-width: $max-width;
+        }
+        .o_mega_menu_container_size {
+            max-width: $max-width - $grid-gutter-width;
+        }
+    }
+}
+
+@include tp-container-width(1200px);
+@include tp-container-width(1240px);  // for 1280x800
+@include tp-container-width(1300px);  // for 1356x768
+@include tp-container-width(1400px);  // for 1440x900
+@include tp-container-width(1505px);  // To make max width 1400 px
+
+//------------------------------------------------------------------------------
+// Utilities
+//------------------------------------------------------------------------------
+.tp-link-dark {
+    color: o-color('dark');
+    transition: 0.2s;
+    @include hover {
+        color: o-color('primary') !important;
+    }
+}
+
+.tp-cursor-pointer {
+    cursor: pointer;
+}
+
+.tp-heading-font-weight {
+    font-weight: $headings-font-weight;
+}
+
+.tp-underline-title {
+    position: relative;
+    display: block;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid $border-color;
+    &:after {
+        content: '';
+        @include o-position-absolute($bottom: -2px, $left: 0);
+        height: 2px;
+        width: 6rem;
+        background-color: o-color('primary');
+    }
+}
+
+.d-product-name, .tp-hover-color-primary {
+    &>a:not([class^="text-"]) {
+        color: o-color('dark') !important;
+        transition: color 0.25s ease-in-out;
+        &:hover {
+            color: o-color('primary') !important;
+            text-decoration: none;
+        }
+    }
+}
+
+button.owl-prev, button.owl-next {
+    &:focus {
+        outline: none;
+    }
+}
+.dr_category_lable {
+    color: gray('500') !important;
+    &:hover {
+        color: gray('600') !important;
+    }
+}
+
+.dri-category {
+    transform: scale(1.1);
+}

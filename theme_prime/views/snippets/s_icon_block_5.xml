@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_5" name="Icon Block - 5">
+        <section class="s_icon_block_5 pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-phone fa-3x text-o-color-1"/>
+                        <h6 class="mt-3">+91 70466 01320</h6>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-map-marker fa-3x text-o-color-1"/>
+                        <h6 class="mt-3">New York, United States</h6>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 text-center">
+                        <span class="fa fa-envelope-o fa-3x text-o-color-1"/>
+                        <h6 class="mt-3">info@droggol.com</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,150 @@
+$dr_facebook_color: #3b5998;
+$dr_twitter_color: #00acee;
+$dr_envelope_color: o-color('primary');
+section#product_detail.tp-product-quick-view-layout {
+    // Solve conflit with main product detail layout
+    .tp-product-detail-carousel {
+        &.sticky-top {
+            position: relative !important;
+            top: unset !important;
+        }
+        // We are updating ids of carousel in quick view So, Copy pasted from Odoo
+        .carousel-indicators {
+            li {
+                width: 64px;
+                height: 64px;
+                text-indent: unset;
+                border: 2px solid transparent;
+                position: relative;
+                .o_product_video_thumb {
+                    @include o-position-absolute($top: 50%, $left: 50%);
+                    transform: translate(-50%, -50%);
+                    color: o-color('400');
+                }
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+        // Copy End
+        @include media-breakpoint-only(xs) {
+            .carousel-outer {
+                height: 350px;
+            }
+        }
+    }
+    .d_share_on .d_social_icon {
+        transition: color 0.25s ease-in-out,background-color 0.25s ease-in-out;
+        &.fa {
+            width: 2.2rem;
+            height: 2.2rem;
+            line-height: 2.2rem;
+        }
+        &.fa-facebook {
+            color: $dr_facebook_color;
+            background-color: rgba($dr_facebook_color, 0.1);
+        }
+        &.fa-twitter {
+            color: $dr_twitter_color;
+            background-color: rgba($dr_twitter_color, 0.1);
+        }
+        &.fa-envelope {
+            color: $dr_envelope_color;
+            background-color: rgba($dr_envelope_color, 0.1);
+        }
+        &:hover {
+            &.fa {
+                color: white;
+            }
+            &.fa-facebook {
+                background-color: $dr_facebook_color;
+            }
+            &.fa-twitter {
+                background-color: $dr_twitter_color;
+            }
+            &.fa-envelope {
+                background-color: $dr_envelope_color;
+            }
+        }
+    }
+}
+
+.dr_full_dialog {
+    .close {
+        @include o-position-absolute(0, 0);
+        font-size: $font-size-base;
+        width: 2 * $font-size-base;
+        height: 2 * $font-size-base;
+        padding: 0;
+        margin: (-$font-size-base) (-$font-size-base) 0 0;
+        opacity: 1;
+        z-index: 1;
+        border-radius: $font-size-base;
+        box-shadow: $box-shadow;
+        transition-duration: 0.2s;
+        transition-property: transform;
+        color: gray('600');
+        background-color: $white;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            transform: scale(1.1);
+            opacity: 1 !important;
+        }
+    }
+}
+
+// Cart Flow
+
+.d_product_quick_view_dialog {
+    .d_product_quick_view_loader {
+        min-height: 350px;
+    }
+    &.is_mini {
+        @include dr-product-attribute-center($max-width: 450px);
+    }
+}
+
+.d_cart_confirmation_dialog {
+    .modal-body {
+        padding: 0px;
+        .dr-confim-col {
+            background-color: rgba(o-color('primary'), 0.17);
+        }
+        .dr-confirm-product-image {
+            position: relative;
+            margin-top: 14px;
+            img {
+                border: 2px solid rgba(2, 2, 2, 0.12);
+                object-fit: cover;
+                height: 140px;
+                width: 140px !important;
+            }
+            .fa {
+                color: #ffffff !important;
+                @include o-position-absolute($right: 12px, $bottom: -2px);
+                position: absolute;
+                background: #22c187;
+                padding: 7px 6px 6px 6px;
+                line-height: 1;
+                border-radius: 20px;
+                font-size: 18px;
+                border: 4px solid #fff;
+            }
+        }
+    }
+    .s_d_title_text p {
+        font-size: 1.3rem;
+    }
+    .s_d_product_small_block {
+        .card {
+            cursor: pointer;
+        }
+        .d_product_info {
+            button {
+                display: none;
+            }
+        }
+    }
+}

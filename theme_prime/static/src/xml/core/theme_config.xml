@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+<t t-extend="theme_prime.snippet_configurator_dialog" t-name="theme_config.dialog">
+</t>
+
+<!--
+============================================================================
+General
+============================================================================
+-->
+
+<t t-name="theme_config.CartFlow">
+    <div>
+        <h4 class="mb-0 text-primary tp-config-title"> Cart Flow </h4>
+        <p class="text-muted">You can change how products are being added in cart.</p>
+        <t t-foreach="widget.selection_options" t-as="opt">
+            <div class="custom-control custom-radio pb-1">
+                <input class="custom-control-input" type="radio" t-att-name="widget.key" t-attf-id="#{widget.key}-#{opt_index}" t-att-value="opt[0]" t-att-checked="opt[0] == widget.value or None"/>
+                <label class="custom-control-label" t-attf-for="#{widget.key}-#{opt_index}"> <t t-esc="opt[1]"/> </label>
+            </div>
+        </t>
+    </div>
+</t>
+
+<t t-name="theme_config.GeneralCategorySearch">
+    <div class="mt-4">
+        <h4 class="mb-0 text-primary tp-config-title">Category in Search</h4>
+        <p class="text-muted">Allow to search products under selected category.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Allow to select category</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="general_show_category_search">
+                    <input type="checkbox" t-att-checked="widget.value || None" id="general_show_category_search"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.GeneralBrandsPage">
+    <div class="mt-4">
+        <h4 class="text-primary tp-config-title">Brands Page</h4>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Disable grouping of brands</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="general_disable_brands_grouping">
+                    <input type="checkbox" t-att-checked="widget.value.disable_brands_grouping || None" id="general_disable_brands_grouping"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.GeneralLanguagePricelistSelector">
+    <div class="mt-4">
+        <h4 class="text-primary tp-config-title">Language/Pricelist Selector</h4>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Hide country flag</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="general_hide_country_flag">
+                    <input type="checkbox" t-att-checked="widget.value.hide_country_flag || None" id="general_hide_country_flag"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<!--
+============================================================================
+Shop
+============================================================================
+-->
+
+<t t-name="theme_config.GridProduct">
+    <div>
+        <h4 class="mb-0 text-primary tp-config-title">Product</h4>
+        <p class="text-muted">Below items will display on product card in shop grid.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show color preview</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="grid_product_color_preview">
+                    <input type="checkbox" t-att-checked="widget.value.show_color_preview || None" id="grid_product_color_preview"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show quick view</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="grid_product_quick_view">
+                    <input type="checkbox" t-att-checked="widget.value.show_quick_view || None" id="grid_product_quick_view"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show similar products</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="grid_product_similar_products">
+                    <input type="checkbox" t-att-checked="widget.value.show_similar_products || None" id="grid_product_similar_products"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3">
+                <b>Show rating</b>
+                <i class="fa fa-info-circle ml-1" title="To show rating, You have to activate 'Discussion and Rating' option in product detail page too."/>
+            </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="grid_product_rating">
+                    <input type="checkbox" t-att-checked="widget.value.show_rating || None" id="grid_product_rating"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.ShopFilters">
+    <div class="mt-4">
+        <h4 class="text-primary tp-config-title">Filters</h4>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show filters in sidebar</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_in_sidebar">
+                    <input type="checkbox" t-att-checked="widget.value.in_sidebar || None" id="shop_filters_in_sidebar"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Collapsible filters</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_collapsible">
+                    <input type="checkbox" t-att-checked="widget.value.collapsible || None" id="shop_filters_collapsible"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show category count</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_category_count">
+                    <input type="checkbox" t-att-checked="widget.value.show_category_count || None" id="shop_filters_show_category_count"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show attribute count</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_attrib_count">
+                    <input type="checkbox" t-att-checked="widget.value.show_attrib_count || None" id="shop_filters_show_attrib_count"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Hide attribute value if no matching product is found</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_hide_attrib_value">
+                    <input type="checkbox" t-att-checked="widget.value.hide_attrib_value || None" id="shop_filters_hide_attrib_value"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3">
+                <b>Show price range filter</b>
+            </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="show_price_range_filter">
+                    <input type="checkbox" t-att-checked="widget.value.show_price_range_filter || None" id="show_price_range_filter"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.show_price_range_filter ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3"><b>Display price range filter based on</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="price_range_display_type">
+                    <select id="price_range_display_type" class="custom-select custom-select-sm">
+                        <t t-set="types" t-value="{'sales_price': 'Sales Price', 'pricelist': 'Pricelist'}"/>
+                        <t t-foreach="types" t-as="type">
+                            <option t-att-value="type" t-att-selected="type == widget.value.price_range_display_type or None"><t t-esc="types[type]"/></option>
+                        </t>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3">
+                <b>Show rating filter</b>
+                <i class="fa fa-info-circle ml-1" title="To show rating, You have to activate 'Discussion and Rating' option in product detail page too."/>
+            </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_rating">
+                    <input type="checkbox" t-att-checked="widget.value.show_rating_filter || None" id="shop_filters_show_rating"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show search in brand</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_brand_search">
+                    <input type="checkbox" t-att-checked="widget.value.show_brand_search || None" id="shop_filters_show_brand_search"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show search in labels</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_labels_search">
+                    <input type="checkbox" t-att-checked="widget.value.show_labels_search || None" id="shop_filters_show_labels_search"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Show search in tags</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="shop_filters_show_tags_search">
+                    <input type="checkbox" t-att-checked="widget.value.show_tags_search || None" id="shop_filters_show_tags_search"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Brands style</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="brands_style">
+                    <select id="brands_style" class="custom-select custom-select-sm">
+                        <t t-set="styles" t-value="{1: 'List', 2: 'Card'}"/>
+                        <t t-foreach="styles" t-as="style">
+                            <option t-att-value="style" t-att-selected="style == widget.value.brands_style or None"><t t-esc="styles[style]"/></option>
+                        </t>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Tags style</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="tags_style">
+                    <select id="tags_style" class="custom-select custom-select-sm">
+                        <t t-set="styles" t-value="{1: 'List', 2: 'Pill'}"/>
+                        <t t-foreach="styles" t-as="style">
+                            <option t-att-value="style" t-att-selected="style == widget.value.tags_style or None"><t t-esc="styles[style]"/></option>
+                        </t>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.CategoryPills">
+    <div class="mt-4">
+        <h4 class="mb-0 text-primary tp-config-title">Category Pills</h4>
+        <p class="text-muted">Show product categories pills on top of the shop page.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Enable category pills</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="category_pills_enabled">
+                    <input type="checkbox" t-att-checked="widget.value.enable || None" id="category_pills_enabled"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.enable ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3">
+                <b>Show child categories pills</b>
+                <i class="fa fa-info-circle ml-1" title="Show child categories pills of active category."/>
+            </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="category_pills_enabled_child">
+                    <input type="checkbox" t-att-checked="widget.value.enable_child || None" id="category_pills_enabled_child"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.enable ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3"><b>Hide in desktop device</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="category_pills_hide_desktop">
+                    <input type="checkbox" t-att-checked="widget.value.hide_desktop || None" id="category_pills_hide_desktop"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.enable ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3"><b>Show title "Categories"</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="category_pills_show_title">
+                    <input type="checkbox" t-att-checked="widget.value.show_title || None" id="category_pills_show_title"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.enable ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3"><b>Style</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="category_pills_style">
+                    <select id="category_pills_style" class="custom-select custom-select-sm">
+                        <t t-set="styles" t-value="{1: 'Card', 2: 'Text', 3: 'Thumbnail + Text (Circle)', 4: 'Thumbnail + Text (Rounded)'}"/>
+                        <t t-foreach="styles" t-as="style">
+                            <option t-att-value="style" t-att-selected="style == widget.value.style or None"><t t-esc="styles[style]"/></option>
+                        </t>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.ajaxLoadProducts">
+    <div class="mt-4">
+        <h4 class="mb-0 text-primary tp-config-title">Lazy Load Products</h4>
+        <p class="text-muted"> Enable lazy load products on shop page.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Enable lazy load products</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="bool_enable_ajax_load">
+                    <input class="tp-enable-ajax-load" type="checkbox" t-att-checked="widget.value || None" id="bool_enable_ajax_load"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<!--
+============================================================================
+Product Detail
+============================================================================
+-->
+
+<t t-name="theme_config.Zoom">
+    <div>
+        <h4 class="mb-0 text-primary tp-config-title"> Product Zoom </h4>
+        <p class="text-muted"> Configuration for the zoom. used in product detail page and quick view. </p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Enable zoom</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="zoom_enabled">
+                    <input type="checkbox" t-att-checked="widget.value.zoom_enabled || None" id="zoom_enabled"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.zoom_enabled ? '' : 'd-none'}">
+            <label for="zoom_factor" class="col-6 col-lg-3 col-form-label"><b>Zoom factor</b></label>
+            <div class="col-6 col-lg-3">
+                <input type="number" class="form-control" id="zoom_factor" t-att-value="widget.value.zoom_factor"/>
+            </div>
+        </div>
+        <div t-attf-class="form-group row mb-2 #{widget.value.zoom_enabled ? '' : 'd-none'}">
+            <div class="col-6 col-lg-3"><b>Disable zoom for small images</b> </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block mt-1 mb-0" for="disable_small">
+                    <input type="checkbox" t-att-checked="widget.value.disable_small || None" id="disable_small"/>
+                    <span></span>
+                </label>
+                <small class="d-block"> Image smaller the 1024x1024 won't be zoomed if this option is enabled. </small>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.StickyAddtoCart">
+    <div class="mt-4">
+        <h4 class="mb-0 text-primary tp-config-title">Sticky Add to Cart</h4>
+        <p class="text-muted">Allows users to follow up product's Add to Cart button until bottom scroll reached.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3"><b>Enable sticky add to cart</b></div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="sticky_add_to_cart_enabled">
+                    <input type="checkbox" t-att-checked="widget.value || None" id="sticky_add_to_cart_enabled"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.ProductOffers">
+    <div class="mt-4">
+        <h4 class="mb-0 text-primary tp-config-title">Product Offers</h4>
+        <p class="text-muted">You will be able to add offers on product and show details in dialog.</p>
+        <div class="form-group row mb-2">
+            <div class="col-6 col-lg-3">
+                <b>Enable product offers</b>
+            </div>
+            <div class="col-6 col-lg-9">
+                <label class="o_switch mb-0 d-inline-block" for="dr_product_dialog_offers">
+                    <input type="checkbox" t-att-checked="widget.value || None" id="dr_product_dialog_offers"/>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_config.BottombarConfig">
+    <div class="mt-3">
+        <h3 class="mb-0 text-primary tp-config-title">Theme Bottombar</h3>
+        <p class="text-muted">Bottom navigation bars allow movement between primary destinations in an website</p>
+        <div class="form-group row">
+            <label class="col-form-label font-weight-bold col-md-3">Select Actions</label>
+            <div class="col-sm-9">
+                <select class="tp-select2-input w-50 tp-select-style" multiple="multiple">
+                    <t t-foreach="widget.value" t-as="val">
+                        <option t-att-value="val" selected="selected"> <t t-esc="widget.data[val].name"/> </option>
+                    </t>
+                    <t t-foreach="widget.data" t-as="element">
+                        <t t-if="!_.contains(widget.value, element)">
+                            <option t-att-value="element"> <t t-esc="element_value.name"/> </option>
+                        </t>
+                    </t>
+                </select>
+            </div>
+        </div>
+    </div>
+</t>
+
+<div class="mt-3" t-name="theme_config.BottomBarOnScroll">
+    <div class="form-group row mb-2">
+        <div class="col-6 col-lg-3"><b>Show Bottombar On Scroll</b></div>
+        <div class="col-6 col-lg-9">
+            <label class="o_switch mb-0 d-inline-block" for="tp-enable-bottombar-on-scroll">
+                <input class="tp-enable-bottombar-on-scroll" type="checkbox" t-att-checked="widget.value || None" id="tp-enable-bottombar-on-scroll"/>
+                <span></span>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="mt-3" t-name="theme_config.BottomBar">
+    <div class="form-group row mb-2">
+        <div class="col-6 col-lg-3"><b>Show Bottombar</b></div>
+        <div class="col-6 col-lg-9">
+            <label class="o_switch mb-0 d-inline-block" for="tp-enable-bottombar">
+                <input class="tp-enable-bottombar" type="checkbox" t-att-checked="widget.value || None" id="tp-enable-bottombar"/>
+                <span></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3" t-name="theme_config.MobileSortFilters">
+    <div class="form-group row mb-2">
+        <div class="col-6 col-lg-3">
+            <b>Show sort and filter button on shop </b>
+        </div>
+        <div class="col-6 col-lg-9">
+            <label class="o_switch mb-0 d-inline-block" for="tp-enable-mobile-filter">
+                <input class="tp-enable-mobile-filter" type="checkbox" t-att-checked="widget.value || None" id="tp-enable-mobile-filter"/>
+                <span></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+</template>

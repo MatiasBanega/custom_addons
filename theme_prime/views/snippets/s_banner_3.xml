@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_3" name="Banner - 3">
+        <section class="s_banner_3 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-lg-8">
+                        <div class="parallax pb64 pt64 px-4 s_no_parallax_speed oe_img_bg oe_custom_bg" data-scroll-background-ratio="0">
+                            <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/web/image/theme_prime.s_banner_3_1'); background-position: 50% 0;"/>
+                            <h5>Hurry up! Limited time offer</h5>
+                            <h3 class="mb-4">Brand New Shoes On Sale</h3>
+                            <a class="btn btn-primary" href="#">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex flex-column h-100 justify-content-center oe_img_bg oe_custom_bg tp-banner-sidebar" style="background-image:url('/web/image/theme_prime.s_banner_3_2')">
+                            <div class="my-2 p-4 text-center">
+                                <h4>Your Add Text Here</h4>
+                                <p>Hurry up to reserve your spot now</p>
+                                <a class="btn btn-primary" href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_banner_3_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_banner_3 .tp-banner-sidebar'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_banner_3 .tp-banner-sidebar">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

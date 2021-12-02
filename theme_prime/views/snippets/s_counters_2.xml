@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_counters_2" name="Counters - 2">
+        <section class="s_counters_2 pt16 pb16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="fa fa-user fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">1200</font></h4>
+                        <h6 class="text-uppercase small">Customers</h6>
+                        <p class="mt-4">
+                            Just some random string to reach eighty charater limit to break.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="fa fa-magic fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">237</font></h4>
+                        <h6 class="text-uppercase small">New Ideas</h6>
+                        <p class="mt-4">
+                            To break the lines we are writing some random string here.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="fa fa-smile-o fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">1340</font></h4>
+                        <h6 class="text-uppercase small">Happy Clients</h6>
+                        <p class="mt-4">
+                            Diffrent content looks good so not repeating the content here.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="fa fa-cube fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">8000</font></h4>
+                        <h6 class="text-uppercase small">Products</h6>
+                        <p class="mt-4">
+                            This is the last paragraph, and i am out of idea what to write.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,53 @@
+.s_icon_block_3 .tp-icon-block-icon.fa-2x {
+    @include tp-icon-center(3rem);
+}
+
+.s_icon_block_4 .tp-icon-block-icon.fa-2x {
+    @include tp-icon-center(3rem);
+}
+
+.s_icon_block_9 .tp-icon-block-icon.fa-2x {
+    @include tp-icon-center(3.5rem);
+}
+
+.s_icon_block_10 {
+    @include media-breakpoint-up(md) {
+        .tp-icon-block:not(:last-child) {
+            border-right: 1px solid;
+            border-color: $border-color;
+        }
+    }
+}
+
+.s_icon_block_11 {
+    @include media-breakpoint-down(lg) {
+        .tp-icon-block .tp-icon-block-icon {
+            border-right-width: 0px;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        .tp-icon-block:not(:last-child) .tp-icon-block-icon {
+            border-right: 1px solid;
+            border-color: $border-color;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        > .container > .row {
+            border-width: 0px !important;
+        }
+    }
+}
+
+.s_icon_block_12 {
+    @include media-breakpoint-down(md) {
+        .tp-icon-block {
+            border-right-width: 0px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .tp-icon-block:not(:last-child) {
+            border-right: 1px solid;
+            border-color: $border-color;
+        }
+    }
+}

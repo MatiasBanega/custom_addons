@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_gallery_3" name="Gallery - 3">
+        <section class="s_gallery">
+            <div class="container-fluid px-0">
+                <div class="row no-gutters tp-photoswipe-container">
+                   <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_01" title="Gallery Image 01" alt="Gallery Image 01"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_02" title="Gallery Image 02" alt="Gallery Image 02"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_03" title="Gallery Image 03" alt="Gallery Image 03"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_04" title="Gallery Image 04" alt="Gallery Image 04"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_05" title="Gallery Image 05" alt="Gallery Image 05"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_06" title="Gallery Image 06" alt="Gallery Image 06"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_07" title="Gallery Image 07" alt="Gallery Image 07"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_08" title="Gallery Image 08" alt="Gallery Image 08"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_09" title="Gallery Image 09" alt="Gallery Image 09"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_10" title="Gallery Image 10" alt="Gallery Image 10"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_11" title="Gallery Image 11" alt="Gallery Image 11"/>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 tp-photoswipe-box">
+                        <div class="gallery-image gallery-zoom-in-effect gallery-overlay-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_12" title="Gallery Image 12" alt="Gallery Image 12"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

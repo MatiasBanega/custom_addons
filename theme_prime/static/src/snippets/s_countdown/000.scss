@@ -1,0 +1,66 @@
+@mixin dr-countdown-snippet-mixin() {
+    &.tp-light {
+        .tp-counter-block {
+            border: 1px solid o-color('200');
+            background: o-color('white');
+            .tp-counter-number {
+                color: o-color('primary');
+            }
+            hr {
+                border-color: o-color('200');
+            }
+        }
+        .tp-counter-title {
+            color: o-color('800');
+        }
+    }
+    &.tp-dark {
+        .tp-counter-block {
+            background: o-color('800');
+            .tp-counter-number {
+                color: o-color('white');
+            }
+            hr {
+                border-color: rgba(o-color('white'), 0.5);
+            }
+        }
+        .tp-counter-title {
+            color: o-color('white');
+        }
+    }
+}
+
+.s_countdown_1 {
+    .tp-counter-block {
+        padding: 16px 22px;
+        flex: 1;
+        border-radius: $border-radius;
+        min-width: 90px;
+    }
+    @include dr-countdown-snippet-mixin();
+}
+
+.s_countdown_2, .s_countdown_3, .s_countdown_4 {
+    &.tp_timer_start .tp-countdown-container {justify-content: flex-start;}
+    &.tp_timer_end  .tp-countdown-container {justify-content: flex-end;}
+    &.tp_timer_center  .tp-countdown-container {justify-content: center;}
+}
+
+.s_countdown_4 {
+    .tp-counter-block {
+        @include tp-icon-center(48px);
+        background-color: o-color('200');
+        border-radius: 50rem;
+    }
+    @include dr-countdown-snippet-mixin();
+    &.tp-dark {
+        .tp-counter-title {
+            color: o-color('800') !important;
+        }
+    }
+    &.tp-light {
+        .tp-counter-title {
+            color: o-color('600') !important;
+        }
+    }
+}

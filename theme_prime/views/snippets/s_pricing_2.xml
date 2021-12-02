@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_pricing_2" name="Pricing - 2">
+        <section class="s_pricing_2 pb16 pt16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card h-100 tp-animation-lift">
+                            <header class="p-4 text-center bg-o-color-1">
+                                <h5>Beginner</h5>
+                                <div>Morbi tincidunt ultrices</div>
+                            </header>
+                            <img src="/web/image/theme_prime.s_pricing_01" class="w-100" alt="Pricing Image 01"/>
+                            <div class="py-4 px-4 py-lg-5 px-lg-5 text-center">
+                                <p>From</p>
+                                <h2 class="mt-3 text-o-color-1">$330.00</h2>
+                                <p class="mt-3">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                                <div class="pt-4 text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card h-100 tp-animation-lift">
+                            <header class="p-4 text-center bg-o-color-1">
+                                <h5>Professional</h5>
+                                <div>Morbi tincidunt ultrices</div>
+                            </header>
+                            <img src="/web/image/theme_prime.s_pricing_02" class="w-100" alt="Pricing Image 02"/>
+                            <div class="py-4 px-4 py-lg-5 px-lg-5 text-center">
+                                <p>From</p>
+                                <h2 class="mt-3 text-o-color-1">$430.00</h2>
+                                <p class="mt-3">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                                <div class="pt-4 text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card h-100 tp-animation-lift">
+                            <header class="p-4 text-center bg-o-color-1">
+                                <h5>Expert</h5>
+                                <div>Morbi tincidunt ultrices</div>
+                            </header>
+                            <img src="/web/image/theme_prime.s_pricing_03" class="w-100" alt="Pricing Image 03"/>
+                            <div class="py-4 px-4 py-lg-5 px-lg-5 text-center">
+                                <p>From</p>
+                                <h2 class="mt-3 text-o-color-1">$530.00</h2>
+                                <p class="mt-3">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                                <div class="pt-4 text-center">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_pricing_2_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_pricing_2 .card'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_pricing_2 .card">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

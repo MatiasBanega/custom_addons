@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_heading_2" name="Heading - 2">
+        <section class="s_heading_2 pt32 pb32">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 tp-heading-container text-center tp-line-bottom">
+                        <h6 class="text-uppercase text-o-color-1 font-weight-bold mb-3">NEW PRODUCTS EVERY DAY</h6>
+                        <h2 class="text-uppercase font-weight-bold">EXPLORE GREAT RANGE OF PRODUCTS</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_heading_2_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector=".s_heading_2" data-target=".tp-heading-container">
+                <we-select string="Position">
+                    <we-button data-select-class="tp-line-top">Top</we-button>
+                    <we-button data-select-class="tp-line-bottom">Bottom</we-button>
+                </we-select>
+                <we-select string="Alignment">
+                    <we-button data-select-class="text-left">Left</we-button>
+                    <we-button data-select-class="text-center">Center</we-button>
+                    <we-button data-select-class="text-right">Right</we-button>
+                </we-select>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

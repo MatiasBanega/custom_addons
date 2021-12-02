@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_6" name="Mega Menu - 6">
+        <section class="s_mega_menu_6 tp-mega-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 pt24 pb24">
+                        <div class="card border-0">
+                            <a class="d-block tp-animation-scale" href="#">
+                                <img class="img img-fluid rounded" src="/web/image/theme_prime.s_mega_menu_6_1" alt="Mega Menu Image 01"/>
+                            </a>
+                            <div class="card-body">
+                                <h5>
+                                    Clothing
+                                </h5>
+                                <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow">
+                                    <li><a href="#">Proin lobortis</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Donec ultrices</a></li>
+                                    <li><a href="#">Etiam</a></li>
+                                    <li><a href="#">Nullam sed</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">Nullam mattis</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt24 pb24">
+                        <div class="card border-0">
+                            <a class="d-block tp-animation-scale" href="#">
+                                <img class="img img-fluid rounded" src="/web/image/theme_prime.s_mega_menu_6_2" alt="Mega Menu Image 02"/>
+                            </a>
+                            <div class="card-body">
+                                <h5>
+                                    Shoes
+                                </h5>
+                                <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow">
+                                    <li><a href="#">Proin lobortis</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Donec ultrices</a></li>
+                                    <li><a href="#">Etiam</a></li>
+                                    <li><a href="#">Nullam sed</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">Nullam mattis</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt24 pb24">
+                        <div class="card border-0">
+                            <a class="d-block tp-animation-scale" href="#">
+                                <img class="img img-fluid rounded" src="/web/image/theme_prime.s_mega_menu_6_3" alt="Mega Menu Image 03"/>
+                            </a>
+                            <div class="card-body">
+                                <h5>
+                                    Accessories
+                                </h5>
+                                <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow">
+                                    <li><a href="#">Proin lobortis</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Donec ultrices</a></li>
+                                    <li><a href="#">Etiam</a></li>
+                                    <li><a href="#">Nullam sed</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">Nullam mattis</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

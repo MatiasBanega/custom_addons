@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_9" name="Mega Menu - 9">
+        <section class="s_mega_menu_9 p-3 p-lg-4">
+            <div class="container">
+                <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                    <div class="col-6 col-lg-3">
+                        <h5 class="mb-1">Clothes</h5>
+                        <div class="row mb-2">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">New in</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Coats &amp; Jackets</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Jeans</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Dresses</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Shorts</a><span class="s_badge badge badge-primary o_animable"><i class="dri dri-tag-l"></i>New</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Skirts</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">T-Shirts</a></div>
+                        </div>
+                        <h5 class="mb-1">Shoes</h5>
+                        <div class="row">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Boots</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Flats</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Heels</a><span class="s_badge badge badge-primary o_animable"><i class="fa fa-star"></i>Sale</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Sandals</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Sports</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Sandals</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h5 class="mb-1">Accessories</h5>
+                        <div class="row mb-2">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">All accessories</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Bags &amp; Purses</a><span class="s_badge badge badge-danger o_animable"><i class="dri dri-tag-l"></i>Popular</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Scarves &amp; Hats</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Jewelry</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Fragrance &amp; Beauty</a></div>
+                        </div>
+                        <h5 class="mb-1">Lingerie</h5>
+                        <div class="row mb-2">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Linger</a><span class="s_badge badge badge-primary o_animable"><i class="dri dri-tag-l"></i>New</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Slippers</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Socks</a></div>
+                        </div>
+                        <h5 class="mb-1">Nightwear</h5>
+                        <div class="row">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Nightwear</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Socks</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Tights</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h5 class="mb-1">Clothes</h5>
+                        <div class="row mb-2">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">New in</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Jeans</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Coats &amp; Jackets</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Shorts</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Dresses</a><span class="s_badge badge badge-danger o_animable"><i class="dri dri-tag-l"></i>Trending</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Skirts</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">T-Shirts</a></div>
+                        </div>
+                        <h5 class="mb-1">Shoes</h5>
+                        <div class="row">
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Boots</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Flats</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Heels</a><span class="s_badge badge badge-success o_animable"><i class="dri dri-tag-l"></i>Sale</span></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Sandals</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Sports</a></div>
+                            <div class="col-12 pb-1"><a class="tp_link" href="#">Boots</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="overflow-hidden position-relative tp-animation-scale">
+                            <img src="/theme_prime/static/src/img/content/s_mega_menu_4_1.jpg" class="img img-fluid" alt="Mega Menu Image 01"/>
+                            <div class="tp-banner-text text-center">
+                                <h6>Starting at $30</h6>
+                                <h4>For Men</h4>
+                                <a href="/shop" class="btn btn-primary btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

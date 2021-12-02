@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_7" name="Mega Menu - 7">
+        <section class="s_mega_menu_7 tp-mega-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 01"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Men</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Sunglasses</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Handbags</a></li>
+                            <li><a href="#">Backpacks</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 02"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Women</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Proin lobortis</a></li>
+                            <li><a href="#">Aenean</a></li>
+                            <li><a href="#">Vivamus</a></li>
+                            <li><a href="#">Donec ultrices</a></li>
+                            <li><a href="#">Etiam</a></li>
+                            <li><a href="#">Nullam sed</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 03"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Shoes</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Sunglasses</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Handbags</a></li>
+                            <li><a href="#">Backpacks</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 04"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Sunglasses</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Proin lobortis</a></li>
+                            <li><a href="#">Aenean</a></li>
+                            <li><a href="#">Vivamus</a></li>
+                            <li><a href="#">Donec ultrices</a></li>
+                            <li><a href="#">Etiam</a></li>
+                            <li><a href="#">Nullam sed</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 05"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Watches</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Sunglasses</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Handbags</a></li>
+                            <li><a href="#">Backpacks</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 py-3">
+                        <div class="tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_mega_menu_7_1" class="img img-fluid" alt="Mega Menu Image 06"/>
+                            <div class="tp-banner-text text-center">
+                                <h5 class="text-white">Bags</h5>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled tp-megamenu-list-dark tp-list-arrow pt-2">
+                            <li><a href="#">Proin lobortis</a></li>
+                            <li><a href="#">Aenean</a></li>
+                            <li><a href="#">Vivamus</a></li>
+                            <li><a href="#">Donec ultrices</a></li>
+                            <li><a href="#">Etiam</a></li>
+                            <li><a href="#">Nullam sed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

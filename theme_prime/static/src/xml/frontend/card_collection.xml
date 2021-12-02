@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <!-- Card container -->
+    <t t-name="d_s_cards_collection_wrapper">
+        <div class="row">
+            <t t-foreach="data" t-as="collection">
+                <div t-attf-class="col-md-#{widget.numOfCol} col-sm-6 px-4">
+                    <t t-call="#{widget.collectionStyle.SelectedStyle}"/>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="d_card_collection_style_1">
+        <div class="d_card_collection_style_1">
+            <h6 class="d_collection_title position-relative border-bottom pb-3 mb-4 mt-2" t-esc="collection.title"/>
+            <t t-foreach="collection.products" t-as="product">
+                <div class="media mb-2 align-items-center">
+                    <a class="d-block mr-2 d_link" t-att-href="product.website_url">
+                        <img t-att-src="product.img_medium" class="o_image_64_contain"/>
+                    </a>
+                    <div class="media-body">
+                        <h6 class="d-product-name mb-0 mt-2">
+                            <a t-att-href="product.website_url"><t t-esc="product.name"/></a>
+                        </h6>
+                        <div class="mt-1" t-if="collection.is_rating_active">
+                            <t t-raw="product.rating"></t>
+                        </div>
+                        <div class="d-product-price">
+                            <p class="d-inline-block text-primary" t-raw="product.price"/>
+                            <p t-if="product.has_discounted_price" class="text-muted d-inline-block" style="text-decoration: line-through; white-space: nowrap;" t-raw="product.list_price"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="d_card_collection_style_2">
+        <div class="d_card_collection_style_2">
+            <h5 class="mb-4 mt-2" t-esc="collection.title"/>
+            <t t-foreach="collection.products" t-as="product">
+                <div t-attf-class="media align-items-center #{product_first ? 'pb-2' : 'py-2'} #{!product_last ? 'border-bottom' : ''}">
+                    <a class="d-block mr-2" t-att-href="product.website_url">
+                        <img t-att-src="product.img_medium" class="o_image_64_contain"/>
+                    </a>
+                    <div class="media-body">
+                        <h6 class="d-product-name mb-1 mt-1">
+                            <a t-att-href="product.website_url"><t t-esc="product.name"/></a>
+                        </h6>
+                        <div class="mt-1" t-if="collection.is_rating_active">
+                            <t t-raw="product.rating"></t>
+                        </div>
+                        <div class="d-product-price">
+                            <p class="d-inline-block text-primary h6" t-raw="product.price"/>
+                            <small t-if="product.has_discounted_price" class="text-muted d-inline-block" style="text-decoration: line-through; white-space: nowrap;" t-raw="product.list_price"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="d_card_collection_style_3">
+        <div class="d_card_collection_style_3">
+            <h6 class="mt-2 text-center" t-esc="collection.title"/>
+            <div class="text-center mb-2">
+                <p class="dr_strike_line text-center"><span class="fa fa-star-o"></span></p>
+            </div>
+            <t t-foreach="collection.products" t-as="product">
+                <div t-attf-class="media p-2 mb-3 bg-white shadow-sm position-relative">
+                    <a class="d-block mr-3" t-att-href="product.website_url">
+                        <img t-att-src="product.img_medium" class="o_image_64_contain"/>
+                    </a>
+                    <div class="media-body">
+                        <h6 class="d-product-name mb-1">
+                            <a t-att-href="product.website_url"><t t-esc="product.name"/></a>
+                        </h6>
+                        <t t-if="collection.is_rating_active">
+                            <t t-raw="product.rating"></t>
+                        </t>
+                        <p class="d-inline-block text-primary h6" t-raw="product.price"/>
+                        <small t-if="product.has_discounted_price" class="text-muted d-inline-block" style="text-decoration: line-through; white-space: nowrap;" t-raw="product.list_price"/>
+                        <button t-att-data-product-product-id="product.product_variant_id" data-toggle="tooltip" data-placement="bottom" class="d_action_btn d_add_to_cart_btn btn" title="Add to Cart">
+                            <i class="d_action_btn_icon dri dri-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+</templates>

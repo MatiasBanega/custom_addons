@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_call_to_action_4" name="Call To Action - 4">
+        <section class="s_call_to_action_4 pt32 pb32 o_cc o_cc2">
+            <div class="container">
+                <div class="row justify-content-center align-items-center text-center text-md-left s_nb_column_fixed">
+                    <div class="col-12 col-md-auto">
+                        <p class="lead mb-2 mb-md-0">We offer best in class service for your needs</p>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a href="/shop" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

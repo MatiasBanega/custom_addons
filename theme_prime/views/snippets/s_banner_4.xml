@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_4" name="Banner - 4">
+        <section class="s_banner_4 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <img src="/web/image/theme_prime.s_banner_4_1" class="img img-fluid" alt="Banner Image 01"/>
+                        <div class="tp-banner-content shadow-sm p-3 bg-white position-relative text-center rounded">
+                            <img src="/web/image/theme_prime.s_banner_4_brand_1" class="img img-fluid" style="width: 25%;" alt="Banner Brand Image 01"/>
+                            <h5 class="mt-2">New Collection</h5>
+                            <p class="lead mb-1">Starting at $150.</p>
+                            <a href="#" class="btn btn-link">+ Explore Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <img src="/web/image/theme_prime.s_banner_4_2" class="img img-fluid" alt="Banner Image 02"/>
+                        <div class="tp-banner-content shadow-sm p-3 bg-white position-relative text-center rounded">
+                            <img src="/web/image/theme_prime.s_banner_4_brand_2" class="img img-fluid" style="width: 25%;" alt="Banner Brand Image 02"/>
+                            <h5 class="mt-2">Winter Collection</h5>
+                            <p class="lead mb-1">Starting at $99.</p>
+                            <a href="#" class="btn btn-link">+ Explore Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <img src="/web/image/theme_prime.s_banner_4_3" class="img img-fluid" alt="Banner Image 03"/>
+                        <div class="tp-banner-content shadow-sm p-3 bg-white position-relative text-center rounded">
+                            <img src="/web/image/theme_prime.s_banner_4_brand_3" class="img img-fluid" style="width: 25%;" alt="Banner Brand Image 03"/>
+                            <h5 class="mt-2">Trending Collection</h5>
+                            <p class="lead mb-1">Starting at $200.</p>
+                            <a href="#" class="btn btn-link">+ Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_1" name="Mega Menu - 1">
+        <section class="s_mega_menu_1 tp-mega-menu p-3 p-lg-4">
+            <div class="container">
+                <div class="row no-gutters s_nb_column_fixed">
+                    <div class="col-12 col-lg-6">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-6">
+                                <h6>
+                                    Career
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark mb-4">
+                                    <li><a href="#">Listing</a></li>
+                                    <li><a href="#">Opening</a></li>
+                                    <li><a href="#">Overview</a></li>
+                                </ul>
+
+                                <h6>
+                                    Company
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark mb-4 mb-lg-0">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h6>
+                                    Help center
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark mb-4">
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Article</a></li>
+                                    <li><a href="#">Search</a></li>
+                                </ul>
+
+                                <h6>
+                                    Contact
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark mb-4 mb-lg-0">
+                                    <li><a href="#">Basic</a></li>
+                                    <li><a href="#">Cover</a></li>
+                                    <li><a href="#">Search</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-6">
+                                <h6>
+                                    Blog
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark mb-4 mb-lg-0">
+                                    <li><a href="#">Rich View</a></li>
+                                    <li><a href="#">Article</a></li>
+                                    <li><a href="#">Showcase</a></li>
+                                    <li><a href="#">Search</a></li>
+                                    <li><a href="#">Rich View</a></li>
+                                    <li><a href="#">Article</a></li>
+                                    <li><a href="#">Showcase</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h6>
+                                    Portfolio
+                                </h6>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Masonry</a></li>
+                                    <li><a href="#">Grid Rows</a></li>
+                                    <li><a href="#">Parallax</a></li>
+                                    <li><a href="#">Case Study</a></li>
+                                    <li><a href="#">Sidebar</a></li>
+                                    <li><a href="#">Sidebar: Fluid</a></li>
+                                    <li><a href="#">Basic Grid</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

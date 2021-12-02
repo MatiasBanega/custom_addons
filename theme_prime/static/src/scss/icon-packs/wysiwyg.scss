@@ -1,0 +1,7 @@
+%o-we-selected-image {
+    outline: 3px solid rgba(150, 150, 220, 0.3);
+}
+
+.dri.o_we_selected_image::before {
+    @extend %o-we-selected-image;
+}

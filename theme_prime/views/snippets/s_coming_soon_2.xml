@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_coming_soon_2" name="Coming Soon - 2">
+        <section class="s_coming_soon s_coming_soon_2 o_full_screen_height" style="background-position: 0% 53.2468%; background-image: url('/web/image/theme_prime.s_coming_soon_2_2');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center d-none d-md-block">
+                            <div class="my-4">
+                                <img src="/web/image/theme_prime.s_coming_soon_2_1" class="img img-fluid" style="max-width: 160px;"/>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h1>Coming Soon...</h1>
+                            <p>We are glad to see you, but please be patient. This page is under construction.</p>
+                        </div>
+                        <div class="tp-coming-soon-side-block d-flex justify-content-center flex-column align-items-center py-4">
+                            <div class="tp-countdown tp_no_bg_opt s_countdown_1 tp_timer_center pt16 pb8 tp-dark" t-att-data-due-date="datetime.datetime.now().timestamp() + 228307" data-countdown-style="s_countdown_1">
+                                <div class="container tp-countdown-wrapper">
+                                    <div class="row pt16 tp-end-msg-container css_non_editable_mode_hidden s_nb_column_fixed">
+                                        <div class="col-12">
+                                            <div class="text-center alert alert-info css_non_editable_mode_hidden o_not_editable" t-ignore="True" role="status">
+                                                The following message will become visible <strong>only</strong> once the countdown ends.
+                                            </div>
+                                            <div class="oe_structure">
+                                                <section class="s_picture">
+                                                    <div class="container">
+                                                        <div class="row s_nb_column_fixed">
+                                                            <div class="col-12">
+                                                                <h2>Happy Shopping!</h2>
+                                                                <p>As promised, we will offer surprise coupon for our next sale.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center py-4 d-none d-md-block">
+                            <h4>Subscribe</h4>
+                            <p>Subscribe and stay in touch with the latest news, deals and promotions.</p>
+                            <div class="s_newsletter_subscribe_form js_subscribe w-100 w-md-50 w-xl-25 mx-auto my-4" data-vxml="001" data-list-id="0">
+                                <div class="input-group">
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+                                    <span class="input-group-append">
+                                        <a role="button" href="#" class="btn btn-primary js_subscribe_btn">Subscribe</a>
+                                        <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

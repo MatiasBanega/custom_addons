@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_1" name="Banner - 1">
+        <section class="s_banner_1 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-lg-6 py-3">
+                        <div class="position-relative tp-animation-scale">
+                            <img class="img img-fluid" src="/web/image/theme_prime.s_banner_1_1" alt="Banner Image 01"/>
+                            <div class="tp-banner-content">
+                                <h5><font>GET <span class="text-o-color-1">10%</span> OFF</font></h5>
+                                <h3>Women's Collection</h3>
+                                <div class="pt16">
+                                    <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 py-3">
+                        <div class="position-relative tp-animation-scale">
+                            <img class="img img-fluid" src="/web/image/theme_prime.s_banner_1_2" alt="Banner Image 02"/>
+                            <div class="tp-banner-content">
+                                <h5><font>GET <span class="text-o-color-1">15%</span> OFF</font></h5>
+                                <h3>Men's Collection</h3>
+                                <div class="pt16">
+                                    <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

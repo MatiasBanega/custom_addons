@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<templates>
+    <div class="d_collection_widget" t-name="collection_widget">
+        <t t-set="collections" t-value="widget.collections"/>
+        <ul class="d_sortable_block list-unstyled">
+            <t t-if="collections">
+                <t t-call="collections_list"/>
+            </t>
+        </ul>
+        <div class="container d-snippet-config-placeholder">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="/theme_prime/static/src/img/content/placeholder.png" class="img img-fluid"/>
+                    <h5>No collection added.</h5>
+                    <div>Click on bottom-left corner button to add collections.</div>
+                </div>
+            </div>
+        </div>
+        <div class="mt32">
+            <button class="btn btn-primary d_add_collection">Add Collection</button>
+        </div>
+    </div>
+
+    <t t-name="collection_item">
+        <li class="container mt-2 mb-2 d_collection_item" t-att-data-products="JSON.stringify(collection.data)">
+            <div class="row form-group border no-gutters">
+                <div class="d_sortable_item_handel justify-content-center d-flex align-items-center">
+                    <span class="text-primary fa fa-ellipsis-v"/>
+                    <span class="text-primary fa fa-ellipsis-v"/>
+                </div>
+                <div class="col-6 px-2 py-3">
+                    <label for="d_collection_title" class="ml-4"><small class="text-primary">Title:</small></label>
+                    <input t-att-value="collection.title" type="input" class="ml-2 d-inline-block form-control form-control-sm w-50" id="d_collection_title"/>
+                </div>
+                <div class="col-6 px-2 py-3">
+                    <button class="pull-right text-primary mr-4 mt-1 btn btn-link p-0 d_open_configrator">
+                        <small> <i class="fa fa-cogs"/> Manage Products</small>
+                    </button>
+                    <span class="dri dri-cross-l d_remove_item border text-center" data-toggle="tooltip" title="Remove"/>
+                </div>
+            </div>
+        </li>
+    </t>
+
+    <t t-name="collections_list">
+        <t t-foreach="collections" t-as="collection">
+            <t t-call="collection_item"/>
+        </t>
+    </t>
+</templates>

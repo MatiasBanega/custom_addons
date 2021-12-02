@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_9" name="Icon Block - 9">
+        <section class="s_icon_block_9 pt32 pb32">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-3 h-100">
+                            <div class="media">
+                                <span class="fa fa-rocket fa-2x rounded-circle bg-o-color-1 mr-4 tp-icon-block-icon"/>
+                                <div class="media-body">
+                                    <h6>Creative ideas</h6>
+                                    <p class="mb-0">Orci varius natoque penatibus et magnis dis parturient montes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-3 h-100">
+                            <div class="media">
+                                <span class="fa fa-magic fa-2x rounded-circle bg-o-color-1 mr-4 tp-icon-block-icon"/>
+                                <div class="media-body">
+                                    <h6>Excellent features</h6>
+                                    <p class="mb-0">Suspendisse potenti. Cras a dui et nisl egestas ornare eu quis odio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-3">
+                        <div class="card p-3 h-100">
+                            <div class="media">
+                                <span class="fa fa-laptop fa-2x rounded-circle bg-o-color-1 mr-4 tp-icon-block-icon"/>
+                                <div class="media-body">
+                                    <h6>Fully responsive</h6>
+                                    <p class="mb-0">In hac habitasse platea dictumst. Praesent cursus congue felis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_icon_block_9_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_icon_block_9 .card'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_icon_block_9 .card">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

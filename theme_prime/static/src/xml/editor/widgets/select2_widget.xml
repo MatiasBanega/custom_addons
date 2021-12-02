@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<templates>
+    <t t-name="select2_widget">
+       <div class="form-group row">
+           <label t-esc="widget.fieldLabel" class="col-form-label font-weight-bold col-md-3"/>
+           <div class="col-sm-9">
+               <input type="hidden" class="d-select2-input" name="selection" t-att-value="widget.recordsIDs"/>
+           </div>
+       </div>
+    </t>
+</templates>

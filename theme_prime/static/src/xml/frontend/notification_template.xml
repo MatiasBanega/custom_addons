@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+<t t-name="DroggolAddToCartNotification">
+    <span class="font-weight-bold text-primary" t-esc="name"/> has been added to your shopping cart.
+</t>
+
+<t t-name="DroggolWishlistNotification">
+    <span class="font-weight-bold text-primary" t-esc="name"/> has been added to your wishlist.
+</t>
+
+</template>

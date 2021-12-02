@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_info_block_4" name="Info Block - 4">
+        <section class="s_info_block_4 pt16 pb16">
+            <div class="container-fluid">
+                <div class="row align-items-center s_nb_column_fixed">
+                    <div class="col-12 offset-lg-1 col-lg-5 order-2 order-lg-0">
+                        <h5>Latest Trend</h5>
+                        <h1>FANCY COLLECTION</h1>
+                        <p>Vestibulum id laoreet sapien. Aliquam porttitor neque ut urna efficitur, eget tincidunt diam convallis. Vestibulum molestie nunc consectetur cursus tincidunt. Aenean interdum justo a tellus condimentum gravida.</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> 24x7 customer support
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> Cash on delivery
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> 30 days replacement
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> Fast delivery
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> 12k+ happy customers
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> 100% secure payment
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> Quality products
+                                </p>
+                                <p class="mb-2">
+                                    <i class="fa fa-check-circle-o text-o-color-1"></i> Easy returns
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-2">Shop Now</a>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0 order-0 order-lg-1">
+                        <div class="tp-animation-scale d-flex align-items-center justify-content-center">
+                            <img src="/web/image/theme_prime.s_info_block_4_1" class="img img-fluid" alt="Info Block Image 01"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_info_block_4_options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-option-name='vAlignment']" position="attributes">
+            <attribute name="data-selector" add=".s_info_block_4" separator=", "/>
+        </xpath>
+    </template>
+
+</odoo>

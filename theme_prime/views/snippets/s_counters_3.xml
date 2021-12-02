@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_counters_3" name="Counters - 3">
+        <section class="s_counters_3 pt16 pb16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="text-o-color-1 fa fa-user fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">1200</font></h4>
+                        <h6>Customers</h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="text-o-color-1 fa fa-magic fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">237</font></h4>
+                        <h6>New Ideas</h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="text-o-color-1 fa fa-smile-o fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">1340</font></h4>
+                        <h6>Happy Clients</h6>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3 text-center">
+                        <h6><span class="text-o-color-1 fa fa-cube fa-3x"/></h6>
+                        <h4 class="mt-4"><font style="font-size: 36px;">8000</font></h4>
+                        <h6>Products</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_heading_6" name="Heading - 6">
+        <section class="s_heading_6 pt32 pb32">
+            <div class="container position-relative">
+                <h3 class="tp-underline-title pb-3">Your title here</h3>
+            </div>
+        </section>
+    </template>
+
+</odoo>

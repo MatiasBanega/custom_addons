@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_7" inherit_id="website.layout" name="Footer Style - 7" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt64 pb16">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-4 mb-4">
+                                <h6 class="mb-3">About Us</h6>
+                                <div>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</div>
+                                <h6 class="mt-4 mb-3">Download our apps</h6>
+                                <div class="d-flex tp-store-img">
+                                    <a href="#" class="mr-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-1.png"/>
+                                    </a>
+                                    <a href="#" class="ml-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-2.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-2 mb-4">
+                                <h6 class="mb-3">
+                                    Categories
+                                </h6>
+                                <ul class="list-unstyled mb-0 tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">Athletic Apparel</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sneakers &amp; Athletic</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sunglasses &amp; Eyewear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Jeans</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Swimwear</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-2 mb-4">
+                                <h6 class="mb-3">
+                                    Account Info
+                                </h6>
+                                <ul class="list-unstyled mb-0 tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">Your account</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Refunds &amp; replacements</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Order tracking</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Delivery info</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Taxes &amp; fees</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-2 mb-4">
+                                <h6 class="mb-3">
+                                    About Us
+                                </h6>
+                                <ul class="list-unstyled mb-0 tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">All services</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="/aboutus">About Us</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="/contactus">Contact Us</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Terms of Use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-2 mb-4">
+                                <h6 class="mb-3">Store Information</h6>
+                                <div>250 Executive Park Blvd, Suite 3400 <br/> San Francisco CA 94134 <br/>United States</div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-envelope mr-1"/><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-phone mr-1"/><span class="o_force_ltr"><a href="tel:1 (650) 691-3277">+1 (650) 691-3277</a></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <ul class="list-inline tp-payment-icons text-center my-3">
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/visa.png" alt="Visa"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/american_express.png" alt="American Express"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/maestro.png" alt="Maestro"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/jcb.png" alt="JCB"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/discover.png" alt="Discover"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-auto text-center text-lg-left">
+                        <div class="my-2">Copyright &amp;copy; MyCompany</div>
+                    </div>
+                    <div class="col-lg-auto text-center">
+                        <ul class="list-inline my-2">
+                            <li class="list-inline-item">
+                                <a href="/website/social/facebook">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/twitter">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/linkedin">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/youtube">
+                                    <span class="fa fa-youtube"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/instagram">
+                                    <span class="fa fa-instagram"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/github">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-auto text-center text-lg-right" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

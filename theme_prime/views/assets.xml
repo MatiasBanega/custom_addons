@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="_assets_utils" inherit_id="web._assets_utils">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/mixins.scss"/>
+        </xpath>
+    </template>
+
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_wysiwyg" inherit_id="website.assets_wysiwyg">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/snippets.editor.js"/>
+        </xpath>
+    </template>
+
+    <template id="assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/theme_config.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/snippet_registry.js"/>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/snippet.options.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/special_menu.js"/>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/category_ui_card_widget.js"/>
+            <!-- Widgets -->
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/abstract_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/products_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/domain_builder_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/abstract_ui_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/dialogs/dialog_product_selector.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/select2_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/dialogs/dialog_snippet_configurator.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/ui_configurator_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/category_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/category_ui_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/collection_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/collection_ui_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/hierarchical_category_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/editor/widgets/hierarchical_category_ui_widget.js"></script>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <!-- Theme Prime -->
+            <script type="text/javascript" src="/theme_prime/static/lib/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/lib/PhotoSwipe-4.1.3/dist/photoswipe.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/lib/PhotoSwipe-4.1.3/dist/photoswipe-ui-default.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/lib/drift-master-1.4.0/dist/Drift.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/lib/ion.rangeSlider-2.3.1/js/ion.rangeSlider.js"></script>
+
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/website_root.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/mixins.js"/>
+            <script type="text/javascript" src="/theme_prime/static/src/js/service_worker_register.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/wysiwyg_multizone.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/website_sale_wishlist.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend/comparison.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/sticky_add_to_cart.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/drift_zoom.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/photoswipe.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/sidebar.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/countdown.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/discount_percentage.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/recently_viewed.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/suggested_product_slider.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/product_detail.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/product_searchbar.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/shop.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend/quick_view_dialog.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend/ajax_load_products.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend/bottombar.js"></script>
+
+            <!-- core -->
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/snippet_root_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/product_root_widget.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/notification_manager.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/js/core/cart_manager.js"></script>
+
+            <!-- snippets -->
+            <script type="text/javascript" src="/theme_prime/static/src/js/frontend/dynamic_snippets.js"></script>
+            <script type="text/javascript" src="/theme_prime/static/src/snippets/s_coming_soon/frontend.js"></script>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <!-- PWA -->
+            <link rel="manifest" t-attf-href="/pwa/#{request.website.id}/manifest.json"/>
+            <link rel="apple-touch-icon" sizes="192x192" t-attf-href="/web/image/website/#{request.website.id}/dr_pwa_icon_192/192x192"/>
+            <meta name="theme-color" t-att-content="request.website.dr_pwa_theme_color"/>
+            <meta name="mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-title" t-att-content="request.website.dr_pwa_name"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+            <!-- Theme Prime -->
+            <link rel="preload" href="/theme_prime/static/lib/Droggol-Pack-v1.0/fonts/Droggol-Pack.ttf?4iwoe7" as="font" crossorigin=""/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/OwlCarousel2-2.3.4/assets/owl.carousel.css"/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/OwlCarousel2-2.3.4/assets/owl.theme.default.css"/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/PhotoSwipe-4.1.3/dist/photoswipe.css"/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/PhotoSwipe-4.1.3/dist/default-skin/default-skin.css"/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/drift-master-1.4.0/dist/drift-basic.css"/>
+            <link rel="stylesheet" type="text/css" href="/theme_prime/static/lib/ion.rangeSlider-2.3.1/css/ion.rangeSlider.css"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/theme.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/rtl.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/website.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/website_sale.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/icon-packs/website.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/utils.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/snippets/cards.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/front_end/quick_view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/front_end/dynamic_snippets.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/front_end/category_filters.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/front_end/image_hotspot.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/snippets/2_col_deal.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/snippets/image_products.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/front_end/bottom_bar.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_banner/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_blog/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_clients/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_coming_soon/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_countdown/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_counters/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_cover/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_gallery/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_heading/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_icon_block/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_info_block/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_megamenu/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_offer/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_team/000.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/snippets/s_testimonial/000.scss"/>
+        </xpath>
+    </template>
+
+    <template id="website_assets_wysiwyg" inherit_id="website.assets_wysiwyg">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/icon-packs/wysiwyg.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/icon-packs/website.edit_mode.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/editor/editor.scss"/>
+            <!-- Widgets -->
+            <link rel="stylesheet" type ="text/scss" href="/theme_prime/static/src/scss/editor/widgets/products_widget.scss"/>
+            <link rel="stylesheet" type ="text/scss" href="/theme_prime/static/src/scss/editor/widgets/domain_builder.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/editor/widgets/select2_widget.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_prime/static/src/scss/editor/widgets/ui_configrator.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_prime/static/src/js/icon-packs/rte.summernote.js"/>
+            <script type="text/javascript" src="/theme_prime/static/src/js/icon-packs/wysiwyg.fonts.js"/>
+            <script type="text/javascript" src="/theme_prime/static/src/js/icon-packs/media.js"/>
+        </xpath>
+    </template>
+
+    <template id="web_editor_assets_frontend" inherit_id="web_editor.assets_frontend">
+        <xpath expr="//link[@href='/web_editor/static/src/scss/web_editor.frontend.scss']" position="replace">
+            <link rel="stylesheet" type ="text/scss" href="/theme_prime/static/src/scss/web_editor.frontend.scss"/>
+            <link rel="stylesheet" type ="text/scss" href="/theme_prime/static/src/scss/editor/dialogs/dialog_snippet_configurator.scss"/>
+            <link rel="stylesheet" type ="text/scss" href="/theme_prime/static/src/scss/sliders.scss"/>
+        </xpath>
+    </template>
+
+</odoo>

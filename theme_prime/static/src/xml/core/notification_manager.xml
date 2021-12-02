@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+
+<t t-name="DroggolNotification.btn">
+    <t t-if="button.icon">
+        <i t-if="button.icon.indexOf('fa-') === 0" t-attf-class="fa fa-fw o_button_icon #{button.icon}" role="img" t-att-aria-label="button.name" t-att-title="button.name"/>
+        <img t-else="" t-att-src="button.icon" t-att-alt="button.name"/>
+    </t>
+    <span t-esc="button.text"/>
+</t>
+
+<t t-name="DroggolNotification" t-extend="Notification">
+    <t t-jquery=".toast-header" t-operation="replace"/>
+    <t t-jquery=".toast-body" t-operation="replace">
+        <div t-if="widget.message or widget.subtitle or widget.buttons.length" class="toast-body p-0">
+            <button type="button"
+                class="mb-1 close o_notification_close my-1 mr-1"
+                data-dismiss="toast" aria-label="Close">
+                <span class="dri dri-cross-l"></span>
+            </button>
+            <div class="card border-0" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-3 text-center border-right align-self-center">
+                        <t t-if="widget.d_image">
+                            <img t-att-src="widget.d_image" class="img img-fluid"></img>
+                        </t>
+                        <t t-else="">
+                            <span t-attf-class="fa-3x #{widget.d_icon}"></span>
+                        </t>
+                    </div>
+                    <div class="col-9 p-2">
+                        <div class="card-body p-0">
+                            <p class="card-text mb-1"><t t-raw="widget.message"/></p>
+                            <div t-if="widget.buttons.length" class="o_notification_buttons">
+                                <t t-foreach="widget.buttons" t-as="button">
+                                    <button t-if="!button.link" type="button" t-att-class="button.class">
+                                        <t t-call="DroggolNotification.btn"/>
+                                    </button>
+                                    <a t-if="button.link" t-att-href="button.href" t-att-class="button.class">
+                                        <t t-call="DroggolNotification.btn"/>
+                                    </a>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
+
+</template>

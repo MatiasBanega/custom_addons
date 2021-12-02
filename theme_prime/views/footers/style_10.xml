@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_10" inherit_id="website.layout" name="Footer Style - 10" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt48 pb16">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3">MyCompany</h6>
+                                <div>250 Executive Park Blvd, Suite 3400 <br/> San Francisco CA 94134 <br/>United States</div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-envelope mr-1"/><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></li>
+                                    <li class="py-1"><i class="fa fa-1x fa-fw fa-phone mr-1"/><span class="o_force_ltr"><a href="tel:1 (650) 691-3277">+1 (650) 691-3277</a></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3">
+                                    Follow us on
+                                </h6>
+                                <ul class="list-inline tp-followus-icons my-2">
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/facebook">
+                                            <span class="fa fa-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/twitter">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/linkedin">
+                                            <span class="fa fa-linkedin"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/youtube">
+                                            <span class="fa fa-youtube"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/instagram">
+                                            <span class="fa fa-instagram"></span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="/website/social/github">
+                                            <span class="fa fa-github"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="mb-3 mt-4">
+                                    Payment Accept
+                                </h6>
+                                <ul class="list-inline mb-0 tp-payment-icons">
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/visa.png" alt="Visa"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/american_express.png" alt="American Express"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/maestro.png" alt="Maestro"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/jcb.png" alt="JCB"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/discover.png" alt="Discover"/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3">
+                                    Subscribe
+                                </h6>
+                                <div class="s_newsletter_subscribe_form js_subscribe w-75" data-vxml="001" data-list-id="0">
+                                    <div class="input-group">
+                                        <input type="email" name="email" class="js_subscribe_email form-control bg-transparent" placeholder="your email..."/>
+                                        <span class="input-group-append">
+                                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><i class="fa fa-send-o"/></a>
+                                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 mb-3">Download our apps</h6>
+                                <div class="d-flex tp-store-img">
+                                    <a href="#" class="mr-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-1.png"/>
+                                    </a>
+                                    <a href="#" class="ml-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-2.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="my-2">
+                            Copyright &amp;copy; MyCompany
+                        </div>
+                    </div>
+                    <div class="col-12 text-center" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

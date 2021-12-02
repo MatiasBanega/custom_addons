@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_header_style_4" inherit_id="website.layout" name="Header Style - 4" active="False">
+        <xpath expr="//header//nav" position="replace">
+            <div class="tp-preheader">
+                <div class="container">
+                    <div class="row justify-content-lg-between justify-content-center align-items-center">
+                        <div class="col-auto py-2 d-none d-lg-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mx-2"><a href="#">Contact Us</a></li>
+                                <li class="list-inline-item mx-2"><a href="#">About Us</a></li>
+                                <li class="list-inline-item mx-2"><a href="#">Terms</a></li>
+                                <li class="list-inline-item mx-2"><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto py-2">
+                            <section><div>Free shipping for all order of $150</div></section>
+                        </div>
+                        <div class="col-auto py-2 d-none d-lg-block">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-auto py-3">
+                            <!-- Brand -->
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-value="'d-none d-lg-block'"/>
+                            </t>
+                        </div>
+                        <div class="col-auto py-3 flex-grow-1">
+                            <form class="o_wsale_products_searchbar_form w-75 mx-auto o_not_editable" method="get" action="/shop">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <t t-call="theme_prime.component_product_search_category_dropdown">
+                                            <t t-set="_classes" t-value="'border'"/>
+                                        </t>
+                                    </div>
+                                    <input type="text" name="search" data-limit="5" data-display-price="true" data-display-image="true" class="form-control bg-transparent search-query" placeholder="Search Product..." t-att-value="search"/>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary" aria-label="Search">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-auto py-3 o_not_editable">
+                            <div class="row align-items-center justify-content-end tp-account-info">
+                                <div class="col-auto my-1">
+                                    <div class="media align-items-center">
+                                        <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+                                        <div class="o_wsale_my_cart position-relative tp-cart-sidebar-action">
+                                            <a href="/shop/cart">
+                                                <i class="dri dri-cart bg-secondary rounded-circle"/>
+                                                <sup class="my_cart_quantity badge badge-primary mb-0 font-weight-bold" t-esc="website_sale_order and website_sale_order.cart_quantity or '0'" t-att-data-order-id="website_sale_order and website_sale_order.id or ''"/>
+                                            </a>
+                                        </div>
+                                        <div class="media-body ml-3 d-none d-xl-block">
+                                            <div class="mb-1">My Cart</div>
+                                            <a class="tp-cart-sidebar-action" href="#"><h6 class="mb-0 tp-link-dark">View Cart</h6></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto my-1">
+                                    <div class="media align-items-center">
+                                        <t t-set="wishcount" t-value="len(request.env['product.wishlist'].current())"/>
+                                        <div class="o_wsale_my_wish position-relative">
+                                            <a href="/shop/wishlist">
+                                                <i class="dri dri-wishlist bg-secondary rounded-circle"/>
+                                                <sup t-esc="wishcount" t-attf-class="my_wish_quantity o_animate_blink badge badge-primary"/>
+                                            </a>
+                                        </div>
+                                        <div class="media-body ml-3 d-none d-xl-block">
+                                            <div class="mb-1">My Wishlist</div>
+                                            <a href="/shop/wishlist"><h6 class="mb-0 tp-link-dark">View Wishlist</h6></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto my-1" t-if="request.website.viewref('portal.user_sign_in').active">
+                                    <div class="media align-items-center">
+                                        <i class="dri dri-user bg-secondary rounded-circle"/>
+                                        <div class="media-body ml-3">
+                                            <div style="max-width: 150px;" class="text-truncate mb-1"><t t-esc="not user_id._is_public() and user_id.name or 'Guest'"/></div>
+                                            <div class="dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown" aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark">My Account</h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/my" role="menuitem" class="dropdown-item">Account</a>
+                                                    <a href="/my/orders" role="menuitem" class="dropdown-item">Orders</a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item">
+                                                        Wishlist (<span class="tp-wishlist-counter"><t t-esc="wishcount"/></span>)
+                                                    </a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="/web/session/logout?redirect=/" role="menuitem" class="dropdown-item">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown" t-else="">
+                                                <a href="#" class="dropdown-toggle d-block" data-toggle="dropdown" aria-label="Account Info">
+                                                    <h6 class="d-inline mb-0 tp-link-dark">My Account</h6>
+                                                </a>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="/web/login" role="menuitem" class="dropdown-item">Login</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="/shop/cart" role="menuitem" class="dropdown-item">My Cart</a>
+                                                    <a href="/shop/wishlist" role="menuitem" class="dropdown-item">
+                                                        Wishlist (<span class="tp-wishlist-counter"><t t-esc="wishcount"/></span>)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+                <div id="top_menu_container" class="container justify-content-between">
+                    <!-- Navbar Toggler -->
+                    <t t-call="theme_prime.component_navbar_toggler"/>
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'d-lg-none o_offcanvas_logo_container'"/>
+                    </t>
+                    <!-- Account Info -->
+                    <t t-call="theme_prime.component_navbar_mobile_account_info"/>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+</odoo>

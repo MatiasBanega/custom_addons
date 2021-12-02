@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_13" name="Icon Block - 13">
+        <section class="s_icon_block_13 bg-o-color-1">
+            <div class="container">
+                <div class="row s_nb_column_fixed text-lg-center">
+                    <div class="col-12 col-lg-4">
+                        <h6 class="my-2">
+                            <i class="fa fa-exchange mr-2"></i> Free returns
+                        </h6>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6 class="my-2">
+                            <i class="fa fa-truck mr-2"></i> Free Shipping for order over $200
+                        </h6>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h6 class="my-2">
+                            <i class="fa fa-life-ring mr-2"></i> Free support
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

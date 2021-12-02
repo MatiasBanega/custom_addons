@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_12" name="Banner - 12">
+        <section class="s_banner_12 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-lg-4 py-3 tp-block-container">
+                        <div class="tp-block-wrapper">
+                            <div class="tp-img-container" style="background-image: url('/web/image/theme_prime.s_banner_11_1')">
+                                <div class="tp-block-content h-100 w-100">
+                                    <h2 class="tp-title text-center w-100">New Arrival</h2>
+                                    <div class="tp-subtitle text-center w-100">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 tp-block-container">
+                        <div class="tp-block-wrapper">
+                            <div class="tp-img-container" style="background-image: url('/web/image/theme_prime.s_banner_11_2')">
+                                <div class="tp-block-content h-100 w-100">
+                                    <h2 class="tp-title text-center w-100">Trending Products</h2>
+                                    <div class="tp-subtitle text-center w-100">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3 tp-block-container">
+                        <div class="tp-block-wrapper">
+                            <div class="tp-img-container" style="background-image: url('/web/image/theme_prime.s_banner_11_3')">
+                                <div class="tp-block-content h-100 w-100">
+                                    <h2 class="tp-title text-center w-100">New Collection</h2>
+                                    <div class="tp-subtitle text-center w-100">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                        <a href="/shop" class="btn btn-primary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_banner_12_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_banner_12 .tp-img-container'"/>
+                <t t-set="with_colors" t-value="False"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="False"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

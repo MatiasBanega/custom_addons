@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_8" name="Mega Menu - 8">
+        <section class="s_mega_menu_8 tp-mega-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pt24 pb24 col-lg-3">
+                        <div class="position-relative tp-banner-block oe_img_bg" style="background-image: url('/web/image/theme_prime.s_mega_menu_8_1');">
+                            <div class="tp-banner-text text-center">
+                                <h4 class="mb-1">For Men</h4>
+                                <h6>Starting at $30</h6>
+                                <a href="/shop" class="btn btn-primary btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt24 pb24 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <h6 class="mb-1">
+                                    Clothing
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-50"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">New in</a></li>
+                                    <li><a href="#">Coats &amp; Jackets</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Shorts</a></li>
+                                    <li><a href="#">Skirts</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <h6 class="mb-1">
+                                    Shoes
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-50"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Boots</a></li>
+                                    <li><a href="#">Flats</a></li>
+                                    <li><a href="#">Heels</a></li>
+                                    <li><a href="#">Donec ultrices</a></li>
+                                    <li><a href="#">Sandals</a></li>
+                                    <li><a href="#">Slippers</a></li>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <h6 class="mb-1">
+                                    Accessories
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-50"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Bags &amp; Purses</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Scarves &amp; Hats</a></li>
+                                    <li><a href="#">Etiam</a></li>
+                                    <li><a href="#">Jewelry</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">Fragrance &amp; Beauty</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <img class="img img-fluid" src="/web/image/theme_prime.s_mega_menu_8_2" alt="Mega Menu Image 02"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt24 pb24 col-lg-3">
+                        <div class="position-relative tp-banner-block oe_img_bg" style="background-image: url('/web/image/theme_prime.s_mega_menu_8_3');">
+                            <div class="tp-banner-text text-center">
+                                <h4 class="mb-1">For Women</h4>
+                                <h6>Starting at $25</h6>
+                                <a href="/shop" class="btn btn-primary btn-sm">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_mega_menu_8_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_mega_menu_8 .tp-banner-block'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_banner_7 .tp-banner-block">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

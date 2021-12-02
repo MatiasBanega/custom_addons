@@ -1,0 +1,75 @@
+$o-base-color-palette: map-merge($o-base-color-palette, (
+    'copyright': 5,
+));
+
+$o-color-palettes: (
+    (
+        'o-color-1': #0da9ef,
+        'o-color-2': #f1f3f8,
+        'o-color-3': #F5F5F5,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #343a40,
+
+        'o-cc1-text': #6c757d,
+        'o-cc1-headings': 'o-color-5',
+        'menu': 1,
+        'footer': 5,
+
+        'o-cc2-headings': 'o-color-5',
+    ),
+);
+
+$o-base-theme-color-palette: (
+    'tp-preheader': 5,
+
+    'tp-label-green': #65B32E,
+    'tp-label-blue': #00A1BE,
+    'tp-label-orange': #FEA569,
+    'tp-label-red': #D41212,
+    'tp-label-gray': #BBBBBB,
+    'tp-label-black': #000000,
+);
+
+$o-website-values-palettes: (
+    (
+        'font-size-base': (14 / 16) * 1rem, // 0.875rem
+
+        'link-underline': 'never',
+
+        'btn-border-radius': 0,
+        'btn-border-radius-sm': 0,
+        'btn-border-radius-lg': 0,
+
+        'input-border-radius': 0,
+        'input-border-radius-sm': 0,
+        'input-border-radius-lg': 0,
+
+        'font': 'Roboto',
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+
+        'logo-height': 3.5rem,
+
+        'tp-square-ui': true,
+        'tp-hide-preheader': false,
+        'tp-back-to-top': true,
+        'tp-icon-pack': 1,
+    ),
+);
+
+$o-theme-font-configs: map-merge((
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,500,500i,600,600i',
+    ),
+), $o-theme-font-configs);
+
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,500,500i,700,700i',
+    ),
+));
+
+$o-theme-headings-font-weight: 500;

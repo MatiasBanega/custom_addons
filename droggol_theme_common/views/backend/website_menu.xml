@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="menu_tree_inherit_droggol_theme_common" model="ir.ui.view">
+        <field name="name">website.menu.tree.inherit.droggol.theme.common</field>
+        <field name="model">website.menu</field>
+        <field name="inherit_id" ref="website.menu_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='url']" position="after">
+                <field name="dr_menu_label_id"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

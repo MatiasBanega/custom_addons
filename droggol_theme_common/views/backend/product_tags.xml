@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dr_product_tags_view_form" model="ir.ui.view">
+        <field name="name">dr.product.tags.view.form</field>
+        <field name="model">dr.product.tags</field>
+        <field name="arch" type="xml">
+            <form string="Tag">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" type="object" name="action_open_products" icon="fa-cubes" attrs="{'invisible': [('product_count', '=', 0)]}">
+                            <field string="Products" name="product_count" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="website_id"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="products" string="Products">
+                            <field name="product_ids" string="Products" mode="kanban" options="{'create_text':'Add a Product'}" context="{'default_dr_label_id': active_id, 'default_website_id': website_id}"/>
+                        </page>
+                        <page name="tabs" string="Products Tabs">
+                            <div class="alert alert-info" role="alert">
+                                Below tabs will appear on products having tag.
+                            </div>
+                            <field name="dr_tab_ids">
+                                <tree string="Tabs" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="icon"/>
+                                </tree>
+                                <form>
+                                    <sheet>
+                                        <div class="oe_title">
+                                            <label for="name"/>
+                                            <h1>
+                                                <field name="name"/>
+                                            </h1>
+                                        </div>
+                                        <group>
+                                            <group>
+                                                <field name="icon"/>
+                                            </group>
+                                        </group>
+                                        <notebook>
+                                            <page name="content" string="Content">
+                                                <field name="content"/>
+                                            </page>
+                                        </notebook>
+                                    </sheet>
+                                </form>
+                            </field>
+                            <div colspan="2" class="text-center">You can find icon at <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">FontAwesome</a>.</div>
+                        </page>
+                        <page name="offers" string="Products Offers">
+                            <div class="alert alert-info" role="alert">
+                                Below offers will appear on products having tag.
+                            </div>
+                            <field name="dr_offer_ids">
+                                <tree string="Offers" editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="description"/>
+                                    <field name="icon"/>
+                                </tree>
+                                <form>
+                                    <sheet>
+                                        <div class="oe_title">
+                                            <label for="name"/>
+                                            <h1>
+                                                <field name="name"/>
+                                            </h1>
+                                        </div>
+                                        <group>
+                                            <group>
+                                                <field name="icon"/>
+                                            </group>
+                                        </group>
+                                        <notebook>
+                                            <page name="dialog_content" string="Dialog Content">
+                                                <field name="dialog_content"/>
+                                            </page>
+                                        </notebook>
+                                    </sheet>
+                                </form>
+                            </field>
+                            <div colspan="2" class="text-center">You can find icon at <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">FontAwesome</a>.
+                            </div>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="dr_product_tags_view_tree" model="ir.ui.view">
+        <field name="name">dr.product.tags.view.tree</field>
+        <field name="model">dr.product.tags</field>
+        <field name="arch" type="xml">
+            <tree string="Tags">
+                <field name="name"/>
+                <field name="website_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="dr_product_tags_view_search" model="ir.ui.view">
+        <field name="name">dr.product.tags.view.search</field>
+        <field name="model">dr.product.tags</field>
+        <field name="arch" type="xml">
+            <search string="Tags">
+                <field name="name"/>
+                <field name="website_id"/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter string="Website" name="website" domain="" context="{'group_by':'website_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="dr_product_tags_action" model="ir.actions.act_window">
+        <field name="name">Tags</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dr.product.tags</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_dr_product_tags"
+        action="dr_product_tags_action"
+        parent="website_sale.menu_product_settings" sequence="6"/>
+
+</odoo>

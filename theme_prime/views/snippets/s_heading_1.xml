@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_heading_1" name="Heading - 1">
+        <section class="s_heading_1 pt32 pb32">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 tp-heading-container text-center tp-line-thickness-normal tp-line-width-normal tp-line-bottom">
+                        <h2>Access wide range of products</h2>
+                        <p class="lead mb-0">Quality products from shop prime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_heading_1_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-selector=".s_heading_1" data-target=".tp-heading-container">
+                <we-select string="Position">
+                    <we-button data-select-class="tp-line-top">Top</we-button>
+                    <we-button data-select-class="tp-line-bottom">Bottom</we-button>
+                </we-select>
+                <we-select string="Alignment">
+                    <we-button data-select-class="text-left">Left</we-button>
+                    <we-button data-select-class="text-center">Center</we-button>
+                    <we-button data-select-class="text-right">Right</we-button>
+                </we-select>
+                <we-select string="Thickness">
+                    <we-button data-select-class="tp-line-thickness-light">Light</we-button>
+                    <we-button data-select-class="tp-line-thickness-normal">Normal</we-button>
+                    <we-button data-select-class="tp-line-thickness-bold">Bold</we-button>
+                </we-select>
+                <we-select string="Width">
+                    <we-button data-select-class="tp-line-width-short">Short</we-button>
+                    <we-button data-select-class="tp-line-width-normal">Normal</we-button>
+                    <we-button data-select-class="tp-line-width-long">Long</we-button>
+                </we-select>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

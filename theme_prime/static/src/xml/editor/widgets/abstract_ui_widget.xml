@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<templates>
+
+    <t t-name="theme_prime.abstract_ui_widget">
+        <div class="abstract_ui_widget">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="form-group">
+                            <label for="tp_style_select" class="h6">Style</label>
+                            <select id="tp_style_select" class="d-inline-block form-control">
+                                <t t-foreach="widget.drAllTemplates" t-as="component">
+                                    <option t-att-value="component" t-att-selected="component === widget[widget.templateTargetNodeAttr] ? 'selected' : undefined">
+                                        Style <t t-esc="component_index + 1"/>
+                                    </option>
+                                </t>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 border-left">
+                        <h6 class="text-center">Preview</h6>
+                        <small class="d-block text-center mb-3">(Hover to see effects)</small>
+                        <div t-attf-class="tp-abstract-ui-preview p-4 bg-100 #{widget.templatePriviewClasses ? widget.templatePriviewClasses : ''}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="tp_abstract_ui_widget">
+        <div t-attf-class="#{widget.parentClass ? 'widget.parentClass' : ''} p-3 bg-white shadow-sm">
+            <t t-call="#{widget[widget.templateTargetNodeAttr]}"/>
+        </div>
+    </t>
+
+</templates>

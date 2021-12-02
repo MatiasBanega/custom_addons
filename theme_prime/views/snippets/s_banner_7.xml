@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_7" name="Banner - 7">
+        <section class="s_banner_7 pt16 pb16">
+            <div class="container">
+                <div class="row no-gutters s_nb_column_fixed">
+                    <div class="col-12 col-lg-6 p-1">
+                        <div class="position-relative tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_banner_7_1" class="w-100" alt="Banner Image 01"/>
+                            <div class="tp-banner-content text-center rounded bg-white-75 w-50">
+                                <h5>Women Tops</h5>
+                                <div>Up to 70% off on selected item</div>
+                                <a href="#" class="mt-3 btn btn-dark">Discover Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row no-gutters s_nb_column_fixed">
+                            <div class="col-lg-12 p-1">
+                                <div class="position-relative tp-animation-scale">
+                                    <img src="/web/image/theme_prime.s_banner_7_2" class="w-100" alt="Banner Image 02"/>
+                                    <div class="tp-banner-content text-center rounded bg-white-75 w-50">
+                                        <h5>Accessories</h5>
+                                        <div>Add finishing touch to your outfit</div>
+                                        <a href="#" class="mt-3 btn btn-dark">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row no-gutters s_nb_column_fixed">
+                                    <div class="col-lg-6 p-1">
+                                        <div class="position-relative tp-animation-scale">
+                                            <img src="/web/image/theme_prime.s_banner_7_3" class="w-100" alt="Banner Image 03"/>
+                                            <div class="tp-banner-content text-center rounded bg-white-75 w-50 w-lg-75">
+                                                <h5>Denim Jeans</h5>
+                                                <div>Find your perfect outfit</div>
+                                                <a href="#" class="mt-3 btn btn-dark">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-1">
+                                        <div class="position-relative tp-animation-scale">
+                                            <img src="/web/image/theme_prime.s_banner_7_4" class="w-100" alt="Banner Image 04"/>
+                                            <div class="tp-banner-content text-center rounded bg-white-75 w-50 w-lg-75">
+                                                <h5>Hot Collection</h5>
+                                                <div>From world's top designer</div>
+                                                <a href="#" class="mt-3 btn btn-dark">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_banner_7_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_banner_7 .tp-banner-content'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_banner_7 .tp-banner-content">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

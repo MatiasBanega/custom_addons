@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_mega_menu_5" name="Mega Menu - 5">
+        <section class="s_mega_menu_5 tp-mega-menu">
+            <div class="container px-0">
+                <div class="row no-gutters s_nb_column_fixed">
+                    <div class="col-12 col-lg-6">
+                        <section class="parallax s_parallax_no_overflow_hidden pt120 pb120" data-scroll-background-ratio="0" data-name="Parallax">
+                            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/theme_prime.s_mega_menu_5_1'); background-position: 50% 0%;"></span>
+                            <div class="oe_structure">
+                                <section class="s_heading_3 pt32 pb32">
+                                    <div class="container">
+                                        <div class="row justify-content-center s_nb_column_fixed">
+                                            <div class="col-12 col-lg-8 text-center">
+                                                <h2 class="mt-3">Want to explore our products?</h2>
+                                                <p class="lead">
+                                                    See all the products at once.
+                                                </p>
+                                                <div class="pt16">
+                                                    <a href="#" class="btn btn-primary">View all products</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row no-gutters p-4">
+                            <div class="col-12 col-lg-4 py-2">
+                                <h6 class="mb-1">
+                                    Clothing
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-25 mr-auto"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Dapibus</a></li>
+                                    <li><a href="#">Proin</a></li>
+                                    <li><a href="#">Morbi vel</a></li>
+                                    <li><a href="#">Duis</a></li>
+                                    <li><a href="#">Morbi vel</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Morbi vel</a></li>
+                                    <li><a href="#">Duis</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4 py-2">
+                                <h6 class="mb-1">
+                                    Shoes
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-25 mr-auto"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Nullam mattis</a></li>
+                                    <li><a href="#">Morbi vel</a></li>
+                                    <li><a href="#">Nullam</a></li>
+                                    <li><a href="#">Duis</a></li>
+                                    <li><a href="#">Nulla vehicula</a></li>
+                                    <li><a href="#">Proin eu</a></li>
+                                    <li><a href="#">Quisque</a></li>
+                                    <li><a href="#">Proin</a></li>
+                                    <li><a href="#">Morbi vel</a></li>
+                                    <li><a href="#">Nullam</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4 py-2">
+                                <h6 class="mb-1">
+                                    Accessories
+                                </h6>
+                                <div class="s_hr pt4 pb4" data-name="Separator">
+                                    <hr class="border-primary w-25 mr-auto"/>
+                                </div>
+                                <ul class="list-unstyled tp-megamenu-list-dark">
+                                    <li><a href="#">Proin lobortis</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                    <li><a href="#">Donec ultrices</a></li>
+                                    <li><a href="#">Etiam</a></li>
+                                    <li><a href="#">Nullam sed</a></li>
+                                    <li><a href="#">Donec non</a></li>
+                                    <li><a href="#">Nullam mattis</a></li>
+                                    <li><a href="#">Aenean</a></li>
+                                    <li><a href="#">Vivamus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

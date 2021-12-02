@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_cover_4" name="Cover - 4">
+        <section class="s_cover_4 pt56 pb56 parallax pt168 pb144 o_full_screen_height" data-scroll-background-ratio="0">
+            <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/web/image/theme_prime.s_cover_4_1'); background-position: 50% 0;"/>
+            <div class="container tp-cover-container">
+                <div class="row s_nb_column_fixed">
+                    <div class="jumbotron rounded pt32 pb32 col-lg-5" data-name="Box">
+                        <h3>New Arrivals</h3>
+                        <h2><font style="font-size: 48px;">Summer Collection</font></h2>
+                        <h4>Up to 20% off on all products.</h4>
+                        <div class="s_btn pt32 pb16" data-name="Button">
+                            <a href="/shop" class="btn btn-primary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container s_icon_block_10 tp-cover-icon-container d-none d-lg-block">
+                <div class="row justify-content-center bg-white shadow-sm s_nb_column_fixed">
+                    <div class="col-12 col-md-3 py-3 mx-auto tp-icon-block">
+                        <div class="media px-md-2 px-lg-5">
+                            <span class="fa fa-rocket fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Free Shipping</h6>
+                                <p class="mb-0">In 2-3 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 py-3 mx-auto tp-icon-block">
+                        <div class="media px-md-2 px-lg-5">
+                            <span class="fa fa-refresh fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Free Returns</h6>
+                                <p class="mb-0">No Questions Asked</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 py-3 mx-auto tp-icon-block">
+                        <div class="media px-md-2 px-lg-5">
+                            <span class="fa fa-phone fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Free Support</h6>
+                                <p class="mb-0">30 Days Support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 py-3 mx-auto tp-icon-block">
+                        <div class="media px-md-2 px-lg-5">
+                            <span class="fa fa-phone fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">100% Genuine</h6>
+                                <p class="mb-0">High Quality Products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

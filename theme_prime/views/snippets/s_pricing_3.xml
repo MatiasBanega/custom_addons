@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_pricing_3" name="Pricing - 3">
+        <section class="s_pricing_3 pb16 pt16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 p-lg-5 h-100">
+                            <header>
+                                <h5>Beginner</h5>
+                                <div class="s_hr pt16 pb16 text-300">
+                                    <hr class="w-100 mx-auto"/>
+                                </div>
+                                <h2>$ 8.80</h2>
+                            </header>
+                            <p class="mt-4 mb-0">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                            <div class="s_hr pt16 pb16 text-300">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-times text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-times text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-times text-o-color-1"></span> Cras justo odio
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary btn-block">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 p-lg-5 h-100">
+                            <header>
+                                <h5>Professional</h5>
+                                <div class="s_hr pt16 pb16 text-300">
+                                    <hr class="w-100 mx-auto"/>
+                                </div>
+                                <h2>$ 15.80</h2>
+                            </header>
+                            <p class="mt-4 mb-0">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                            <div class="s_hr pt16 pb16 text-300">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-times text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-times text-o-color-1"></span> Cras justo odio
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary btn-block">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="card p-4 p-lg-5 h-100">
+                            <header>
+                                <h5>Business</h5>
+                                <div class="s_hr pt16 pb16 text-300">
+                                    <hr class="w-100 mx-auto"/>
+                                </div>
+                                <h2>$ 21.00</h2>
+                            </header>
+                            <p class="mt-4 mb-0">Morbi tincidunt ultrices fermentum. Suspendisse egestas ipsum eu.</p>
+                            <div class="s_hr pt16 pb16 text-300">
+                                <hr class="w-100 mx-auto"/>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Dapibus ac facilisis
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Vestibulum at eros
+                                </li>
+                                <li class="list-group-item p-1 border-0 bg-transparent">
+                                    <span class="p-1 fa fa-check text-o-color-1"></span> Cras justo odio
+                                </li>
+                            </ul>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary btn-block">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_pricing_3_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_pricing_3 .card'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_pricing_3 .card">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--
+    ============================================================================
+    All Brands
+    ============================================================================
+    -->
+    <template id="all_brands" name="Theme Prime: All Brands">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure" id="oe_structure_all_brands"/>
+                <div class="container py-4 tp-all-brands-page">
+                    <div t-if="not is_disable_grouping" class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between tp-brand-range">
+                                <t t-foreach="grouped_brands" t-as="alphabet">
+                                    <h2 t-if="len(grouped_brands[alphabet])" class="mx-2 mb-0">
+                                        <a class="text-primary" t-att-href="'#brand-' + alphabet" t-esc="alphabet"/>
+                                    </h2>
+                                    <h2 t-else="" class="mx-2 mb-0 text-700" t-esc="alphabet"/>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div t-if="len(grouped_brands[alphabet])" class="col-12 py-3" t-foreach="grouped_brands" t-as="alphabet">
+
+                            <h3 t-if="not is_disable_grouping" t-attf-id="brand-#{alphabet}" t-esc="alphabet"/>
+                            <h3 t-else="">All Brands</h3>
+
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3" t-foreach="grouped_brands[alphabet]" t-as="brand">
+                                    <a class="tp-brand-wrapper d-block border" t-attf-href="/shop?brand=#{brand.id}">
+                                        <div class="row no-gutters">
+                                            <div class="col-4 pl-3 border-right p-3">
+                                                <img class="mx-auto o_image_64_contain" t-attf-src="/web/image/dr.product.brand/#{brand.id}/image"  t-att-alt="brand.name"/>
+                                            </div>
+                                            <div class="col-6 pl-3 py-3 d-flex align-items-start justify-content-center flex-column">
+                                                <h6 t-field="brand.name" class="w-100 text-truncate"></h6>
+                                                <small class="d-block text-body"><t t-esc="brand.product_count"/> Products</small>
+                                            </div>
+                                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                                <button class="btn btn-primary-soft px-2"><i class="dri dri-chevron-right-l"></i></button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!--
+    ============================================================================
+    PWA Offline
+    ============================================================================
+    -->
+    <template id="pwa_offline_page" name="Theme Prime: PWA - Offline Page">
+        <html>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <head>
+                <style>
+                    body {
+                       font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                        color: #3f3d56;
+                    }
+                    h1, h2 {
+                        margin-top: 0px;
+                    }
+                    div.tp-container {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                    }
+                    .tp-logo img {
+                        max-width: 150px;
+                        height: auto;
+                    }
+                    .tp-offline-icon {
+                        width: 60%;
+                        max-width: 350px;
+                        margin: 25px 0px;
+                    }
+                    a.btn {
+                        padding: 12px 26px;
+                        color: #fff;
+                        background: #3f3d56;
+                        text-decoration: none;
+                        font-weight: bold;
+                        display: inline-block;
+
+                    }
+                </style>
+            </head>
+            <body >
+                <div class="tp-container">
+                    <div class="tp-logo">
+                        <img src="/pwa/logo.png"/>
+                    </div>
+                    <div>
+                        <img class="tp-offline-icon" src='/theme_prime/static/src/img/pwa_offline.png' style=""/>
+                    </div>
+                    <h1>
+                        You do not have internet connection !
+                    </h1>
+                    <div>
+                        <a class="btn" href="#" onclick="window.location.reload(true);"> RELOAD </a>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </template>
+
+</odoo>

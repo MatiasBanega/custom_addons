@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_category_4" name="Category - 4">
+        <section class="s_category_4 oe_img_bg oe_custom_bg pt48 pb48" style="background-image: url('/web/image/theme_prime.s_category_4_1');">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                        <div class="py-5 px-4 px-md-5">
+                            <h2 class="mb-4">
+                                Get -50% from Summer Collection
+                            </h2>
+                            <h5>Appear, dry there darkness they're seas.</h5>
+                            <h6 class="text-o-color-1">Use code 4GF5SD</h6>
+                            <div class="pt16">
+                                <a href="/shop" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_gallery_4" name="Gallery - 4">
+        <section class="s_gallery">
+            <div class="container-fluid px-0">
+                <div class="row no-gutters tp-photoswipe-container">
+                   <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_01" alt="Gallery Image 01"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 1</div>
+                                <p class="mt-2 mb-0">Just adding some random string  heresit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_02" alt="Gallery Image 02"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 2</div>
+                                <p class="mt-2 mb-0">Just adding some random string here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_03" alt="Gallery Image 03"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 3</div>
+                                <p class="mt-2 mb-0">Just adding some random string here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_04" alt="Gallery Image 04"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 4</div>
+                                <p class="mt-2 mb-0">Just adding some random string here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_05" alt="Gallery Image 05"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 5</div>
+                                <p class="mt-2 mb-0">Just adding some random string here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 tp-photoswipe-box">
+                        <div class="gallery-image gallery-text-effect">
+                            <img class="img-fluid tp-photoswipe-img" src="/web/image/theme_prime.s_gallery_06" alt="Gallery Image 06"/>
+                            <div class="text-center px-2 py-4 gallery-text-block">
+                                <div class="text-alpha">Fashion card 6</div>
+                                <p class="mt-2 mb-0">Just adding some random string here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

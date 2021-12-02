@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_heading_3" name="Heading - 3">
+        <section class="s_heading_3 pt32 pb32">
+            <div class="container">
+                <div class="row justify-content-center s_nb_column_fixed">
+                    <div class="col-12 col-lg-8 text-center">
+                        <span class="badge badge-primary badge-pill">Discover</span>
+                        <h2 class="mt-3">Featured Products</h2>
+                        <p class="lead">
+                            We add new products every day. Explore our great range of products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

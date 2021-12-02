@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_2" inherit_id="website.layout" name="Footer Style - 2" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt40 pb24">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                <h6>Shop departments</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-50 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <ul class="list-unstyled tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">Athletic Apparel</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sneakers &amp; Athletic</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sunglasses &amp; Eyewear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Jeans</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Swimwear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Clogs &amp; Mules</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Bags</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Footwear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Kidswear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">T-shirts</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Polo T-shirts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                                <h6>Account &amp; other info</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-50 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <ul class="list-unstyled tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">My account</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Your Orders</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Shipping Info</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Delivery data</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#"> Our Policy</a>
+                                    </li>
+                                </ul>
+                                <h6 class="mt-4">About us</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-50 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <ul class="list-unstyled tp-list-arrow">
+                                    <li class="my-2">
+                                        <a href="#">Our Stores</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Locate store</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <h6>Stay informed</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-100 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <div class="s_newsletter_subscribe_form js_subscribe flex-wrap" data-vxml="001" data-list-id="0">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-envelope-o"/>
+                                        </span>
+                                        <input type="email" name="email" class="js_subscribe_email form-control border text-body" placeholder="your email..."/>
+                                    </div>
+                                    <span class="input-group-append mt-2 d-flex-block">
+                                        <a role="button" href="#" class="btn btn-primary js_subscribe_btn w-100" aria-label="Send">
+                                            <i class="fa fa-send-o"/> Subscribe*
+                                        </a>
+                                        <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none w-100" disabled="disabled">Thanks</a>
+                                    </span>
+                                </div>
+                                <div>
+                                    <small> * Subscribe to our newsletter to receive early discount offers and new products info. </small>
+                                </div>
+
+                                <h6 class="mt-4">Download our apps</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-100 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <div class="d-flex">
+                                    <a href="#" class="mr-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-1.png"/>
+                                    </a>
+                                    <a href="#" class="ml-2">
+                                        <img class="img img-fluid" src="/theme_prime/static/src/img/store/app-store-2.png"/>
+                                    </a>
+                                </div>
+
+                                <h6 class="mt-4">We accept</h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="w-100 mr-auto s_hr_2px" style="border-top-width: 1px !important; border-top-color: rgba(255, 255, 255, 0.25) !important;"/>
+                                </div>
+                                <ul class="list-inline tp-payment-icons">
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/visa.png" alt="Visa"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/american_express.png" alt="American Express"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/maestro.png" alt="Maestro"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/jcb.png" alt="JCB"/>
+                                    </li>
+                                    <li class="list-inline-item my-1">
+                                        <img src="/theme_prime/static/src/img/payment/discover.png" alt="Discover"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <section class="s_icon_block_12 pt16 pb16">
+                <div class="container">
+                    <div class="row justify-content-center p-3 s_nb_column_fixed">
+                        <div class="col-12 col-sm-6 col-lg-3 s_col_no_bgcolor tp-icon-block text-center">
+                            <span class="fa fa-2x fa-rocket rounded-circle text-o-color-1 m-3"></span>
+                            <h6>Free Delivery</h6>
+                            <p>All oders over $100</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 s_col_no_bgcolor tp-icon-block text-center">
+                            <span class="fa fa-2x fa-thumbs-up rounded-circle text-o-color-1 m-3"></span>
+                            <h6>Quality Products</h6>
+                            <p>100% Genuine product</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 s_col_no_bgcolor tp-icon-block text-center">
+                            <span class="fa fa-2x fa-phone rounded-circle text-o-color-1 m-3"></span>
+                            <h6>Customer Support</h6>
+                            <p>Friendly 24/7 customer support</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 s_col_no_bgcolor tp-icon-block text-center">
+                            <span class="fa fa-2x fa-undo rounded-circle text-o-color-1 m-3"></span>
+                            <h6>Easy Returns</h6>
+                            <p>No Questions Asked</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container py-2">
+                <div class="row justify-content-between">
+                    <div class="col-lg-auto text-center text-lg-left">
+                        <div class="my-2">Copyright &amp;copy; MyCompany</div>
+                    </div>
+                    <div class="col-lg-auto text-center">
+                        <ul class="list-inline my-2">
+                            <li class="list-inline-item">
+                                <a href="/website/social/facebook">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/twitter">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/linkedin">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/youtube">
+                                    <span class="fa fa-youtube"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/instagram">
+                                    <span class="fa fa-instagram"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="/website/social/github">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-auto text-center text-lg-right" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

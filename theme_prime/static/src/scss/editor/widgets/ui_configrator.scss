@@ -1,0 +1,69 @@
+$d-light-color-config-dialog: #b8c1d1;
+
+.d_ui_configurator_widget {
+    .d_configurator_btn {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        margin-left: 8px;
+        margin-top: 15px;
+        background-color: #f1f3fb;
+        width: 80px;
+        height: 85px;
+        border-radius: 2px;
+        border-top: 3px solid transparent;
+        &.d_active {
+            border-top: 3px solid o-color('primary');
+            box-shadow: 11px 3px 4px rgb(255, 255, 255), -13px 3px 4px rgb(255, 255, 255), 0 -8px 16px rgba(o-color('primary'), 0.2);
+            .d-btn-label {
+                color: o-color('primary');
+                font-size: 11px;
+            }
+            .d-btn-icon {
+                .fa,.dri {
+                    color: o-color('primary');
+                }
+            }
+        }
+        .d-btn-label {
+            color: $d-light-color-config-dialog;
+            font-size: 11px;
+        }
+        .d-btn-icon {
+            .fa,.dri {
+                color: $d-light-color-config-dialog;
+            }
+        }
+        &.d_disabled {
+            opacity: 0.7;
+            .d-disabled-warning {
+                @include o-position-absolute($bottom: 2px, $left: 33px);
+            }
+        }
+    }
+    .d-range-slider {
+        .d-range-slider-indicator-wrapper {
+            margin-top: -10px;
+            .d-range-slider-indicator {
+                span, small {
+                    width: 10px;
+                    color: $d-light-color-config-dialog;
+                }
+            }
+        }
+    }
+    .d-snippet-preview {
+        padding: 19px;
+        // background-color: #f1f3fb;
+        .card {
+            .d-product-img {
+                max-height: 365px;
+                width: 100%;
+                object-fit: cover;
+            }
+            background-color: white;
+            padding: 0;
+            border: none;
+        }
+    }
+}

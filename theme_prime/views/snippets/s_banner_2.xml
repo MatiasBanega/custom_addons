@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_2" name="Banner - 2">
+        <section class="s_banner_2 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="position-relative tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_banner_2_1" class="img img-fluid" alt="Banner Image 01"/>
+                            <div class="tp-banner-content">
+                                <h4>Women Special</h4>
+                                <a href="#" class="btn btn-outline-dark mt-3">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="position-relative tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_banner_2_2" class="img img-fluid" alt="Banner Image 02"/>
+                            <div class="tp-banner-content">
+                                <h4>Men Special</h4>
+                                <a href="#" class="mt-3 btn btn-outline-dark">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="position-relative tp-animation-scale">
+                            <img src="/web/image/theme_prime.s_banner_2_3" class="img img-fluid" alt="Banner Image 03"/>
+                            <div class="tp-banner-content">
+                                <h4>Kids Special</h4>
+                                <a href="#" class="mt-3 btn btn-outline-dark">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

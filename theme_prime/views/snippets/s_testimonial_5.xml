@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_testimonial_5" name="Testimonial - 5">
+        <section class="s_testimonial_5 pb16 pt16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 py-3">
+                        <blockquote class="lead font-weight-light p-4 position-relative shadow-sm border-primary">
+                            "Proin a nisi id turpis pharetra fermentum ac eu sem. Morbi ullamcorper mi quis porttitor interdum. Maecenas luctus varius interdum. Duis commodo tincidunt velit non bibendum. Phasellus placerat sodales nunc."
+                        </blockquote>
+                        <div class="media align-items-center mt-5">
+                            <img class="img img-fluid tp-author-image mr-3 rounded-circle img-thumbnail" src="/web/image/theme_prime.s_testimonial_author_01" alt="Author Image 01"></img>
+                            <div class="media-body">
+                                <h5 class="mb-0">John Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <blockquote class="lead font-weight-light p-4 position-relative shadow-sm border-primary">
+                            "Fusce sagittis ac orci sed tristique. Suspendisse a lobortis augue. Maecenas scelerisque varius mattis. Sed auctor fermentum libero, sed ullamcorper elit laoreet venenatis. Cras ac ex enim. Suspendisse sodales volutpat."
+                        </blockquote>
+                        <div class="media align-items-center mt-5">
+                            <img class="img img-fluid tp-author-image mr-3 rounded-circle img-thumbnail" src="/web/image/theme_prime.s_testimonial_author_02" alt="Author Image 02"></img>
+                            <div class="media-body">
+                                <h5 class="mb-0">Vivamus Tem</h5>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

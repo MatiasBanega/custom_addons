@@ -1,0 +1,15 @@
+.s_counters {
+    .tp-circle-block {
+        height: 150px;
+        width: 150px;
+        &:after {
+            content: '';
+            @include o-position-absolute($top: -9px, $right: -9px, $bottom: -9px, $left: -9px);
+            display: block;
+            border-radius: inherit;
+            border-width: 1px;
+            border-style: solid;
+            border-color: inherit;
+        }
+    }
+}

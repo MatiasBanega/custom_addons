@@ -1,0 +1,8 @@
+.s_offer_4 {
+    .banner-text {
+        @include o-position-absolute($top: 20%, $left: 50%);
+        width: 100%;
+        transform: translate(-50% , -20%);
+        -webkit-transform: translate(-50%, -20%);
+    }
+}

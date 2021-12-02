@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_6" name="Banner - 6">
+        <section class="s_banner_6 pt16 pb16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-12 col-lg-6 py-3">
+                        <div class="row no-gutters s_nb_column_fixed">
+                            <div class="col-12 col-sm-6 bg-200 pt80 pb80 tp-banner-sidebar">
+                                <div class="px-4 text-center">
+                                    <h4>Featured</h4>
+                                    <h4 class="text-o-color-1">Products</h4>
+                                    <p class="mt16">Just some random content to break this paragraph into two line.</p>
+                                    <div class="s_btn pt16" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Discover Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-image-container col-12 col-sm-6 oe_img_bg oe_custom_bg" style="background-image: url('/web/image/theme_prime.s_banner_6_1')"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 py-3">
+                        <div class="row no-gutters s_nb_column_fixed">
+                            <div class="col-12 col-sm-6 bg-200 pt80 pb80 tp-banner-sidebar">
+                                <div class="px-4 text-center">
+                                    <h4>Fresh Arrival</h4>
+                                    <h4 class="text-o-color-1">Products</h4>
+                                    <p class="mt16">Just some random content to break this paragraph into two line.</p>
+                                    <div class="s_btn pt16" data-name="Buttons">
+                                        <a href="/shop" class="btn btn-primary">Discover Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-image-container col-12 col-sm-6 oe_img_bg oe_custom_bg" style="background-image: url('/web/image/theme_prime.s_banner_6_2')"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_banner_6_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_banner_6 .tp-banner-sidebar'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_banner_6 .tp-banner-sidebar">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_banner_6 .tp-image-container'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

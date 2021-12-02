@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_team_2" name="Team - 2">
+        <section class="s_team_2 pb16 pt16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 py-3">
+                        <div class="card border-0 h-100 bg-transparent">
+                            <img src="/web/image/theme_prime.s_team_01" class="card-img-top" alt="Team Image 01"/>
+                            <div class="py-4">
+                                <div class="text-o-color-1 text-uppercase small">
+                                    Partner
+                                </div>
+                                <h5 class="card-title mt-1 mb-0">Jane Doe</h5>
+                                <p class="mt-1">Praesent ornare mi quis</p>
+                                <div class="s_hr pt4 pb4 text-300">
+                                    <hr class="w-100 mx-auto" style="border-top-style: dashed !important; border-top-width: 1px !important;"/>
+                                </div>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="list-item"><span class="fa fa-envelope p-1"/> information@mail.com</li>
+                                    <li class="list-item"><span class="fa fa-phone p-1"/> +12 345 6789 101</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3">
+                        <div class="card border-0 h-100 bg-transparent">
+                            <img src="/web/image/theme_prime.s_team_02" class="card-img-top" alt="Team Image 02"/>
+                            <div class="py-4">
+                                <div class="text-o-color-1 text-uppercase small">
+                                    Office manager
+                                </div>
+                                <h5 class="card-title mt-1 mb-0">Jane Doe</h5>
+                                <p class="mt-1">Praesent ornare mi quis</p>
+                                <div class="s_hr pt4 pb4 text-300">
+                                    <hr class="w-100 mx-auto" style="border-top-style: dashed !important; border-top-width: 1px !important;"/>
+                                </div>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="list-item"><span class="fa fa-envelope p-1"/> information@mail.com</li>
+                                    <li class="list-item"><span class="fa fa-phone p-1"/> +12 345 6789 101</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3">
+                        <div class="card border-0 h-100 bg-transparent">
+                            <img src="/web/image/theme_prime.s_team_03" class="card-img-top" alt="Team Image 03"/>
+                            <div class="py-4">
+                                <div class="text-o-color-1 text-uppercase small">
+                                    Partner
+                                </div>
+                                <h5 class="card-title mt-1 mb-0">John Doe</h5>
+                                <p class="mt-1">Praesent ornare mi quis</p>
+                                <div class="s_hr pt4 pb4 text-300">
+                                    <hr class="w-100 mx-auto" style="border-top-style: dashed !important; border-top-width: 1px !important;"/>
+                                </div>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="list-item"><span class="fa fa-envelope p-1"/> information@mail.com</li>
+                                    <li class="list-item"><span class="fa fa-phone p-1"/> +12 345 6789 101</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 py-3">
+                        <div class="card border-0 h-100 bg-transparent">
+                            <img src="/web/image/theme_prime.s_team_04" class="card-img-top" alt="Team Image 04"/>
+                            <div class="py-4">
+                                <div class="text-o-color-1 text-uppercase small">
+                                    Receptionist
+                                </div>
+                                <h5 class="card-title mt-1 mb-0">Jane Doe</h5>
+                                <p class="mt-1">Praesent ornare mi quis</p>
+                                <div class="s_hr pt4 pb4 text-300">
+                                    <hr class="w-100 mx-auto" style="border-top-style: dashed !important; border-top-width: 1px !important;"/>
+                                </div>
+                                <ul class="list-unstyled mb-0 mt-3">
+                                    <li class="list-item"><span class="fa fa-envelope p-1"/> information@mail.com</li>
+                                    <li class="list-item"><span class="fa fa-phone p-1"/> +12 345 6789 101</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

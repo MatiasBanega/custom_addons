@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<templates>
+
+    <t t-name="theme_prime.d_selection_btns">
+        <div class="d-flex btn-group btn-group-toggle w-50 mb-3 d_selection_type_btn_wrapper" data-toggle="buttons">
+            <t t-foreach="widget.SelectionBtns" t-as="btn">
+                <label t-attf-class="btn p-2 border rounded-0 d_selection_type_btn #{btn.active ? 'active' : ''}" t-att-data-type="btn.type">
+                    <input type="radio" name="options" id="option1" checked=""/><i class="fa fa-check-circle"/> <t t-esc="btn.label"/>
+                </label>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="theme_prime.products_widget">
+    <div t-attf-class="d_products_widget #{widget.noSwicher and 'd_products_no_swicher' or ''}" >
+        <t t-if="!widget.noSwicher" t-call="theme_prime.d_selection_btns"/>
+        <t t-set="products" t-value="widget.products"/>
+        <div t-attf-class="d_body_content d_advance_selection_body #{widget.activeSelectionType === 'advance' ? '' : 'd-none'}"/>
+        <div t-attf-class="d_body_content d_manual_selection_body #{widget.activeSelectionType === 'manual' ? '' : 'd-none'}">
+            <div class="d_product_selector_title">
+                <h5 class="mt-2">
+                    <i class="fa fa-shopping-cart text-primary"></i> Products    <small class="text-muted">(Drag &amp; Drop items to sort)</small>
+                </h5>
+                <hr class="mt-0"/>
+            </div>
+            <ul class="d_sortable_block list-unstyled">
+                <!-- productIDs for the first time when open dialog -->
+                <t t-if="widget.productIDs.length &amp;&amp; products">
+                    <t t-call="theme_prime.products_list"/>
+                </t>
+            </ul>
+            <div class="container d-snippet-config-placeholder">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="/theme_prime/static/src/img/content/placeholder.png" class="img img-fluid"/>
+                        <h5>No products added.</h5>
+                        <div>Click on bottom-left corner button to add product.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt32">
+                <button class="btn btn-primary d_add_product">Add Product</button>
+            </div>
+        </div>
+    </div>
+    </t>
+
+    <t t-name="theme_prime.products_list">
+        <t t-foreach="products" t-as="product">
+            <li t-att-data-product-id="product.id" class="container mt-2 mb-2 d_list_item">
+                <div class="row border no-gutters">
+                    <div class="d_sortable_item_handel justify-content-center d-flex align-items-center">
+                        <span class="text-primary fa fa-ellipsis-v"/>
+                        <span class="text-primary fa fa-ellipsis-v"/>
+                    </div>
+                    <div class="col-md-2 p-0 my-auto">
+                        <img t-att-src="product.img_small" class="d_thumb_img img w-100"/>
+                    </div>
+                    <div class="col-md-10 p-2 border-left">
+                        <h6 class="text-700 mb-1 d-inline-block" t-esc="product.name"/>
+                        <!-- TO-DO badge original color -->
+                        <span t-if="product.label" class="ml-3 badge badge-pill badge-alpha" t-esc="product.label"/>
+                        <div>
+                            <small class="text-600 font-weight-bold mb-1" t-raw="product.price"/>
+                             <small t-if="product.has_discounted_price" class="text-danger" style="text-decoration: line-through; white-space: nowrap;" t-raw="product.list_price"/>
+                        </div>
+                        <!-- w-75 just for droggol touch :) -->
+                        <small t-if="product.short_description" t-attf-class="d-block text-truncate text-600 #{!product.website_published ? 'w-75' : ''}" t-esc="product.short_description"/>
+                        <span class="dri dri-cross-l d_remove_item border text-center" data-toggle="tooltip" title="Remove"/>
+                        <span t-if="!product.website_published" class="badge badge-pill badge-danger d_unpublished_label" data-toggle="tooltip" data-html="true" t-attf-title="#{product.name} is not published so it will be not visible in snippet.">
+                            <span class="fa fa-exclamation-triangle"/> UNPUBLISHED
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </t>
+    </t>
+
+    <div t-name="d_select2_products_dropdown">
+        <div class="row no-gutters border-bottom" style="min-height:75px;">
+            <div class="col-md-2 p-0 my-auto">
+                <img class="card-img o_image_64_contain" t-att-src="data.img_small"/>
+            </div>
+            <div class="col-md-10 p-2 border-left">
+                <h6 class="text-700 mb-1" t-esc="data.text"/>
+                <small class="d-block text-600 font-weight-bold mb-1" t-raw="data.price"/>
+                <small t-if="data.description" class="d-block w-75 text-truncate text-600" t-esc="data.description"/>
+            </div>
+        </div>
+    </div>
+
+</templates>

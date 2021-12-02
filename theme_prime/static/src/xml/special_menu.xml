@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+     <t t-extend="website.contentMenu.dialog.submenu">
+        <t t-jquery="i.fa-home" t-operation="after">
+            <span t-if="submenu.fields['dr_is_special_menu']" class="badge badge-info dr_special_menu ml-2" title="Click to define as special Menu" style="cursor: pointer;">
+                <span class="fa fa-star"/>
+            </span>
+            <span t-if="!submenu.fields['dr_is_special_menu']" class="badge dr_special_menu ml-2" title="Click to define as special Menu" style="cursor: pointer;">
+                <span class="fa fa-star"/>
+            </span>
+        </t>
+    </t>
+
+</templates>

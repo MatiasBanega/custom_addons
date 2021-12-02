@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_banner_8" name="Banner - 8">
+        <section class="s_banner_8 pt16 pb16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="tp-animation-layla">
+                            <a href="#">
+                                <img src="/web/image/theme_prime.s_banner_8_1" class="w-100" alt="Banner Image 01"/>
+                            </a>
+                            <div class="tp-banner-content bg-white-75 rounded">
+                                <h5 class="text-center mb-0">Mens</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="tp-animation-layla">
+                            <a href="#">
+                                <img src="/web/image/theme_prime.s_banner_8_2" class="w-100" alt="Banner Image 02"/>
+                            </a>
+                            <div class="tp-banner-content bg-white-75 rounded">
+                                <h5 class="text-center mb-0">Womens</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <div class="tp-animation-layla">
+                            <a href="#">
+                                <img src="/web/image/theme_prime.s_banner_8_3" class="w-100" alt="Banner Image 03"/>
+                            </a>
+                            <div class="tp-banner-content bg-white-75 rounded">
+                                <h5 class="text-center mb-0">Kids</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

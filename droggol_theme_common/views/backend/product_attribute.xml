@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_attribute_view_form_inherit_droggol_theme_common" model="ir.ui.view">
+        <field name="name">product.attribute.view.form.inherit</field>
+        <field name="model">product.attribute</field>
+        <field name="inherit_id" ref="product.product_attribute_view_form"/>
+        <field name="arch" type="xml">
+            <field name="create_variant" position="after">
+                <field name="dr_is_hide_shop_filter"/>
+                <field name="dr_is_show_shop_search"/>
+            </field>
+            <xpath expr="//field[@name='value_ids']/tree/field[last()]" position="after">
+                <field name="dr_image" attrs="{'column_invisible': [('parent.display_type', '!=', 'radio_image')]}" widget="image"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_attribute_value_view_form_inherit_droggol_theme_common" model="ir.ui.view">
+        <field name="name">product.template.attribute.value.view.form.inherit</field>
+        <field name="model">product.template.attribute.value</field>
+        <field name="inherit_id" ref="product.product_template_attribute_value_view_form"/>
+        <field name="arch" type="xml">
+            <field name="html_color" position="after">
+                <field name="dr_image" widget="image" attrs="{'invisible': [('display_type', '!=', 'radio_image')]}"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

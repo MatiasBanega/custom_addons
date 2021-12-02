@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_team_3" name="Team - 3">
+        <section class="s_team_3 pb16 pt16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-4 py-3">
+                        <div class="card h-100">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="media p-2">
+                                        <img src="/web/image/theme_prime.s_team_square_01" class="img img-fluid tp-team-avatar mr-3" alt="Team Image 01"/>
+                                        <div class="media-body">
+                                            <h5 class="card-title mb-0">Jane Doe</h5>
+                                            <div class="text-o-color-1">
+                                                Partner
+                                            </div>
+                                            <ul class="list-unstyled mt-2 mb-0">
+                                                <li class="list-item"><span class="fa fa-envelope mr-1"></span> information@mail.com</li>
+                                                <li class="list-item"><span class="fa fa-phone mr-1"></span> +12 345 6789 101</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 py-3">
+                        <div class="card h-100">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="media p-2">
+                                        <img src="/web/image/theme_prime.s_team_square_02" class="img img-fluid tp-team-avatar mr-3" alt="Team Image 02"/>
+                                        <div class="media-body">
+                                            <h5 class="card-title mb-0">Jane Doe</h5>
+                                            <div class="text-o-color-1">
+                                                Office manager
+                                            </div>
+                                            <ul class="list-unstyled mt-2 mb-0">
+                                                <li class="list-item"><span class="fa fa-envelope mr-1"></span> information@mail.com</li>
+                                                <li class="list-item"><span class="fa fa-phone mr-1"></span> +12 345 6789 101</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 py-3">
+                        <div class="card h-100">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="media p-2">
+                                        <img src="/web/image/theme_prime.s_team_square_03" class="img img-fluid tp-team-avatar mr-3" alt="Team Image 03"/>
+                                        <div class="media-body">
+                                            <h5 class="card-title mb-0">Jane Doe</h5>
+                                            <div class="text-o-color-1">
+                                                Receptionist
+                                            </div>
+                                            <ul class="list-unstyled mt-2 mb-0">
+                                                <li class="list-item"><span class="fa fa-envelope mr-2"></span> information@mail.com</li>
+                                                <li class="list-item"><span class="fa fa-phone mr-2"></span> +12 345 6789 101</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_team_3_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_team_3 .media'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_team_3 .media">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

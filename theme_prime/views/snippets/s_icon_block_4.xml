@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_4" name="Icon Block - 4">
+        <section class="s_icon_block_4 pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-rocket fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Creative ideas</h5>
+                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-magic fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Excellent features</h5>
+                        <p>Suspendisse potenti. Cras a dui et nisl egestas ornare eu quis odio. Sed bibendum in ante vel accumsan.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-laptop fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Fully responsive</h5>
+                        <p>In hac habitasse platea dictumst. Praesent cursus congue felis, nec pellentesque nulla ornare sed.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-book fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Extensive documentation</h5>
+                        <p>Aenean varius ligula vel augue condimentum scelerisque. In a urna at tortor tincidunt gravida sit.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-leaf fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Modern design</h5>
+                        <p>Proin purus dui, feugiat id ipsum eu, varius ornare ex. Mauris elit dolor, consectetur ac accumsan eu.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 py-3">
+                        <span class="fa fa-code fa-2x rounded bg-o-color-1 tp-icon-block-icon"/>
+                        <h5 class="mt-4">Clean code</h5>
+                        <p>Nam blandit arcu vel mi mollis faucibus. Nam justo velit, maximus viverra volutpat eu, hendrerit et velit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

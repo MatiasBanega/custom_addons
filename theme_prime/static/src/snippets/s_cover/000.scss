@@ -1,0 +1,29 @@
+.s_cover_4 {
+    width: 100%;
+    vertical-align: middle;
+    background-position: 100%;
+    .tp-cover-icon-container {
+        @include o-position-absolute($right: 0%, $bottom: 30px, $left: 0%);
+        z-index: 1;
+        border-radius: $border-radius;
+    }
+}
+
+.s_cover_5_sub_block {
+    z-index: 8;
+    @include o-position-absolute();
+    @include media-breakpoint-up(md) {
+        bottom: 90px;
+    }
+    @include media-breakpoint-up(xl) {
+        bottom: 30px;
+        margin-top: -8rem;
+    }
+    .tp-banner-text {
+        @include o-position-absolute($right: 30px, $bottom: 30px, $left: 30px);
+        background-color: rgba(o-color('white'), 0.8);
+    }
+    .tp-img-block {
+        max-height: 300px;
+    }
+}

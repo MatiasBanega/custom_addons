@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_subscribe_3" name="Subscribe - 3">
+        <section class="s_subscribe_3 pt32 pb32">
+            <div class="container">
+                <div class="row text-center s_nb_column_fixed">
+                    <div class="col-12">
+                        <h3>Join Our Newsletter Now</h3>
+                        <p>Sign up for all the news about our latest arrivals and get an exclusive early access shopping.</p>
+                        <div class="s_newsletter_subscribe_form js_subscribe my-3 mx-auto" style="max-width:400px;" data-vxml="001" data-list-id="0">
+                            <div class="input-group">
+                                <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+                                <span class="input-group-append">
+                                    <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><i class="fa fa-send-o"/></a>
+                                    <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="my-3">OR</div>
+                        <h3>Follow Us</h3>
+                        <p>Be the first to find out all the latest news, products and trends.</p>
+                        <div class="s_share text-center" data-name="Social Media">
+                            <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                <i class="fa fa-facebook m-1 rounded-circle shadow-sm"/>
+                            </a>
+                            <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                <i class="fa fa-twitter m-1 rounded-circle shadow-sm"/>
+                            </a>
+                            <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                <i class="fa fa-linkedin m-1 rounded-circle shadow-sm"/>
+                            </a>
+                            <a href="/website/social/github" class="s_share_github" target="_blank">
+                                <i class="fa fa-github m-1 rounded-circle shadow-sm"/>
+                            </a>
+                            <a href="/website/social/youtube" class="s_share_youtube" target="_blank">
+                                <i class="fa fa-youtube m-1 rounded-circle shadow-sm"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

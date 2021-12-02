@@ -1,0 +1,43 @@
+.s_team_3 .tp-team-avatar {
+    height: 100px;
+    width: 100px;
+}
+
+.s_team_4 {
+    .card-img-top {
+        height: 150px;
+        width: 150px;
+    }
+    .tp-team-social-icon {
+        @include tp-icon-center(40px);
+        border-radius: 50%;
+        border: 1px solid $card-border-color;
+        cursor: pointer;
+        display: block;
+        &:hover {
+            background-color: o-color('300');
+        }
+    }
+}
+
+.s_team_5 {
+    .tp-team-card {
+        overflow: initial;
+        margin-top: 3rem;
+    }
+    .tp-team-avatar {
+        height: 96px;
+        width: 96px;
+        margin-top: -3rem;
+    }
+    .tp-team-social-icon {
+        @include tp-icon-center(40px);
+        border-radius: 50%;
+        border: 1px solid $card-border-color;
+        cursor: pointer;
+        display: block;
+        &:hover {
+            background-color: o-color('300');
+        }
+    }
+}

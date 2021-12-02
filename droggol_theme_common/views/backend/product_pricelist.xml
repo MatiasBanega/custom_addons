@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_pricelist_item_form_view_inherit_droggol_theme_common" model="ir.ui.view">
+        <field name="name">product.pricelist.item.form.inherit.droggol.theme.common</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_end']" position="after">
+                <field name="dr_offer_msg" attrs="{'invisible': [('date_end', '=', False)], 'required': [('date_end', '!=', False)]}"/>
+                <field name="dr_offer_finish_msg" attrs="{'invisible': [('date_end', '=', False)], 'required': [('date_end', '!=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_pricelist_view_inherit_droggol_theme_common" model="ir.ui.view">
+        <field name="name">product.pricelist.form.inherit.droggol.theme.common</field>
+        <field name="model">product.pricelist</field>
+        <field name="inherit_id" ref="product.product_pricelist_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='item_ids']/tree/field[@name='date_end']" position="after">
+                <field name="dr_offer_msg" attrs="{'invisible': [('date_end', '=', False)], 'required': [('date_end', '!=', False)]}"/>
+                <field name="dr_offer_finish_msg" attrs="{'invisible': [('date_end', '=', False)], 'required': [('date_end', '!=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

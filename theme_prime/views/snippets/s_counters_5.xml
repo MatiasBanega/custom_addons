@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_counters_5" name="Counters - 5">
+        <section class="s_counters_4 s_counters pt32 pb32">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-sm-6 col-md-3 py-3 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center rounded-circle border-dark bg-black-50 tp-circle-block position-relative">
+                            <div class="align-self-center">
+                                <h2>1200</h2>
+                                <h5>Customers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-3 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center rounded-circle border-dark bg-black-50 tp-circle-block position-relative">
+                            <div class="align-self-center">
+                                <h2>237</h2>
+                                <h5>New Ideas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-3 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center rounded-circle border-dark bg-black-50 tp-circle-block position-relative">
+                            <div class="align-self-center">
+                                <h2>1340</h2>
+                                <h5>Happy Clients</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 py-3 d-flex justify-content-center">
+                        <div class="d-flex justify-content-center rounded-circle border-dark bg-black-50 tp-circle-block position-relative">
+                            <div class="align-self-center">
+                                <h2>8000</h2>
+                                <h5>Products</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

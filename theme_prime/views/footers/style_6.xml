@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_footer_style_6" inherit_id="website.layout" name="Footer Style - 6" active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="tp-newsletter-block">
+                    <div class="container pt32 pb32">
+                        <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                            <div class="col-md-8 align-self-center">
+                                <h3 class="mb-0">Subscribe to our weekly newsletter</h3>
+                            </div>
+                            <div class="col-md-4 align-self-center">
+                                <div class="s_newsletter_subscribe_form js_subscribe" data-vxml="001" data-list-id="0">
+                                    <div class="input-group">
+                                        <input type="email" name="email" class="js_subscribe_email form-control border text-body" placeholder="your email..."/>
+                                        <span class="input-group-append">
+                                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><i class="fa fa-send-o"/></a>
+                                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_text_block pt48 pb24">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 mb-3">
+                                <a href="/" class="o_footer_logo logo">
+                                    <img src="/website/static/src/img/website_logo.png" class="img-fluid" aria-label="Logo of MyCompany" title="MyCompany" role="img"/>
+                                </a>
+                                <div class="s_share tp-followus-icons mt-4" data-name="Social Media">
+                                    <h5 class="s_share_title d-none">Follow us</h5>
+                                    <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                        <i class="fa fa-facebook rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                        <i class="fa fa-twitter rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                        <i class="fa fa-linkedin rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/whatsapp" class="s_share_whatsapp" target="_blank">
+                                        <i class="fa fa-whatsapp rounded-circle shadow-sm"/>
+                                    </a>
+                                    <a href="/website/social/pinterest" class="s_share_pinterest" target="_blank">
+                                        <i class="fa fa-pinterest rounded-circle shadow-sm"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-3">
+                                <h6>
+                                    Categories
+                                </h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="border-primary s_hr_solid w-25 mr-auto s_hr_2px"/>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="my-2">
+                                        <a href="#">Athletic Apparel</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sneakers &amp; Athletic</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Sunglasses &amp; Eyewear</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Jeans</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Swimwear</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-3">
+                                <h6>
+                                    Account Info
+                                </h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="border-primary s_hr_solid w-25 mr-auto s_hr_2px"/>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="my-2">
+                                        <a href="#">Your account</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Refunds &amp; replacements</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Order tracking</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Delivery info</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Taxes &amp; fees</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-3">
+                                <h6>
+                                    Useful Links
+                                </h6>
+                                <div class="s_hr pt0 pb8" data-name="Separator">
+                                    <hr class="border-primary s_hr_solid w-25 mr-auto s_hr_2px"/>
+                                </div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="my-2">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Community</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Forums</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href="#">Pricing and Plans</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-3 mb-3">
+                                <h6>About Us</h6>
+                                <div class="s_hr pt0 pb8" style="width:60%" data-name="Separator">
+                                    <hr class="border-primary s_hr_solid w-25 mr-auto s_hr_2px"/>
+                                </div>
+                                <p>
+                                    We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.
+                                </p>
+                                <p>
+                                    Our products are designed for small to medium size companies willing to optimize their performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+            <attribute name="class" add="tp-custom-copyright" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_footer_copyright')]/div[hasclass('container')]" position="after">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-auto text-center text-md-left">
+                        <div class="my-2">
+                            Copyright &amp;copy; MyCompany
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto text-center text-md-right" t-if="(len(languages) &gt; 1 or (website and (editable or translatable))) or (website_sale_pricelists and len(website_sale_pricelists)&gt;1)">
+                        <ul class="list-inline my-2">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

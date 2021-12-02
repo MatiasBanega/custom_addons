@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="template_header_style_1" inherit_id="website.layout" name="Header Style - 1" active="False">
+        <xpath expr="//header//nav" position="replace">
+            <div class="tp-preheader">
+                <div class="container">
+                    <div class="row align-items-center justify-content-lg-between justify-content-center">
+                        <div class="col-auto py-3">
+                            <div class="s_share no_icon_color" data-name="Social Media">
+                                <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                    <i class="fa fa-facebook m-1"/>
+                                </a>
+                                <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                    <i class="fa fa-twitter m-1"/>
+                                </a>
+                                <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin m-1"/>
+                                </a>
+                                <a href="/website/social/github" class="s_share_github" target="_blank">
+                                    <i class="fa fa-github m-1"/>
+                                </a>
+                                <a href="/website/social/youtube" class="s_share_youtube" target="_blank">
+                                    <i class="fa fa-youtube m-1"/>
+                                </a>
+                                <a href="/website/social/instagram" class="s_share_instagram" target="_blank">
+                                    <i class="fa fa-instagram m-1"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-auto py-3 d-none d-lg-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="tel:1 (650) 691-3277"><i class="fa fa-1x fa-fw fa-phone"/> 1 (650) 691-3277</a></li>
+                                <li class="list-inline-item"><a href="mailto:info@yourcompany.example.com"><i class="fa fa-1x fa-fw fa-envelope"/> info@yourcompany.example.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto py-3 d-none d-lg-block">
+                            <t t-call="theme_prime.component_language_pricelist"/>
+                        </div>
+                        <div class="col-auto py-3 d-none d-lg-block">
+                            <ul class="list-inline mb-0 d-flex align-items-center tp-account-info">
+                                <t t-call="theme_prime.component_account_info"/>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+                <div id="top_menu_container" class="container justify-content-between">
+                    <!-- Navbar Toggler -->
+                    <t t-call="theme_prime.component_navbar_toggler"/>
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand"/>
+                    <!-- Account Info -->
+                    <t t-call="theme_prime.component_navbar_mobile_account_info"/>
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1 justify-content-end'"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </nav>
+        </xpath>
+    </template>
+
+</odoo>

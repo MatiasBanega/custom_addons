@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_pricing_4" name="Pricing - 4">
+        <section class="s_pricing_4 pb16 pt16">
+            <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-6 py-3">
+                        <div class="media align-items-center tp-pricing-block border">
+                            <div class="p-4 mr-3">
+                                <h2 class="text-o-color-1 mb-0"><b>$19.00</b></h2>
+                                <p>per month</p>
+                                <a href="#" class="btn btn-primary mt-2">Purchase</a>
+                            </div>
+                            <div class="p-4">
+                                <h5>Basic Pass</h5>
+                                <p class="mb-0">
+                                    Ut ac pellentesque tortor. Sed fringilla nibh vel urna porttitor feugiat sit amet ac ex. Duis ut mattis est, eget venenatis leo. Sed et facilisis leo. Class aptent taciti sociosqu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <div class="media align-items-center tp-pricing-block border">
+                            <div class="p-4 mr-3">
+                                <h2 class="text-o-color-1 mb-0"><b>$48.99</b></h2>
+                                <p>per month</p>
+                                <a href="#" class="btn btn-primary mt-2">Purchase</a>
+                            </div>
+                            <div class="p-4">
+                                <h5>Advanced Pass</h5>
+                                <p class="mb-0">
+                                    Vivamus at tempor arcu. Vestibulum fermentum facilisis dui, vitae iaculis purus accumsan quis. Quisque sit amet dignissim justo. Nullam ac sodales lorem, id volutpat arcu. Sed justo neque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_pricing_4_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <t t-call="web_editor.snippet_options_background_options">
+                <t t-set="selector" t-value="'.s_pricing_4 .tp-pricing-block'"/>
+                <t t-set="with_colors" t-value="True"/>
+                <t t-set="with_images" t-value="True"/>
+                <t t-set="with_color_combinations" t-value="True"/>
+            </t>
+            <div data-js="Box" data-selector=".s_pricing_4 .tp-pricing-block">
+                <t t-call="website.snippet_options_border_widgets"/>
+                <t t-call="website.snippet_options_shadow_widgets"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

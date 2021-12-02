@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_call_to_action_5" name="Call To Action - 5">
+        <section class="s_call_to_action_5 pt56 pb56">
+           <div class="container">
+                <div class="row align-items-center s_nb_column_fixed">
+                    <div class="col-lg-3 mb-3 mb-lg-0">
+                        <img class="img-fluid" src="/web/image/theme_prime.s_call_to_action_5_1" alt="CTA Image 01"/>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2>Need to do calculations?</h2>
+                        <p class="lead">We are the creative team of theme prime. No one actually read this so let me write any thing here until the content is long enough to break this lines in to multiple lines.</p>
+                    </div>
+                    <div class="col-lg-2">
+                      <a class="btn btn-primary" href="/shop">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

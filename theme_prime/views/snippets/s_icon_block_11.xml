@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_icon_block_11" name="Icon Block - 11">
+        <section class="s_icon_block_11 pt32 pb32">
+            <div class="container">
+                <div class="row justify-content-center border s_nb_column_fixed">
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-truck fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Free Delivery</h6>
+                                <p class="mb-0">All oders over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-credit-card fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Safe Payment</h6>
+                                <p class="mb-0">100% secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-phone fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Help Center</h6>
+                                <p class="mb-0">24 X 7 support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-undo fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Free Returns</h6>
+                                <p class="mb-0">No Questions Asked</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-rocket fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Fast Shipping</h6>
+                                <p class="mb-0">In 2-3 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2 p-3 tp-icon-block">
+                        <div class="media align-items-center tp-icon-block-icon">
+                            <span class="fa fa-smile-o fa-2x text-o-color-1 mr-3"/>
+                            <div class="media-body">
+                                <h6 class="mb-1">Happy Customers</h6>
+                                <p class="mb-0">12k+ Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,91 @@
+.tp-mega-menu {
+    ul.tp-megamenu-list-dark {
+        > li {
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            > a:not(.btn) {
+                color: $body-color;
+                &:hover {
+                    color: o-color('primary');
+                }
+            }
+        }
+    }
+
+    a.tp-megamenu-link-dark {
+        color: o-color('dark');
+        transition: 0.2s;
+        @include hover {
+            color: o-color('primary') !important;
+        }
+    }
+}
+.s_mega_menu_6 {
+    .card, .card-body {
+        background-color: transparent !important;
+    }
+}
+.s_mega_menu_4 {
+    .tp-banner-text {
+        @include o-position-absolute($top: 20%, $left: 50%);
+        width: 100%;
+        transform: translate(-50% , -20%);
+        -webkit-transform: translate(-50%, -20%);
+        z-index: 2;
+    }
+}
+
+.s_mega_menu_7 {
+    .tp-banner-text {
+        @include o-position-absolute($top: 20%, $left: 50%);
+        width: 100%;
+        transform: translate(-50% , -20%);
+        -webkit-transform: translate(-50%, -20%);
+        z-index: 2;
+    }
+}
+
+.s_mega_menu_8 {
+    .tp-banner-block {
+        min-height: 400px;
+        .tp-banner-text {
+            @include o-position-absolute($right: 18px, $bottom: 20px, $left: 18px);
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+        }
+    }
+}
+
+.s_mega_menu_9 {
+    .tp-banner-text {
+        @include o-position-absolute($bottom: 0, $left: 50%);
+        width: 100%;
+        transform: translate(-50% , 0%);
+        -webkit-transform: translate(-50%, 0%);
+        z-index: 2;
+        padding: 1rem;
+        background-color: rgba(o-color('white'), 0.6);
+    }
+}
+
+a.tp_link {
+    color: #6c757d !important;
+    transition: color 0.25s ease-in-out;
+    &:hover {
+        color: theme-color('primary') !important;
+        text-decoration: none;
+    }
+}
+.s_mega_menu_9 {
+    .s_badge {
+        margin: 0;
+        margin-left: 0.8rem;
+        padding: 0.4em 0.6em;
+        font-size: 0.66rem;
+        border-radius: 3px;
+        padding-top: 5px;
+        i {
+            margin-right: 0.3rem;
+        }
+    }
+}
