@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_sync,access_product_sync,model_product_sync,base.group_user,1,1,1,1
+access_pop_message,access_pop_message,model_pop_message,base.group_user,1,1,1,1
