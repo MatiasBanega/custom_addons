@@ -10,7 +10,7 @@
             <div onload="generateCaptcha();"/>
         </xpath>
         <xpath expr="//div[@class='form-group field-password']" position="after">
-            <script type="text/javascript" src="/auth_signup_address/static/src/js/captcha_index.js"/>
+          <!--  <script type="text/javascript" src="/auth_signup_address/static/src/js/captcha_index.js"/> -->
             <script src="/web/static/lib/jquery/jquery.js" type="text/javascript"/>
             <script type="text/javascript">
                 $(document).ready(function () {

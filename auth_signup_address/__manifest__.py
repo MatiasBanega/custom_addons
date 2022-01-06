@@ -18,7 +18,6 @@
         'data/ir_config_parameter_data.xml',
         'views/auth_signup_views.xml',
         'views/auth_signup_login_templates.xml',
-        'views/res_config_settings_views.xml',
         'views/res_partner_views.xml',
         'views/res_users_views.xml',
     ],

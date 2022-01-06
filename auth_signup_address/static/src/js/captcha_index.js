@@ -1,4 +1,4 @@
-function generateCaptcha()
+/*function generateCaptcha()
 {
 const myInput = document.getElementById('mainCaptcha');
 console.log("Testing Captcha")
@@ -49,4 +49,4 @@ function onChangeTest() {
   }
 }
 
-
+*/
