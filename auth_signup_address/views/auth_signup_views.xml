@@ -79,17 +79,7 @@
                            required="required"/>
                 </div>
             </div>
-            <!--<div t-if="auth_signup_with_captcha" id="auth_signup_with_captcha"
-                 onload="generateCaptcha();">
-                <div class="input-container">
-                    <input type="text" class="input-field captcha" id="mainCaptcha" disabled="disabled"
-                           onclick="generateCaptcha();" readonly="readonly"/>
-                </div>
-                <div class="input-container">
-                    <input class="input-field" type="text" onKeyUp="onChangeTest()" placeholder="Enter Captcha"
-                           name="captcha" id="txtInput" onfocus="generateCaptcha();" required="required"/>
-                    <i class="fa fa-refresh icon" id="refresh_icon" onclick="generateCaptcha();"/>
-                </div>-->
+            <div>
                 <span id="success" style="color:green"/>
                 <span id="error" style="color:red"/>
                 <p class="alert alert-danger" t-if="error">
