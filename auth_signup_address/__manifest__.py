@@ -5,8 +5,8 @@
     'description': """
     Signup page with Optional extra fields such as Address, Phone, Date of Birth & Captcha.
     """,
-    'author': 'Tintumon',
-    'website': 'https://tintumon.co.in',
+    'author': 'OUARRAQI SOUFIANE',
+    'website': 'https://versus&solution.ma',
     'license': 'AGPL-3',
     'category': 'Website',
     'version': '0.1',
