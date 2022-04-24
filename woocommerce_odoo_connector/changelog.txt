@@ -1,0 +1,31 @@
+	------------------------------ Version 2.0.0 (29-05-2020) --------------------------------
+	+ [Fix] Import Taxes added .
+	+ [Fix] Upgrade from WOCv13 old to WOCv13 new.
+
+	------------------------------- Version 2.0.0 (12-06-2020) --------------------------------
+	+ [ADD] import process using API filters (page, per_page)
+
+	------------------------------- Version 2.0.0 (17-06-2020) ----------------------------------
+	+[ADD] import date set to the last added date when importing .
+
+	------------------------------- Version 2.0.0 (25-06-2020) ----------------------------------
+	+ [FIX] export stock with multichannel location.
+	+[FIX] try and except removal.
+	+[FIX] import category recursion.
+	+[FIX] import taxes 
+	+ [FIX] remove search condition for categories while importing products
+	+ [FIX] import operation code to work with other channel.
+
+	------------------------------- Version 2.0.0 (07-07-2020) ----------------------------------
+	+ [REM] remove the invoice and shipping address from import partner code
+
+	------------------------------- Version 2.0.1 (09-07-2020) ----------------------------------
+	+ [FIX] previous order status update code from odoo to woocommerce.
+	+ [ADD] sync_cancel feature in multi.channel.sale model.
+	+ [REM] HTML tags from description sale and description purchase.
+
+	------------------------------- Version 2.0.2 (09-07-2020) ----------------------------------
+	+ [FIX] used multichannel method in export_update_category code .
+	+ [FIX] added multichannel method for getting quantity in export_update_product code .
+	+ [ADD] Added functionality for not raising error messages during import cron.
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+	<data>
+		<record id="woocommerce_odoo_connector.inherited_multi_channel_sale_woocommerce" model="ir.ui.view">
+			<field name="name">multi.channel.sale.woocommerce</field>
+			<field name="model">multi.channel.sale</field>
+			<field name="inherit_id" ref="odoo_multi_channel_sale.multi_channel_view_form" />
+			<field name="arch" type="xml">
+				<group name="credentials" position="inside">
+					<group attrs="{'invisible':[('channel','!=', 'woocommerce')]}">
+						<field name="woocommerce_url" widget="url" placeholder="http://woocommerce-store-url" attrs="{'required':[('channel','=', 'woocommerce')],'readonly':[('state','=', 'validate')]}" />
+						<field name="woocommerce_consumer_key" placeholder="eg. ck_ccac94fc4362ba12a2045086ea9db285e8f02ac9" password="True" attrs="{'required':[('channel','=', 'woocommerce')],'readonly':[('state','=', 'validate')]}" />
+						<label for="woocommerce_secret_key" string="Secret Key"/>
+						<field password="True" name="woocommerce_secret_key" nolabel="1" placeholder="eg. cs_a4c0092684bf08cf7a83606b44c82a6e0d8a4cae" attrs="{'required':[('channel','=', 'woocommerce')],'readonly':[('state','=', 'validate')]}" />
+					</group>
+				</group>
+			</field>
+		</record>
+	</data>
+</odoo>
